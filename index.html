@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Workout Builder</title>
+  <!-- Script html2pdf per scaricare il PDF direttamente dal browser -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <!-- Database esterno degli esercizi -->
   <script src="esercizi.js"></script>
   <style>
     :root {
@@ -26,7 +28,7 @@
     header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 6px; }
     .header-brand { display: flex; align-items: center; gap: 10px; }
     .site-logo { height: 38px; width: auto; max-width: 110px; object-fit: contain; border-radius: 6px; }
-    h1 { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
+    h1 { font-size: 1.15rem; font-weight: 700; color: var(--primary); }
 
     .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
     .section-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--primary); display: flex; justify-content: space-between; }
@@ -61,14 +63,16 @@
     .pdf-sheet { background: #ffffff; color: #1e293b; padding: 25px; width: 800px; font-size: 12px; }
     .pdf-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0284c7; padding-bottom: 10px; margin-bottom: 12px; }
     .pdf-header-left { display: flex; align-items: center; gap: 14px; }
-    .pdf-logo { height: 50px; width: auto; max-width: 130px; object-fit: contain; }
-    .pdf-header h2 { font-size: 20px; color: #0284c7; line-height: 1.1; }
+    .pdf-logo { height: 55px; width: auto; max-width: 140px; object-fit: contain; }
+    .pdf-header h2 { font-size: 19px; color: #0284c7; line-height: 1.1; margin-bottom: 3px; }
+    .pdf-coach-tag { font-size: 11px; font-weight: 700; color: #0369a1; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
     .pdf-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 14px; font-size: 11px; }
     .pdf-table { width: 100%; border-collapse: collapse; }
     .pdf-table th { background: #0284c7; color: #fff; text-align: left; padding: 7px 6px; font-size: 10px; text-transform: uppercase; }
     .pdf-table td { padding: 8px 6px; border-bottom: 1px solid #cbd5e1; vertical-align: middle; }
     .pdf-table tr:nth-child(even) { background: #f8fafc; }
     .pdf-img { width: 56px; height: 56px; border-radius: 4px; object-fit: cover; border: 1px solid #94a3b8; }
+    .pdf-footer { display: flex; justify-content: space-between; margin-top: 14px; padding-top: 8px; border-top: 1px solid #cbd5e1; font-size: 10px; color: #64748b; }
   </style>
 </head>
 <body>
@@ -129,7 +133,6 @@
         </div>
       </div>
 
-      <!-- Campi specifici: Serie/Reps, Rest, RIR/@ -->
       <div class="grid-3">
         <div class="field">
           <label>Serie e Ripetizioni</label>
@@ -145,7 +148,6 @@
         </div>
       </div>
 
-      <!-- Note tecniche -->
       <div class="field" style="margin-top: 8px;">
         <label>Note</label>
         <input type="text" id="inNotes" placeholder="es. Discesa 3s, fermo 1s al petto">
@@ -178,6 +180,7 @@
           <div>
             <h2>SCHEDA DI ALLENAMENTO</h2>
             <div style="font-weight: 700; color: #475569;" id="pdfSplit">-</div>
+            <div class="pdf-coach-tag">Coach: Carlo Ratto</div>
           </div>
         </div>
         <div style="text-align: right; font-size: 11px; color: #64748b;">
@@ -205,6 +208,11 @@
         </thead>
         <tbody id="pdfTableBody"></tbody>
       </table>
+
+      <div class="pdf-footer">
+        <span>Coach Carlo Ratto • Workout Builder</span>
+        <span>Scheda personalizzata per atleta</span>
+      </div>
     </div>
   </div>
 
