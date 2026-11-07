@@ -40,7 +40,7 @@
     label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
     input, select, textarea { background: var(--input-bg); border: 1px solid var(--border); color: #fff; padding: 10px; border-radius: 8px; font-size: 0.9rem; outline: none; width: 100%; }
     input:focus, select:focus, textarea:focus { border-color: var(--primary); }
-    textarea { resize: vertical; min-height: 60px; font-size: 0.85rem; }
+    textarea { resize: vertical; min-height: 70px; font-size: 0.85rem; line-height: 1.4; }
 
     /* Barra filtri e ricerca */
     .filter-row { display: flex; gap: 8px; margin-bottom: 8px; }
@@ -60,12 +60,13 @@
     .exercise-list { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; max-height: 440px; overflow-y: auto; }
     .day-group { display: flex; flex-direction: column; gap: 6px; }
     .day-badge { background: #1a2736; border: 1px solid #0284c7; color: var(--primary); font-size: 0.8rem; font-weight: 700; padding: 6px 10px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .exercise-item { background: #141414; border: 1px solid var(--border); border-radius: 8px; padding: 10px; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
-    .item-img { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; }
+    .exercise-item { background: #141414; border: 1px solid var(--border); border-radius: 8px; padding: 10px; display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+    .item-img { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
     .item-details { flex: 1; font-size: 0.85rem; }
     .item-details strong { font-size: 0.9rem; display: block; margin-bottom: 2px; }
-    .item-sub { color: var(--text-muted); font-size: 0.75rem; }
-    .btn-del { background: transparent; border: none; color: var(--danger); font-size: 1.2rem; cursor: pointer; padding: 6px; }
+    .item-sub { color: var(--text-muted); font-size: 0.75rem; margin-top: 2px; }
+    .item-notes { color: var(--primary); font-size: 0.75rem; white-space: pre-wrap; margin-top: 4px; line-height: 1.35; }
+    .btn-del { background: transparent; border: none; color: var(--danger); font-size: 1.2rem; cursor: pointer; padding: 4px 6px; }
 
     /* LAYOUT DEL DOCUMENTO PDF GENERATO */
     #pdfPreviewWrapper { display: none; }
@@ -77,14 +78,15 @@
     .pdf-coach-tag { font-size: 11px; font-weight: 700; color: #0369a1; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
     
     .pdf-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; font-size: 11px; }
-    .pdf-general-notes { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 8px 10px; font-size: 11px; color: #78350f; margin-bottom: 14px; border-radius: 4px; display: none; }
+    .pdf-general-notes { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 8px 10px; font-size: 11px; color: #78350f; margin-bottom: 14px; border-radius: 4px; display: none; white-space: pre-wrap; line-height: 1.35; }
     
     .pdf-day-banner { background: #0284c7; color: #fff; font-size: 12px; font-weight: 800; padding: 6px 8px; border-radius: 4px; margin-top: 14px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
     .pdf-table { width: 100%; border-collapse: collapse; margin-bottom: 6px; }
     .pdf-table th { background: #e2e8f0; color: #334155; text-align: left; padding: 6px; font-size: 10px; text-transform: uppercase; }
-    .pdf-table td { padding: 8px 6px; border-bottom: 1px solid #cbd5e1; vertical-align: middle; }
+    .pdf-table td { padding: 8px 6px; border-bottom: 1px solid #cbd5e1; vertical-align: top; }
     .pdf-table tr:nth-child(even) { background: #f8fafc; }
     .pdf-img { width: 54px; height: 54px; border-radius: 4px; object-fit: cover; border: 1px solid #94a3b8; }
+    .pdf-notes-cell { font-size: 10px; color: #334155; white-space: pre-wrap; line-height: 1.3; }
     .pdf-footer { display: flex; justify-content: space-between; margin-top: 14px; padding-top: 8px; border-top: 1px solid #cbd5e1; font-size: 10px; color: #64748b; }
   </style>
 </head>
@@ -114,7 +116,7 @@
       </div>
       <div class="field" style="margin-top: 8px;">
         <label>Note Generali Scheda</label>
-        <textarea id="generalNotes" placeholder="es. Riscaldamento: 5 min cyclette + mobilità. Rispettare i tempi di recupero e annotare i carichi."></textarea>
+        <textarea id="generalNotes" placeholder="es. Riscaldamento: 5 min cyclette + mobilità.&#10;Rispettare i recuperi indicati."></textarea>
       </div>
     </div>
 
@@ -122,7 +124,6 @@
     <div class="card">
       <div class="section-title">2. Aggiungi Esercizio</div>
 
-      <!-- Scelta Giorno vincolata da 1 a 7 -->
       <div class="field" style="margin-bottom: 8px;">
         <label>Giorno / Seduta</label>
         <select id="exerciseDay">
@@ -136,7 +137,6 @@
         </select>
       </div>
       
-      <!-- Filtro muscolo + Ricerca con suggerimenti -->
       <div class="filter-row">
         <select id="muscleFilter">
           <option value="ALL">Tutti</option>
@@ -177,7 +177,7 @@
 
       <div class="field" style="margin-top: 8px;">
         <label>Note Esercizio</label>
-        <input type="text" id="inNotes" placeholder="es. Tut 3-0-1-0, fermo 1s al petto">
+        <textarea id="inNotes" style="min-height: 85px;" placeholder="es. Esecuzione: discesa 3s controllata.&#10;Fermo 1s al petto.&#10;Ultima serie a cedimento."></textarea>
       </div>
 
       <button class="btn btn-add" id="btnAddEx">➕ Inserisci nella Scheda</button>
@@ -220,12 +220,10 @@
         <div><strong>Totale Esercizi:</strong> <span id="pdfCount">0</span></div>
       </div>
 
-      <!-- Box Note Generali nel PDF -->
       <div class="pdf-general-notes" id="pdfGeneralNotesBox">
         <strong>NOTE GENERALI:</strong> <span id="pdfGeneralNotesText"></span>
       </div>
 
-      <!-- Contenitore tabelle raggruppate per giorno -->
       <div id="pdfTablesContainer"></div>
 
       <div class="pdf-footer">
@@ -307,6 +305,15 @@
     exerciseSelect.addEventListener("change", updatePreview);
     populateSelect();
 
+    function escapeHtml(str) {
+      return str
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
     document.getElementById("btnAddEx").addEventListener("click", () => {
       const selected = EXERCISE_DB.find(e => e.id === exerciseSelect.value);
       if (!selected) {
@@ -370,11 +377,11 @@
           const item = document.createElement("div");
           item.className = "exercise-item";
           item.innerHTML = `
-            <img src="${ex.img}" class="item-img" alt="${ex.name}">
+            <img src="${ex.img}" class="item-img" alt="${escapeHtml(ex.name)}">
             <div class="item-details">
-              <strong>${idx + 1}. ${ex.name}</strong>
-              <div class="item-sub"><strong>${ex.setsReps}</strong> | Rest: ${ex.rest} | RIR/@: ${ex.rir}</div>
-              ${ex.notes !== '-' ? `<div class="item-sub" style="color: var(--primary);">Note: ${ex.notes}</div>` : ''}
+              <strong>${idx + 1}. ${escapeHtml(ex.name)}</strong>
+              <div class="item-sub"><strong>${escapeHtml(ex.setsReps)}</strong> | Rest: ${escapeHtml(ex.rest)} | RIR/@: ${escapeHtml(ex.rir)}</div>
+              ${ex.notes !== '-' ? `<div class="item-notes">Note:&#10;${escapeHtml(ex.notes)}</div>` : ''}
             </div>
             <button class="btn-del" onclick="deleteEx(${ex.uid})">✖</button>
           `;
@@ -414,7 +421,6 @@
         notesBox.style.display = "none";
       }
 
-      // Costruzione tabelle separate e ordinate per giorno (Giorno 1 -> Giorno 7)
       const container = document.getElementById("pdfTablesContainer");
       container.innerHTML = "";
 
@@ -445,11 +451,11 @@
             ${exercises.map((ex, i) => `
               <tr>
                 <td><img src="${ex.img}" class="pdf-img" crossorigin="anonymous"></td>
-                <td><strong>${i + 1}. ${ex.name}</strong><br><small style="color: #64748b;">${ex.muscle}</small></td>
-                <td style="text-align: center; font-weight: bold;">${ex.setsReps}</td>
-                <td style="text-align: center;">${ex.rest}</td>
-                <td style="text-align: center; font-weight: 600;">${ex.rir}</td>
-                <td style="font-size: 10px; color: #334155;">${ex.notes}</td>
+                <td><strong>${i + 1}. ${escapeHtml(ex.name)}</strong><br><small style="color: #64748b;">${escapeHtml(ex.muscle)}</small></td>
+                <td style="text-align: center; font-weight: bold;">${escapeHtml(ex.setsReps)}</td>
+                <td style="text-align: center;">${escapeHtml(ex.rest)}</td>
+                <td style="text-align: center; font-weight: 600;">${escapeHtml(ex.rir)}</td>
+                <td class="pdf-notes-cell">${escapeHtml(ex.notes)}</td>
               </tr>
             `).join("")}
           </tbody>
