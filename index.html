@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Crea Scheda Palestra</title>
-  <!-- Script html2pdf per scaricare il PDF direttamente dal browser -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <!-- Database esterno degli esercizi -->
   <script src="esercizi.js"></script>
   <style>
     :root {
@@ -34,13 +32,12 @@
     .section-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--primary); display: flex; justify-content: space-between; }
 
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+    .grid-3 { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 6px; }
     .field { display: flex; flex-direction: column; gap: 4px; }
     label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
     input, select, textarea { background: #070d17; border: 1px solid var(--border); color: #fff; padding: 10px; border-radius: 8px; font-size: 0.9rem; outline: none; width: 100%; }
     input:focus, select:focus { border-color: var(--primary); }
 
-    /* Selettore Esercizio */
     .filter-row { display: flex; gap: 8px; margin-bottom: 8px; }
     .preview-box { display: flex; gap: 12px; align-items: center; margin: 8px 0; background: rgba(0,0,0,0.25); padding: 8px; border-radius: 8px; }
     .preview-thumb { width: 68px; height: 68px; border-radius: 6px; object-fit: cover; background: #000; border: 1px solid var(--border); }
@@ -51,7 +48,6 @@
     .btn-add { background: var(--primary); color: #000; margin-top: 10px; }
     .btn-pdf { background: var(--success); color: #fff; font-size: 1.05rem; padding: 15px; margin-top: 12px; }
 
-    /* Lista esercizi inseriti */
     .exercise-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; max-height: 380px; overflow-y: auto; }
     .exercise-item { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 10px; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
     .item-img { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; }
@@ -60,7 +56,7 @@
     .item-sub { color: var(--text-muted); font-size: 0.75rem; }
     .btn-del { background: transparent; border: none; color: var(--danger); font-size: 1.2rem; cursor: pointer; padding: 6px; }
 
-    /* TEMPLATE NASCOSTO FORMATTATO PER IL PDF */
+    /* LAYOUT DEL DOCUMENTO PDF GENERATO */
     #pdfPreviewWrapper { display: none; }
     .pdf-sheet { background: #ffffff; color: #1e293b; padding: 25px; width: 800px; font-size: 12px; }
     .pdf-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0284c7; padding-bottom: 10px; margin-bottom: 12px; }
@@ -113,7 +109,6 @@
     <div class="card">
       <div class="section-title">2. Aggiungi Esercizio</div>
       
-      <!-- Filtro muscolo + Ricerca -->
       <div class="filter-row">
         <select id="muscleFilter" style="max-width: 130px;">
           <option value="ALL">Tutti</option>
@@ -126,7 +121,6 @@
         <select id="exerciseSelect"></select>
       </div>
 
-      <!-- Anteprima visiva dell'esercizio selezionato -->
       <div class="preview-box">
         <img id="previewImg" class="preview-thumb" src="" alt="Anteprima">
         <div class="preview-info">
@@ -135,29 +129,26 @@
         </div>
       </div>
 
-      <!-- Campi compilabili a mano -->
-      <div class="grid-4">
+      <!-- Campi specifici: Serie/Reps, Rest, RIR/@ -->
+      <div class="grid-3">
         <div class="field">
-          <label>Serie</label>
-          <input type="text" id="inSets" placeholder="4">
+          <label>Serie e Ripetizioni</label>
+          <input type="text" id="inSetsReps" placeholder="es. 4x8-10">
         </div>
         <div class="field">
-          <label>Reps</label>
-          <input type="text" id="inReps" placeholder="8-10">
+          <label>Rest</label>
+          <input type="text" id="inRest" placeholder="es. 90'' o 2'">
         </div>
         <div class="field">
-          <label>Recup.</label>
-          <input type="text" id="inRest" placeholder="90''">
-        </div>
-        <div class="field">
-          <label>Carico</label>
-          <input type="text" id="inLoad" placeholder="RPE 8">
+          <label>RIR / @</label>
+          <input type="text" id="inRir" placeholder="es. RIR 1 o @8">
         </div>
       </div>
 
+      <!-- Note tecniche -->
       <div class="field" style="margin-top: 8px;">
-        <label>Note Esecuzione / Spiegazione</label>
-        <input type="text" id="inNotes" placeholder="es. Fermo 1s in basso, discesa controllata 3s">
+        <label>Note</label>
+        <input type="text" id="inNotes" placeholder="es. Discesa 3s, fermo 1s al petto">
       </div>
 
       <button class="btn btn-add" id="btnAddEx">➕ Inserisci nella Scheda</button>
@@ -204,13 +195,12 @@
       <table class="pdf-table">
         <thead>
           <tr>
-            <th style="width: 60px;">Img</th>
+            <th style="width: 60px;">Foto</th>
             <th>Esercizio</th>
-            <th style="width: 50px; text-align: center;">Serie</th>
-            <th style="width: 70px;">Reps</th>
-            <th style="width: 60px;">Rec.</th>
-            <th style="width: 80px;">Carico</th>
-            <th>Note Tecniche</th>
+            <th style="width: 110px; text-align: center;">Serie e Reps</th>
+            <th style="width: 70px; text-align: center;">Rest</th>
+            <th style="width: 80px; text-align: center;">RIR / @</th>
+            <th>Note</th>
           </tr>
         </thead>
         <tbody id="pdfTableBody"></tbody>
@@ -262,10 +252,9 @@
       const selected = EXERCISE_DB.find(e => e.id === exerciseSelect.value);
       if (!selected) return;
 
-      const sets = document.getElementById("inSets").value.trim() || "-";
-      const reps = document.getElementById("inReps").value.trim() || "-";
+      const setsReps = document.getElementById("inSetsReps").value.trim() || "-";
       const rest = document.getElementById("inRest").value.trim() || "-";
-      const load = document.getElementById("inLoad").value.trim() || "-";
+      const rir = document.getElementById("inRir").value.trim() || "-";
       const notes = document.getElementById("inNotes").value.trim() || "-";
 
       currentWorkout.push({
@@ -273,7 +262,7 @@
         name: selected.name,
         muscle: selected.muscle,
         img: selected.img,
-        sets, reps, rest, load, notes
+        setsReps, rest, rir, notes
       });
 
       document.getElementById("inNotes").value = "";
@@ -297,7 +286,7 @@
           <img src="${ex.img}" class="item-img" alt="${ex.name}">
           <div class="item-details">
             <strong>${idx + 1}. ${ex.name}</strong>
-            <div class="item-sub">${ex.sets} Serie × ${ex.reps} | Rec: ${ex.rest} | ${ex.load}</div>
+            <div class="item-sub"><strong>${ex.setsReps}</strong> | Rest: ${ex.rest} | RIR/@: ${ex.rir}</div>
             ${ex.notes !== '-' ? `<div class="item-sub" style="color: var(--primary);">Note: ${ex.notes}</div>` : ''}
           </div>
           <button class="btn-del" onclick="deleteEx(${ex.uid})">✖</button>
@@ -337,10 +326,9 @@
         tr.innerHTML = `
           <td><img src="${ex.img}" class="pdf-img" crossorigin="anonymous"></td>
           <td><strong>${i + 1}. ${ex.name}</strong><br><small style="color: #64748b;">${ex.muscle}</small></td>
-          <td style="text-align: center; font-weight: bold;">${ex.sets}</td>
-          <td>${ex.reps}</td>
-          <td>${ex.rest}</td>
-          <td>${ex.load}</td>
+          <td style="text-align: center; font-weight: bold;">${ex.setsReps}</td>
+          <td style="text-align: center;">${ex.rest}</td>
+          <td style="text-align: center; font-weight: 600;">${ex.rir}</td>
           <td style="font-size: 10px; color: #334155;">${ex.notes}</td>
         `;
         tbody.appendChild(tr);
