@@ -47,8 +47,12 @@
     .filter-row select { max-width: 125px; }
     .filter-row input { flex: 1; }
 
-    .preview-box { display: flex; gap: 12px; align-items: center; margin: 8px 0; background: #141414; border: 1px solid var(--border); padding: 8px; border-radius: 8px; }
-    .preview-thumb { width: 68px; height: 68px; border-radius: 6px; object-fit: cover; background: #000; border: 1px solid var(--border); }
+    /* Box anteprima con doppia foto */
+    .preview-box { display: flex; gap: 14px; align-items: center; margin: 8px 0; background: #141414; border: 1px solid var(--border); padding: 8px; border-radius: 8px; }
+    .preview-photos { display: flex; gap: 8px; flex-shrink: 0; }
+    .preview-photo-wrap { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+    .preview-thumb { width: 62px; height: 62px; border-radius: 6px; object-fit: cover; background: #000; border: 1px solid var(--border); }
+    .photo-tag { font-size: 9px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
     .preview-info { font-size: 0.85rem; line-height: 1.3; }
 
     .btn { border: none; border-radius: 8px; padding: 12px 14px; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%; }
@@ -56,19 +60,20 @@
     .btn-add { background: var(--primary); color: #000; margin-top: 10px; }
     .btn-pdf { background: var(--success); color: #fff; font-size: 1.05rem; padding: 15px; margin-top: 12px; }
 
-    /* Raggruppamento sedute */
+    /* Raggruppamento per sedute nella UI */
     .exercise-list { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; max-height: 440px; overflow-y: auto; }
     .day-group { display: flex; flex-direction: column; gap: 6px; }
     .day-badge { background: #1a2736; border: 1px solid #0284c7; color: var(--primary); font-size: 0.8rem; font-weight: 700; padding: 6px 10px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
     .exercise-item { background: #141414; border: 1px solid var(--border); border-radius: 8px; padding: 10px; display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
-    .item-img { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
-    .item-details { flex: 1; font-size: 0.85rem; }
+    .item-photos { display: flex; gap: 6px; flex-shrink: 0; }
+    .item-img { width: 44px; height: 44px; border-radius: 5px; object-fit: cover; border: 1px solid var(--border); }
+    .item-details { flex: 1; font-size: 0.85rem; margin-left: 4px; }
     .item-details strong { font-size: 0.9rem; display: block; margin-bottom: 2px; }
     .item-sub { color: var(--text-muted); font-size: 0.75rem; margin-top: 2px; }
     .item-notes { color: var(--primary); font-size: 0.75rem; white-space: pre-wrap; margin-top: 4px; line-height: 1.35; }
     .btn-del { background: transparent; border: none; color: var(--danger); font-size: 1.2rem; cursor: pointer; padding: 4px 6px; }
 
-    /* LAYOUT DEL DOCUMENTO PDF: posizionamento a coordinate 0 per azzerare gli offset */
+    /* LAYOUT DEL DOCUMENTO PDF GENERATO */
     #pdfPreviewWrapper {
       display: none;
       position: fixed;
@@ -85,33 +90,67 @@
       background: #ffffff;
       color: #1e293b;
       padding: 18px 22px;
-      width: 720px; /* Misura esatta per foglio A4 con margini */
+      width: 720px;
       margin: 0 auto;
       box-sizing: border-box;
       font-size: 11px;
     }
 
-    .pdf-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0284c7; padding-bottom: 8px; margin-bottom: 10px; }
+    /* Intestazione in nero */
+    .pdf-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #111827; padding-bottom: 8px; margin-bottom: 10px; }
     .pdf-header-left { display: flex; align-items: center; gap: 12px; }
     .pdf-logo { height: 50px; width: auto; max-width: 120px; object-fit: contain; }
-    .pdf-header h2 { font-size: 18px; color: #0284c7; line-height: 1.1; margin-bottom: 2px; }
-    .pdf-coach-tag { font-size: 10px; font-weight: 700; color: #0369a1; text-transform: uppercase; letter-spacing: 0.5px; }
+    .pdf-header h2 { font-size: 18px; color: #111827; line-height: 1.1; margin-bottom: 2px; font-weight: 800; letter-spacing: 0.5px; }
+    .pdf-coach-tag { font-size: 10.5px; font-weight: 800; color: #111827; text-transform: uppercase; letter-spacing: 0.5px; }
     
     .pdf-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; background: #f1f5f9; padding: 7px 10px; border-radius: 6px; margin-bottom: 8px; font-size: 10.5px; }
-    .pdf-general-notes { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 7px 10px; font-size: 10.5px; color: #78350f; margin-bottom: 10px; border-radius: 4px; display: none; white-space: pre-wrap; line-height: 1.35; }
     
+    /* Note Generali in linea dall'inizio */
+    .pdf-general-notes { 
+      background: #fffbeb; 
+      border-left: 3px solid #f59e0b; 
+      padding: 8px 10px; 
+      font-size: 10.5px; 
+      color: #78350f; 
+      margin-bottom: 10px; 
+      border-radius: 4px; 
+      display: none; 
+      line-height: 1.4; 
+    }
+    .pdf-general-notes-title { 
+      display: block; 
+      font-weight: 800; 
+      margin-bottom: 3px; 
+      letter-spacing: 0.3px; 
+    }
+    .pdf-general-notes-body { 
+      display: block; 
+      white-space: pre-wrap; 
+    }
+    
+    /* Banner Seduta/Giorno nero con conteggio a destra */
     .pdf-day-banner {
-      background: #0284c7;
-      color: #fff;
+      background: #000000;
+      color: #ffffff;
       font-size: 11px;
       font-weight: 800;
-      padding: 5px 8px;
+      padding: 6px 10px;
       border-radius: 4px;
       margin-top: 12px;
       margin-bottom: 4px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       page-break-after: avoid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pdf-day-count {
+      font-size: 10px;
+      font-weight: 600;
+      color: #d1d5db;
+      text-transform: none;
+      letter-spacing: 0;
     }
 
     .pdf-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
@@ -119,7 +158,10 @@
     .pdf-table td { padding: 6px; border-bottom: 1px solid #cbd5e1; vertical-align: top; }
     .pdf-table tr { page-break-inside: avoid; }
     .pdf-table tr:nth-child(even) { background: #f8fafc; }
-    .pdf-img { width: 50px; height: 50px; border-radius: 4px; object-fit: cover; border: 1px solid #94a3b8; }
+    
+    /* Doppia foto nel PDF */
+    .pdf-photos-wrap { display: flex; gap: 4px; align-items: center; }
+    .pdf-img { width: 44px; height: 44px; border-radius: 4px; object-fit: cover; border: 1px solid #94a3b8; }
     .pdf-notes-cell { font-size: 9.5px; color: #334155; white-space: pre-wrap; line-height: 1.25; }
     .pdf-footer { display: flex; justify-content: space-between; margin-top: 14px; padding-top: 8px; border-top: 1px solid #cbd5e1; font-size: 9.5px; color: #64748b; page-break-inside: avoid; }
   </style>
@@ -186,8 +228,18 @@
 
       <select id="exerciseSelect" style="margin-bottom: 8px;"></select>
 
+      <!-- Box Anteprima a doppia immagine (Partenza / Arrivo) -->
       <div class="preview-box">
-        <img id="previewImg" class="preview-thumb" src="" alt="Anteprima">
+        <div class="preview-photos">
+          <div class="preview-photo-wrap">
+            <img id="previewImgStart" class="preview-thumb" src="" alt="Partenza">
+            <span class="photo-tag">Partenza</span>
+          </div>
+          <div class="preview-photo-wrap">
+            <img id="previewImgEnd" class="preview-thumb" src="" alt="Arrivo">
+            <span class="photo-tag">Arrivo</span>
+          </div>
+        </div>
         <div class="preview-info">
           <strong id="previewName">-</strong><br>
           <span style="color: var(--primary);" id="previewMuscle">-</span>
@@ -240,7 +292,7 @@
           <img src="logo_carlo.png" alt="Logo" class="pdf-logo">
           <div>
             <h2>SCHEDA DI ALLENAMENTO</h2>
-            <div class="pdf-coach-tag">Coach: Carlo Ratto</div>
+            <div class="pdf-coach-tag">COACH: CARLO RATTO</div>
           </div>
         </div>
         <div style="text-align: right; font-size: 11px; color: #64748b; white-space: nowrap;">
@@ -254,8 +306,10 @@
         <div><strong>Totale Esercizi:</strong> <span id="pdfCount">0</span></div>
       </div>
 
+      <!-- Box Note Generali formattato in blocco con testo allineato -->
       <div class="pdf-general-notes" id="pdfGeneralNotesBox">
-        <strong>NOTE GENERALI:</strong> <span id="pdfGeneralNotesText"></span>
+        <span class="pdf-general-notes-title">NOTE GENERALI:</span>
+        <span class="pdf-general-notes-body" id="pdfGeneralNotesText"></span>
       </div>
 
       <div id="pdfTablesContainer"></div>
@@ -274,7 +328,8 @@
     const exerciseSearch = document.getElementById("exerciseSearch");
     const exerciseSelect = document.getElementById("exerciseSelect");
     const exerciseSuggestions = document.getElementById("exerciseSuggestions");
-    const previewImg = document.getElementById("previewImg");
+    const previewImgStart = document.getElementById("previewImgStart");
+    const previewImgEnd = document.getElementById("previewImgEnd");
     const previewName = document.getElementById("previewName");
     const previewMuscle = document.getElementById("previewMuscle");
     const exerciseDay = document.getElementById("exerciseDay");
@@ -309,7 +364,8 @@
         opt.value = "";
         opt.textContent = "Nessun esercizio trovato";
         exerciseSelect.appendChild(opt);
-        previewImg.src = "";
+        previewImgStart.src = "";
+        previewImgEnd.src = "";
         previewName.textContent = "Nessun esercizio";
         previewMuscle.textContent = "-";
         return;
@@ -328,7 +384,8 @@
     function updatePreview() {
       const selected = EXERCISE_DB.find(e => e.id === exerciseSelect.value);
       if (selected) {
-        previewImg.src = selected.img;
+        previewImgStart.src = selected.imgStart || selected.img || "";
+        previewImgEnd.src = selected.imgEnd || selected.imgStart || selected.img || "";
         previewName.textContent = selected.name;
         previewMuscle.textContent = selected.muscle;
       }
@@ -366,7 +423,8 @@
         day: day,
         name: selected.name,
         muscle: selected.muscle,
-        img: selected.img,
+        imgStart: selected.imgStart || selected.img || "",
+        imgEnd: selected.imgEnd || selected.imgStart || selected.img || "",
         setsReps, rest, rir, notes
       });
 
@@ -411,7 +469,10 @@
           const item = document.createElement("div");
           item.className = "exercise-item";
           item.innerHTML = `
-            <img src="${ex.img}" class="item-img" alt="${escapeHtml(ex.name)}">
+            <div class="item-photos">
+              <img src="${ex.imgStart}" class="item-img" alt="Start" title="Partenza">
+              <img src="${ex.imgEnd}" class="item-img" alt="End" title="Arrivo">
+            </div>
             <div class="item-details">
               <strong>${idx + 1}. ${escapeHtml(ex.name)}</strong>
               <div class="item-sub"><strong>${escapeHtml(ex.setsReps)}</strong> | Rest: ${escapeHtml(ex.rest)} | RIR/@: ${escapeHtml(ex.rir)}</div>
@@ -465,7 +526,12 @@
         const exercises = grouped[dayName];
         const dayTitle = document.createElement("div");
         dayTitle.className = "pdf-day-banner";
-        dayTitle.textContent = dayName;
+        
+        // Nome del giorno a sinistra, conteggio a destra
+        dayTitle.innerHTML = `
+          <span>${dayName}</span>
+          <span class="pdf-day-count">${exercises.length} ${exercises.length === 1 ? 'esercizio' : 'esercizi'}</span>
+        `;
         container.appendChild(dayTitle);
 
         const table = document.createElement("table");
@@ -473,18 +539,23 @@
         table.innerHTML = `
           <thead>
             <tr>
-              <th style="width: 54px;">Foto</th>
+              <th style="width: 96px; text-align: center;">Movimento</th>
               <th>Esercizio</th>
-              <th style="width: 100px; text-align: center;">Serie e Reps</th>
-              <th style="width: 65px; text-align: center;">Rest</th>
-              <th style="width: 75px; text-align: center;">RIR / @</th>
+              <th style="width: 95px; text-align: center;">Serie e Reps</th>
+              <th style="width: 60px; text-align: center;">Rest</th>
+              <th style="width: 70px; text-align: center;">RIR / @</th>
               <th>Note</th>
             </tr>
           </thead>
           <tbody>
             ${exercises.map((ex, i) => `
               <tr>
-                <td><img src="${ex.img}" class="pdf-img" crossorigin="anonymous"></td>
+                <td>
+                  <div class="pdf-photos-wrap">
+                    <img src="${ex.imgStart}" class="pdf-img" crossorigin="anonymous" title="Partenza">
+                    <img src="${ex.imgEnd}" class="pdf-img" crossorigin="anonymous" title="Arrivo">
+                  </div>
+                </td>
                 <td><strong>${i + 1}. ${escapeHtml(ex.name)}</strong><br><small style="color: #64748b;">${escapeHtml(ex.muscle)}</small></td>
                 <td style="text-align: center; font-weight: bold;">${escapeHtml(ex.setsReps)}</td>
                 <td style="text-align: center;">${escapeHtml(ex.rest)}</td>
@@ -500,7 +571,6 @@
       const element = document.getElementById("pdfSheet");
       const wrapper = document.getElementById("pdfPreviewWrapper");
       
-      // Rende visibile il foglio a coordinate fisse
       wrapper.style.display = "block";
 
       const opt = {
