@@ -10,11 +10,12 @@
   <script src="esercizi.js"></script>
   <style>
     :root {
-      --bg: #0b1120;
-      --card-bg: #1e293b;
-      --border: #334155;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
+      --bg: #000000;
+      --card-bg: #0d0d0d;
+      --input-bg: #161616;
+      --border: #262626;
+      --text: #ffffff;
+      --text-muted: #8e8e93;
       --primary: #38bdf8;
       --success: #22c55e;
       --danger: #ef4444;
@@ -33,15 +34,16 @@
     .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
     .section-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--primary); display: flex; justify-content: space-between; }
 
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .grid-3-meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
     .grid-3 { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 6px; }
     .field { display: flex; flex-direction: column; gap: 4px; }
     label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
-    input, select, textarea { background: #070d17; border: 1px solid var(--border); color: #fff; padding: 10px; border-radius: 8px; font-size: 0.9rem; outline: none; width: 100%; }
-    input:focus, select:focus { border-color: var(--primary); }
+    input, select, textarea { background: var(--input-bg); border: 1px solid var(--border); color: #fff; padding: 10px; border-radius: 8px; font-size: 0.9rem; outline: none; width: 100%; }
+    input:focus, select:focus, textarea:focus { border-color: var(--primary); }
+    textarea { resize: vertical; min-height: 60px; font-size: 0.85rem; }
 
     .filter-row { display: flex; gap: 8px; margin-bottom: 8px; }
-    .preview-box { display: flex; gap: 12px; align-items: center; margin: 8px 0; background: rgba(0,0,0,0.25); padding: 8px; border-radius: 8px; }
+    .preview-box { display: flex; gap: 12px; align-items: center; margin: 8px 0; background: #141414; border: 1px solid var(--border); padding: 8px; border-radius: 8px; }
     .preview-thumb { width: 68px; height: 68px; border-radius: 6px; object-fit: cover; background: #000; border: 1px solid var(--border); }
     .preview-info { font-size: 0.85rem; line-height: 1.3; }
 
@@ -51,7 +53,7 @@
     .btn-pdf { background: var(--success); color: #fff; font-size: 1.05rem; padding: 15px; margin-top: 12px; }
 
     .exercise-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; max-height: 380px; overflow-y: auto; }
-    .exercise-item { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 10px; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+    .exercise-item { background: #141414; border: 1px solid var(--border); border-radius: 8px; padding: 10px; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
     .item-img { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; }
     .item-details { flex: 1; font-size: 0.85rem; }
     .item-details strong { font-size: 0.9rem; display: block; margin-bottom: 2px; }
@@ -66,7 +68,10 @@
     .pdf-logo { height: 55px; width: auto; max-width: 140px; object-fit: contain; }
     .pdf-header h2 { font-size: 19px; color: #0284c7; line-height: 1.1; margin-bottom: 3px; }
     .pdf-coach-tag { font-size: 11px; font-weight: 700; color: #0369a1; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
-    .pdf-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 14px; font-size: 11px; }
+    
+    .pdf-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; font-size: 11px; }
+    .pdf-general-notes { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 8px 10px; font-size: 11px; color: #78350f; margin-bottom: 14px; border-radius: 4px; display: none; }
+    
     .pdf-table { width: 100%; border-collapse: collapse; }
     .pdf-table th { background: #0284c7; color: #fff; text-align: left; padding: 7px 6px; font-size: 10px; text-transform: uppercase; }
     .pdf-table td { padding: 8px 6px; border-bottom: 1px solid #cbd5e1; vertical-align: middle; }
@@ -89,7 +94,7 @@
     <!-- 1. Dati Scheda -->
     <div class="card">
       <div class="section-title">1. Informazioni Scheda</div>
-      <div class="grid-2">
+      <div class="grid-3-meta">
         <div class="field">
           <label>Nome Atleta</label>
           <input type="text" id="athleteName" placeholder="es. Mario Rossi">
@@ -99,13 +104,13 @@
           <input type="text" id="daySplit" placeholder="es. Giorno A - Spinta">
         </div>
         <div class="field">
-          <label>Obiettivo</label>
-          <input type="text" id="goal" placeholder="es. Ipertrofia / Forza">
-        </div>
-        <div class="field">
-          <label>Durata (settimane)</label>
+          <label>Durata</label>
           <input type="text" id="duration" placeholder="es. 6 settimane">
         </div>
+      </div>
+      <div class="field" style="margin-top: 8px;">
+        <label>Note Generali Scheda</label>
+        <textarea id="generalNotes" placeholder="es. Riscaldamento: 5 min cyclette + mobilità articolare. Rispettare i recuperi indicati."></textarea>
       </div>
     </div>
 
@@ -190,9 +195,13 @@
 
       <div class="pdf-meta">
         <div><strong>Atleta:</strong> <span id="pdfAthlete">-</span></div>
-        <div><strong>Fase:</strong> <span id="pdfGoal">-</span></div>
         <div><strong>Durata:</strong> <span id="pdfDuration">-</span></div>
         <div><strong>Tot Esercizi:</strong> <span id="pdfCount">0</span></div>
+      </div>
+
+      <!-- Box Note Generali nel PDF -->
+      <div class="pdf-general-notes" id="pdfGeneralNotesBox">
+        <strong>NOTE GENERALI:</strong> <span id="pdfGeneralNotesText"></span>
       </div>
 
       <table class="pdf-table">
@@ -316,15 +325,24 @@
 
       const athlete = document.getElementById("athleteName").value.trim() || "Atleta";
       const split = document.getElementById("daySplit").value.trim() || "Allenamento";
-      const goal = document.getElementById("goal").value.trim() || "-";
       const duration = document.getElementById("duration").value.trim() || "-";
+      const generalNotes = document.getElementById("generalNotes").value.trim();
 
       document.getElementById("pdfAthlete").textContent = athlete;
       document.getElementById("pdfSplit").textContent = split;
-      document.getElementById("pdfGoal").textContent = goal;
       document.getElementById("pdfDuration").textContent = duration;
       document.getElementById("pdfCount").textContent = currentWorkout.length;
       document.getElementById("pdfDate").textContent = new Date().toLocaleDateString("it-IT");
+
+      // Gestione visualizzazione note generali nel PDF
+      const notesBox = document.getElementById("pdfGeneralNotesBox");
+      const notesText = document.getElementById("pdfGeneralNotesText");
+      if (generalNotes) {
+        notesText.textContent = generalNotes;
+        notesBox.style.display = "block";
+      } else {
+        notesBox.style.display = "none";
+      }
 
       const tbody = document.getElementById("pdfTableBody");
       tbody.innerHTML = "";
