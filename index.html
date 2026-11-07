@@ -34,7 +34,7 @@
     .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
     .section-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--primary); display: flex; justify-content: space-between; align-items: center; }
 
-    .grid-3-meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .grid-3 { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 6px; }
     .field { display: flex; flex-direction: column; gap: 4px; }
     label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
@@ -73,7 +73,7 @@
     .pdf-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0284c7; padding-bottom: 10px; margin-bottom: 12px; }
     .pdf-header-left { display: flex; align-items: center; gap: 14px; }
     .pdf-logo { height: 55px; width: auto; max-width: 140px; object-fit: contain; }
-    .pdf-header h2 { font-size: 19px; color: #0284c7; line-height: 1.1; margin-bottom: 3px; }
+    .pdf-header h2 { font-size: 20px; color: #0284c7; line-height: 1.1; margin-bottom: 3px; }
     .pdf-coach-tag { font-size: 11px; font-weight: 700; color: #0369a1; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
     
     .pdf-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; font-size: 11px; }
@@ -102,14 +102,10 @@
     <!-- 1. Dati Scheda -->
     <div class="card">
       <div class="section-title">1. Informazioni Scheda</div>
-      <div class="grid-3-meta">
+      <div class="grid-2">
         <div class="field">
           <label>Nome Atleta</label>
           <input type="text" id="athleteName" placeholder="es. Mario Rossi">
-        </div>
-        <div class="field">
-          <label>Split Generale</label>
-          <input type="text" id="splitGeneral" placeholder="es. 3 sedute (A-B-C)">
         </div>
         <div class="field">
           <label>Durata</label>
@@ -126,17 +122,18 @@
     <div class="card">
       <div class="section-title">2. Aggiungi Esercizio</div>
 
-      <!-- Scelta Giorno di destinazione -->
+      <!-- Scelta Giorno vincolata da 1 a 7 -->
       <div class="field" style="margin-bottom: 8px;">
         <label>Giorno / Seduta</label>
-        <input type="text" id="exerciseDay" list="dayPresets" value="Giorno A" placeholder="es. Giorno A (o scrivi liberamente)">
-        <datalist id="dayPresets">
-          <option value="Giorno A">
-          <option value="Giorno B">
-          <option value="Giorno C">
-          <option value="Giorno D">
-          <option value="Giorno E">
-        </datalist>
+        <select id="exerciseDay">
+          <option value="Giorno 1">Giorno 1</option>
+          <option value="Giorno 2">Giorno 2</option>
+          <option value="Giorno 3">Giorno 3</option>
+          <option value="Giorno 4">Giorno 4</option>
+          <option value="Giorno 5">Giorno 5</option>
+          <option value="Giorno 6">Giorno 6</option>
+          <option value="Giorno 7">Giorno 7</option>
+        </select>
       </div>
       
       <!-- Filtro muscolo + Ricerca con suggerimenti -->
@@ -209,7 +206,6 @@
           <img src="logo_carlo.png" alt="Logo" class="pdf-logo">
           <div>
             <h2>SCHEDA DI ALLENAMENTO</h2>
-            <div style="font-weight: 700; color: #475569;" id="pdfSplit">-</div>
             <div class="pdf-coach-tag">Coach: Carlo Ratto</div>
           </div>
         </div>
@@ -318,7 +314,7 @@
         return;
       }
 
-      const day = exerciseDay.value.trim() || "Giorno A";
+      const day = exerciseDay.value;
       const setsReps = document.getElementById("inSetsReps").value.trim() || "-";
       const rest = document.getElementById("inRest").value.trim() || "-";
       const rir = document.getElementById("inRir").value.trim() || "-";
@@ -340,7 +336,7 @@
     function getGroupedExercises() {
       const grouped = {};
       currentWorkout.forEach(ex => {
-        const d = ex.day || "Giorno A";
+        const d = ex.day || "Giorno 1";
         if (!grouped[d]) grouped[d] = [];
         grouped[d].push(ex);
       });
@@ -358,8 +354,10 @@
       }
 
       const grouped = getGroupedExercises();
+      const sortedDays = Object.keys(grouped).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
-      for (const [dayName, exercises] of Object.entries(grouped)) {
+      sortedDays.forEach(dayName => {
+        const exercises = grouped[dayName];
         const groupEl = document.createElement("div");
         groupEl.className = "day-group";
 
@@ -384,7 +382,7 @@
         });
 
         list.appendChild(groupEl);
-      }
+      });
     }
 
     window.deleteEx = function(uid) {
@@ -399,12 +397,10 @@
       }
 
       const athlete = document.getElementById("athleteName").value.trim() || "Atleta";
-      const splitGeneral = document.getElementById("splitGeneral").value.trim() || "Scheda Allenamento";
       const duration = document.getElementById("duration").value.trim() || "-";
       const generalNotes = document.getElementById("generalNotes").value.trim();
 
       document.getElementById("pdfAthlete").textContent = athlete;
-      document.getElementById("pdfSplit").textContent = splitGeneral;
       document.getElementById("pdfDuration").textContent = duration;
       document.getElementById("pdfCount").textContent = currentWorkout.length;
       document.getElementById("pdfDate").textContent = new Date().toLocaleDateString("it-IT");
@@ -418,13 +414,15 @@
         notesBox.style.display = "none";
       }
 
-      // Costruzione tabelle separate per ogni giorno
+      // Costruzione tabelle separate e ordinate per giorno (Giorno 1 -> Giorno 7)
       const container = document.getElementById("pdfTablesContainer");
       container.innerHTML = "";
 
       const grouped = getGroupedExercises();
+      const sortedDays = Object.keys(grouped).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
-      for (const [dayName, exercises] of Object.entries(grouped)) {
+      sortedDays.forEach(dayName => {
+        const exercises = grouped[dayName];
         const dayTitle = document.createElement("div");
         dayTitle.className = "pdf-day-banner";
         dayTitle.textContent = dayName;
@@ -457,7 +455,7 @@
           </tbody>
         `;
         container.appendChild(table);
-      }
+      });
 
       const element = document.getElementById("pdfSheet");
       const wrapper = document.getElementById("pdfPreviewWrapper");
@@ -465,7 +463,7 @@
 
       const opt = {
         margin:       8,
-        filename:     `Scheda_${athlete.replace(/\s+/g, '_')}_${splitGeneral.replace(/\s+/g, '_')}.pdf`,
+        filename:     `Scheda_${athlete.replace(/\s+/g, '_')}.pdf`,
         image:        { type: 'jpeg', quality: 0.98 },
         html2canvas:  { scale: 2, useCORS: true },
         jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
