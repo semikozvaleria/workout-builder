@@ -1668,8 +1668,8 @@ const EXERCISE_DB = [
     id: "leg_press_orizzontale",
     name: "Leg Press Orizzontale",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Leg_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Leg_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/3Rj0qWqY/legpressorizzontale.jpg",
+    imgEnd: "https://i.postimg.cc/3Rj0qWqY/legpressorizzontale.jpg"
   },
   {
     id: "leg_press_45",
@@ -1682,8 +1682,8 @@ const EXERCISE_DB = [
     id: "leg_press_monopodalica",
     name: "Leg Press Monopodalica",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Leg_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Leg_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/yNjzrHTb/Leg-press-monopodalica.jpg",
+    imgEnd: "https://i.postimg.cc/yNjzrHTb/Leg-press-monopodalica.jpg"
   },
   {
     id: "leg_extension",
@@ -1696,8 +1696,8 @@ const EXERCISE_DB = [
     id: "leg_extension_monopodalica",
     name: "Leg Extension Monopodalica",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Leg_Extensions/0.jpg`,
-    imgEnd: `${BASE_IMG}/Leg_Extensions/1.jpg`
+    imgStart: "https://i.postimg.cc/JhP95Qrw/Leg-Extension-Monopodalica.jpg",
+    imgEnd: "https://i.postimg.cc/JhP95Qrw/Leg-Extension-Monopodalica.jpg"
   },
   {
     id: "pendulum_squat",
@@ -1710,8 +1710,8 @@ const EXERCISE_DB = [
     id: "belt_squat",
     name: "Belt Squat",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Barbell_Full_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Full_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/v8VGbp8D/Belt-Squat.jpg",
+    imgEnd: "https://i.postimg.cc/v8VGbp8D/Belt-Squat.jpg"
   },
   {
     id: "hip_thrust_machine",
@@ -1731,15 +1731,15 @@ const EXERCISE_DB = [
     id: "gluteus_machine",
     name: "Gluteus Machine",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Glute_Kickback/0.jpg`,
-    imgEnd: `${BASE_IMG}/Glute_Kickback/1.jpg`
+    imgStart: "https://i.postimg.cc/zfgxVSy3/Gluteus-Machine.jpg",
+    imgEnd: "https://i.postimg.cc/zfgxVSy3/Gluteus-Machine.jpg"
   },
   {
     id: "adductor",
     name: "Adductor Machine",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Side_Lunge_With_Dumbbells/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`
+    imgStart: "https://i.postimg.cc/02XnnHmr/Adductor-Machine.jpg",
+    imgEnd: "https://i.postimg.cc/02XnnHmr/Adductor-Machine.jpg"
   },
   {
     id: "abductor",
