@@ -2076,5 +2076,806 @@ const EXERCISE_DB = [
     muscle: "Gambe",
     imgStart: `${BASE_IMG}/Standing_Dumbbell_Calf_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Standing_Dumbbell_Calf_Raise/1.jpg`
+  },
+  // ==========================================
+  // --- FUNZIONALI ---
+  // ==========================================
+  {
+    id: "sled_push",
+    name: "Sled Push",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Sled_Push/0.jpg`,
+    imgEnd: `${BASE_IMG}/Sled_Push/1.jpg`
+  },
+  {
+    id: "sled_pull",
+    name: "Sled Pull",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Sled_Pull/0.jpg`,
+    imgEnd: `${BASE_IMG}/Sled_Pull/1.jpg`
+  },
+  {
+    id: "sled_drag_indietro",
+    name: "Sled Drag all'Indietro",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Sled_Pull/0.jpg`,
+    imgEnd: `${BASE_IMG}/Sled_Pull/1.jpg`
+  },
+  {
+    id: "sled_drag_avanti",
+    name: "Sled Drag in Avanti",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Sled_Push/0.jpg`,
+    imgEnd: `${BASE_IMG}/Sled_Push/1.jpg`
+  },
+  {
+    id: "farmer_carry",
+    name: "Farmer Carry",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Farmers_Walk/0.jpg`,
+    imgEnd: `${BASE_IMG}/Farmers_Walk/1.jpg`
+  },
+  {
+    id: "suitcase_carry_kettlebell",
+    name: "Suitcase Carry Kettlebell",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Farmers_Walk/0.jpg`,
+    imgEnd: `${BASE_IMG}/Farmers_Walk/1.jpg`
+  },
+  {
+    id: "walking_lunge_sandbag",
+    name: "Walking Lunge con Sandbag",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_Lunges/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Lunges/1.jpg`
+  },
+  {
+    id: "box_jump",
+    name: "Box Jump",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Box_Jump/0.jpg`,
+    imgEnd: `${BASE_IMG}/Box_Jump/1.jpg`
+  },
+  {
+    id: "box_step_up",
+    name: "Box Step-Up",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_Step_Ups/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Step_Ups/1.jpg`
+  },
+  {
+    id: "lateral_box_jump",
+    name: "Lateral Box Jump",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Side_To_Side_Box_Shuffle/0.jpg`,
+    imgEnd: `${BASE_IMG}/Side_To_Side_Box_Shuffle/1.jpg`
+  },
+  {
+    id: "broad_jump",
+    name: "Broad Jump",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Box_Jump/0.jpg`,
+    imgEnd: `${BASE_IMG}/Box_Jump/1.jpg`
+  },
+  {
+    id: "squat_jump",
+    name: "Squat Jump",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Jump_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Jump_Squat/1.jpg`
+  },
+  {
+    id: "skater_jump",
+    name: "Skater Jump",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Side_To_Side_Box_Shuffle/0.jpg`,
+    imgEnd: `${BASE_IMG}/Side_To_Side_Box_Shuffle/1.jpg`
+  },
+  {
+    id: "jumping_lunge",
+    name: "Jumping Lunge",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Scissor_Jumps/0.jpg`,
+    imgEnd: `${BASE_IMG}/Scissor_Jumps/1.jpg`
+  },
+  {
+    id: "jumping_jack",
+    name: "Jumping Jack",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Jumping_Jacks/0.jpg`,
+    imgEnd: `${BASE_IMG}/Jumping_Jacks/1.jpg`
+  },
+  {
+    id: "high_knees",
+    name: "High Knees",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/High_Knees/0.jpg`,
+    imgEnd: `${BASE_IMG}/High_Knees/1.jpg`
+  },
+  {
+    id: "burpee",
+    name: "Burpee",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Burpee/0.jpg`,
+    imgEnd: `${BASE_IMG}/Burpee/1.jpg`
+  },
+  {
+    id: "american_kettlebell_swing",
+    name: "American Kettlebell Swing",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Swing/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Swing/1.jpg`
+  },
+  {
+    id: "single_arm_kettlebell_swing",
+    name: "Single Arm Kettlebell Swing",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/One-Arm_Kettlebell_Swings/0.jpg`,
+    imgEnd: `${BASE_IMG}/One-Arm_Kettlebell_Swings/1.jpg`
+  },
+  {
+    id: "double_kettlebell_swing",
+    name: "Double Kettlebell Swing",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Swing/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Swing/1.jpg`
+  },
+  {
+    id: "kettlebell_clean",
+    name: "Kettlebell Clean",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Clean/1.jpg`
+  },
+  {
+    id: "kettlebell_snatch",
+    name: "Kettlebell Snatch",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Snatch/1.jpg`
+  },
+  {
+    id: "kettlebell_high_pull",
+    name: "Kettlebell High Pull",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Sumo_High_Pull/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Sumo_High_Pull/1.jpg`
+  },
+  {
+    id: "kettlebell_thruster",
+    name: "Kettlebell Thruster",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Thruster/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Thruster/1.jpg`
+  },
+  {
+    id: "kettlebell_push_press",
+    name: "Kettlebell Push Press",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Push_Press/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Push_Press/1.jpg`
+  },
+  {
+    id: "kettlebell_windmill",
+    name: "Kettlebell Windmill",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Windmill/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Windmill/1.jpg`
+  },
+  {
+    id: "turkish_get_up",
+    name: "Turkish Get-Up",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Turkish_Get-Up/0.jpg`,
+    imgEnd: `${BASE_IMG}/Turkish_Get-Up/1.jpg`
+  },
+  {
+    id: "kettlebell_halo",
+    name: "Kettlebell Halo",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Halo/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Halo/1.jpg`
+  },
+  {
+    id: "kettlebell_bottom_up_press",
+    name: "Kettlebell Bottom-Up Press",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Push_Press/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Push_Press/1.jpg`
+  },
+  {
+    id: "double_kettlebell_front_squat",
+    name: "Double Kettlebell Front Squat",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Kettlebell_Front_Squats/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kettlebell_Front_Squats/1.jpg`
+  },
+  {
+    id: "dumbbell_snatch",
+    name: "Dumbbell Snatch",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/1.jpg`
+  },
+  {
+    id: "dumbbell_clean",
+    name: "Dumbbell Clean",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Clean/1.jpg`
+  },
+  {
+    id: "dumbbell_hang_clean",
+    name: "Dumbbell Hang Clean",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Clean/1.jpg`
+  },
+  {
+    id: "dumbbell_thruster",
+    name: "Dumbbell Thruster",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Standing_Dumbbell_Press/1.jpg`
+  },
+  {
+    id: "dumbbell_push_press",
+    name: "Dumbbell Push Press",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Standing_Dumbbell_Press/0.jpg`,
+    imgEnd: `${BASE_IMG}/Standing_Dumbbell_Press/1.jpg`
+  },
+  {
+    id: "dumbbell_devil_press",
+    name: "Dumbbell Devil Press",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Burpee/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/1.jpg`
+  },
+  {
+    id: "dumbbell_ground_to_overhead",
+    name: "Dumbbell Ground to Overhead",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/1.jpg`
+  },
+  {
+    id: "power_clean",
+    name: "Power Clean",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Power_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Power_Clean/1.jpg`
+  },
+  {
+    id: "hang_power_clean",
+    name: "Hang Power Clean",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Hang_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Hang_Clean/1.jpg`
+  },
+  {
+    id: "squat_clean",
+    name: "Squat Clean",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Power_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Power_Clean/1.jpg`
+  },
+  {
+    id: "clean_and_jerk",
+    name: "Clean and Jerk",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Clean_and_Jerk/0.jpg`,
+    imgEnd: `${BASE_IMG}/Clean_and_Jerk/1.jpg`
+  },
+  {
+    id: "power_snatch",
+    name: "Power Snatch",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Snatch/1.jpg`
+  },
+  {
+    id: "hang_power_snatch",
+    name: "Hang Power Snatch",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Hang_Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Hang_Snatch/1.jpg`
+  },
+  {
+    id: "squat_snatch",
+    name: "Squat Snatch",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Snatch/1.jpg`
+  },
+  {
+    id: "hang_snatch",
+    name: "Hang Snatch",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Hang_Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Hang_Snatch/1.jpg`
+  },
+  {
+    id: "clean_pull",
+    name: "Clean Pull",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Power_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Power_Clean/0.jpg`
+  },
+  {
+    id: "snatch_pull",
+    name: "Snatch Pull",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Snatch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Snatch/0.jpg`
+  },
+  {
+    id: "barbell_thruster",
+    name: "Barbell Thruster",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Front_Barbell_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Push_Press/1.jpg`
+  },
+  {
+    id: "wall_ball",
+    name: "Wall Ball",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Medicine_Ball_Chest_Pass/0.jpg`,
+    imgEnd: `${BASE_IMG}/Medicine_Ball_Chest_Pass/1.jpg`
+  },
+  {
+    id: "medicine_ball_slam",
+    name: "Medicine Ball Slam",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Overhead_Slam/0.jpg`,
+    imgEnd: `${BASE_IMG}/Overhead_Slam/1.jpg`
+  },
+  {
+    id: "slam_ball_over_shoulder",
+    name: "Slam Ball Over Shoulder",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Overhead_Slam/0.jpg`,
+    imgEnd: `${BASE_IMG}/Overhead_Slam/1.jpg`
+  },
+  {
+    id: "sandbag_clean",
+    name: "Sandbag Clean",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Power_Clean/0.jpg`,
+    imgEnd: `${BASE_IMG}/Power_Clean/1.jpg`
+  },
+  {
+    id: "sandbag_squat",
+    name: "Sandbag Squat",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Barbell_Full_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Barbell_Full_Squat/1.jpg`
+  },
+  {
+    id: "sandbag_thruster",
+    name: "Sandbag Thruster",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Push_Press/0.jpg`,
+    imgEnd: `${BASE_IMG}/Push_Press/1.jpg`
+  },
+  {
+    id: "sandbag_front_lunge",
+    name: "Sandbag Front Lunge",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Dumbbell_Lunges/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Lunges/1.jpg`
+  },
+  {
+    id: "jump_rope_single_under",
+    name: "Jump Rope Single Under",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Rope_Jumping/0.jpg`,
+    imgEnd: `${BASE_IMG}/Rope_Jumping/1.jpg`
+  },
+  {
+    id: "jump_rope_double_under",
+    name: "Jump Rope Double Under",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Rope_Jumping/0.jpg`,
+    imgEnd: `${BASE_IMG}/Rope_Jumping/1.jpg`
+  },
+  {
+    id: "battle_rope",
+    name: "Battle Rope",
+    muscle: "Funzionali",
+    imgStart: `${BASE_IMG}/Battling_Ropes/0.jpg`,
+    imgEnd: `${BASE_IMG}/Battling_Ropes/1.jpg`
+  },
+  // ==========================================
+  // --- TRX ---
+  // ==========================================
+  {
+    id: "trx_squat",
+    name: "TRX Squat",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Bodyweight_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+  },
+  {
+    id: "trx_jump_squat",
+    name: "TRX Jump Squat",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Jump_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Jump_Squat/1.jpg`
+  },
+  {
+    id: "trx_assisted_split_squat",
+    name: "TRX Assisted Split Squat",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Split_Squats/0.jpg`,
+    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+  },
+  {
+    id: "trx_reverse_lunge",
+    name: "TRX Reverse Lunge",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Dumbbell_Rear_Lunge/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Rear_Lunge/1.jpg`
+  },
+  {
+    id: "trx_bulgarian_split_squat",
+    name: "TRX Bulgarian Split Squat",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Split_Squats/0.jpg`,
+    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+  },
+  {
+    id: "trx_pistol_squat_assistito",
+    name: "TRX Pistol Squat Assistito",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Single_Leg_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Single_Leg_Squat/1.jpg`
+  },
+  {
+    id: "trx_hamstring_curl",
+    name: "TRX Hamstring Curl",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Lying_Leg_Curls/0.jpg`,
+    imgEnd: `${BASE_IMG}/Lying_Leg_Curls/1.jpg`
+  },
+  {
+    id: "trx_hip_bridge",
+    name: "TRX Hip Bridge",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Single_Leg_Glute_Bridge/0.jpg`,
+    imgEnd: `${BASE_IMG}/Single_Leg_Glute_Bridge/1.jpg`
+  },
+  {
+    id: "trx_row",
+    name: "TRX Row",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+  },
+  {
+    id: "trx_high_row",
+    name: "TRX High Row",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+  },
+  {
+    id: "trx_wide_row",
+    name: "TRX Wide Row",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+  },
+  {
+    id: "trx_single_arm_row",
+    name: "TRX Single Arm Row",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+  },
+  {
+    id: "trx_power_pull",
+    name: "TRX Power Pull",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+  },
+  {
+    id: "trx_face_pull",
+    name: "TRX Face Pull",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Face_Pull/0.jpg`,
+    imgEnd: `${BASE_IMG}/Face_Pull/1.jpg`
+  },
+  {
+    id: "trx_y_fly",
+    name: "TRX Y Fly",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Side_Lateral_Raise/1.jpg`
+  },
+  {
+    id: "trx_t_fly",
+    name: "TRX T Fly",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_Rear_Delt_Fly/1.jpg`
+  },
+  {
+    id: "trx_biceps_curl",
+    name: "TRX Biceps Curl",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_Curl/1.jpg`
+  },
+  {
+    id: "trx_chest_press",
+    name: "TRX Chest Press",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
+    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+  },
+  {
+    id: "trx_chest_fly",
+    name: "TRX Chest Fly",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
+    imgEnd: `${BASE_IMG}/Butterfly/1.jpg`
+  },
+  {
+    id: "trx_push_up",
+    name: "TRX Push-Up",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
+    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+  },
+  {
+    id: "trx_triceps_extension",
+    name: "TRX Triceps Extension",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Close-Grip_Push-Up/0.jpg`,
+    imgEnd: `${BASE_IMG}/Close-Grip_Push-Up/1.jpg`
+  },
+  {
+    id: "trx_atomic_push_up",
+    name: "TRX Atomic Push-Up",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
+    imgEnd: `${BASE_IMG}/Seated_Flat_Bench_Leg_Pull-In/1.jpg`
+  },
+  {
+    id: "trx_fallout",
+    name: "TRX Fallout",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
+    imgEnd: `${BASE_IMG}/Front_Plank/0.jpg`
+  },
+  {
+    id: "trx_mountain_climber",
+    name: "TRX Mountain Climber",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Mountain_Climbers/0.jpg`,
+    imgEnd: `${BASE_IMG}/Mountain_Climbers/1.jpg`
+  },
+  {
+    id: "trx_side_plank",
+    name: "TRX Side Plank",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Side_Plank/0.jpg`,
+    imgEnd: `${BASE_IMG}/Side_Plank/0.jpg`
+  },
+  {
+    id: "trx_pendulum",
+    name: "TRX Pendulum",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
+    imgEnd: `${BASE_IMG}/Side_Plank/0.jpg`
+  },
+  {
+    id: "trx_hamstring_runner",
+    name: "TRX Hamstring Runner",
+    muscle: "TRX",
+    imgStart: `${BASE_IMG}/Lying_Leg_Curls/0.jpg`,
+    imgEnd: `${BASE_IMG}/Lying_Leg_Curls/1.jpg`
+  },
+
+  // ==========================================
+  // --- MOBILITÀ ---
+  // ==========================================
+  {
+    id: "cat_cow",
+    name: "Cat-Cow",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Cat_Cow_Pose/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cat_Cow_Pose/1.jpg`
+  },
+  {
+    id: "childs_pose",
+    name: "Child's Pose",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Childs_Pose/0.jpg`,
+    imgEnd: `${BASE_IMG}/Childs_Pose/1.jpg`
+  },
+  {
+    id: "worlds_greatest_stretch",
+    name: "World's Greatest Stretch",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Worlds_Greatest_Stretch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Worlds_Greatest_Stretch/1.jpg`
+  },
+  {
+    id: "90_90_hip_switch",
+    name: "90/90 Hip Switch",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Butterfly/0.jpg`,
+    imgEnd: `${BASE_IMG}/Butterfly/1.jpg`
+  },
+  {
+    id: "90_90_hip_rotation",
+    name: "90/90 Hip Rotation",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Butterfly/0.jpg`,
+    imgEnd: `${BASE_IMG}/Butterfly/1.jpg`
+  },
+  {
+    id: "hip_cars",
+    name: "Hip CARs",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Standing_Leg_Curl/0.jpg`,
+    imgEnd: `${BASE_IMG}/Standing_Leg_Curl/1.jpg`
+  },
+  {
+    id: "shoulder_cars",
+    name: "Shoulder CARs",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Arm_Circles/0.jpg`,
+    imgEnd: `${BASE_IMG}/Arm_Circles/1.jpg`
+  },
+  {
+    id: "thoracic_rotation_quadrupedia",
+    name: "Thoracic Rotation Quadrupedia",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Bird_Dog/0.jpg`,
+    imgEnd: `${BASE_IMG}/Bird_Dog/1.jpg`
+  },
+  {
+    id: "open_book",
+    name: "Open Book",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Spine_Twist/0.jpg`,
+    imgEnd: `${BASE_IMG}/Spine_Twist/1.jpg`
+  },
+  {
+    id: "deep_squat_hold",
+    name: "Deep Squat Hold",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Bodyweight_Squat/1.jpg`,
+    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+  },
+  {
+    id: "ankle_dorsiflexion_mobilization",
+    name: "Ankle Dorsiflexion Mobilization",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Calf_Stretch_with_Rope/0.jpg`,
+    imgEnd: `${BASE_IMG}/Calf_Stretch_with_Rope/1.jpg`
+  },
+  {
+    id: "couch_stretch",
+    name: "Couch Stretch",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Quad_Stretch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Quad_Stretch/1.jpg`
+  },
+  {
+    id: "hip_flexor_stretch",
+    name: "Hip Flexor Stretch",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Kneeling_Hip_Flexor/0.jpg`,
+    imgEnd: `${BASE_IMG}/Kneeling_Hip_Flexor/1.jpg`
+  },
+  {
+    id: "hamstring_dynamic_stretch",
+    name: "Hamstring Dynamic Stretch",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Hamstring_Stretch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Hamstring_Stretch/1.jpg`
+  },
+  {
+    id: "adductor_rock_back",
+    name: "Adductor Rock Back",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`,
+    imgEnd: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`
+  },
+  {
+    id: "pectoral_doorway_stretch",
+    name: "Pectoral Doorway Stretch",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Doorway_Chest_Stretch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Doorway_Chest_Stretch/1.jpg`
+  },
+  {
+    id: "lat_stretch",
+    name: "Lat Stretch",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Overhead_Lat_Stretch/0.jpg`,
+    imgEnd: `${BASE_IMG}/Overhead_Lat_Stretch/1.jpg`
+  },
+  {
+    id: "band_shoulder_dislocation",
+    name: "Band Shoulder Dislocation",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Band_Pull_Apart/0.jpg`,
+    imgEnd: `${BASE_IMG}/Band_Pull_Apart/1.jpg`
+  },
+  {
+    id: "scapular_retraction_elastico",
+    name: "Scapular Retraction con Elastico",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Band_Pull_Apart/0.jpg`,
+    imgEnd: `${BASE_IMG}/Band_Pull_Apart/1.jpg`
+  },
+  {
+    id: "serratus_wall_slide",
+    name: "Serratus Wall Slide",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Standing_Military_Press/0.jpg`,
+    imgEnd: `${BASE_IMG}/Standing_Military_Press/1.jpg`
+  },
+  {
+    id: "glute_bridge_march",
+    name: "Glute Bridge March",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Single_Leg_Glute_Bridge/0.jpg`,
+    imgEnd: `${BASE_IMG}/Single_Leg_Glute_Bridge/1.jpg`
+  },
+  {
+    id: "single_leg_balance",
+    name: "Single Leg Balance",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Single_Leg_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Single_Leg_Squat/0.jpg`
+  },
+  {
+    id: "terminal_knee_extension_elastico",
+    name: "Terminal Knee Extension con Elastico",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Standing_Calf_Raises/0.jpg`,
+    imgEnd: `${BASE_IMG}/Standing_Calf_Raises/1.jpg`
+  },
+  {
+    id: "spanish_squat",
+    name: "Spanish Squat",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Bodyweight_Squat/0.jpg`,
+    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+  },
+  {
+    id: "wall_sit",
+    name: "Wall Sit",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Bodyweight_Squat/1.jpg`,
+    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+  },
+  {
+    id: "isometric_split_squat",
+    name: "Isometric Split Squat",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Split_Squats/1.jpg`,
+    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+  },
+  {
+    id: "calf_isometric_hold",
+    name: "Calf Isometric Hold",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Standing_Calf_Raises/1.jpg`,
+    imgEnd: `${BASE_IMG}/Standing_Calf_Raises/1.jpg`
+  },
+  {
+    id: "dead_bug_fitball",
+    name: "Dead Bug con Fitball",
+    muscle: "Mobilità",
+    imgStart: `${BASE_IMG}/Dead_Bug/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dead_Bug/1.jpg`
   }
 ];
