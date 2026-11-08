@@ -1731,22 +1731,22 @@ const EXERCISE_DB = [
     id: "gluteus_machine",
     name: "Gluteus Machine",
     muscle: "Gambe",
-    imgStart: "https://i.postimg.cc/zfgxVSy3/Gluteus-Machine.jpg",
-    imgEnd: "https://i.postimg.cc/zfgxVSy3/Gluteus-Machine.jpg"
+    imgStart: "https://i.postimg.cc/pdSy1zC4/Gluteus-Machine0.jpg",
+    imgEnd: "https://i.postimg.cc/d0fDSr6f/Gluteus-Machine1.jpg"
   },
   {
     id: "adductor",
     name: "Adductor Machine",
     muscle: "Gambe",
-    imgStart: "https://i.postimg.cc/02XnnHmr/Adductor-Machine.jpg",
-    imgEnd: "https://i.postimg.cc/02XnnHmr/Adductor-Machine.jpg"
+    imgStart: "https://i.postimg.cc/jj1CkPc8/Adductor-Machine0.jpg",
+    imgEnd: "https://i.postimg.cc/KYW4sBfp/Adductor-Machine1.jpg"
   },
   {
     id: "abductor",
     name: "Abductor Machine",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Glute_Kickback/0.jpg`,
-    imgEnd: `${BASE_IMG}/Glute_Kickback/1.jpg`
+    imgStart: "https://i.postimg.cc/YSPjyYRd/Abductor-Machine0.jpg",
+    imgEnd: "https://i.postimg.cc/1zd4YwBY/Abductor-Machine1.jpg"
   },
   {
     id: "leg_curl_seduto",
@@ -1759,8 +1759,8 @@ const EXERCISE_DB = [
     id: "leg_curl_monopodalico",
     name: "Leg Curl Monopodalico",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Standing_Leg_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Leg_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/jSLb39F9/Leg-Curl-Monopodalico.avif",
+    imgEnd: "https://i.postimg.cc/jSLb39F9/Leg-Curl-Monopodalico.avif"
   },
   {
     id: "leg_curl_sdraiato",
@@ -1815,15 +1815,15 @@ const EXERCISE_DB = [
     id: "pin_squat",
     name: "Pin Squat",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Barbell_Full_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Full_Squat/1.jpg`
+    imgStart: `https://i.postimg.cc/L8ZW1M7h/Pin-Squat.jpg`,
+    imgEnd: `https://i.postimg.cc/L8ZW1M7h/Pin-Squat.jpg`
   },
   {
     id: "squat_safety_bar",
     name: "Squat Safety Bar",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Barbell_Full_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Full_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/fT12Zrb6/safety-bar-squat-800.jpg",
+    imgEnd: "https://i.postimg.cc/fT12Zrb6/safety-bar-squat-800.jpg"
   },
   {
     id: "squat_multipower",
@@ -1843,15 +1843,15 @@ const EXERCISE_DB = [
     id: "split_squat_multipower",
     name: "Split Squat al Multipower",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Split_Squats/0.jpg`,
-    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+    imgStart: "https://i.postimg.cc/SstLdn2t/Split-Squat-al-Multipower.png",
+    imgEnd: "https://i.postimg.cc/SstLdn2t/Split-Squat-al-Multipower.png"
   },
   {
     id: "squat_bulgaro_multipower",
     name: "Squat Bulgaro al Multipower",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Split_Squats/0.jpg`,
-    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+    imgStart: "https://i.postimg.cc/SstLdn2t/Split-Squat-al-Multipower.png",
+    imgEnd: "https://i.postimg.cc/SstLdn2t/Split-Squat-al-Multipower.png"
   },
   {
     id: "sumo_squat_multipower",
@@ -1864,8 +1864,8 @@ const EXERCISE_DB = [
     id: "goblet_squat",
     name: "Goblet Squat",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Goblet_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Goblet_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/X75k7nX5/goblet-squat-800.jpg",
+    imgEnd: "https://i.postimg.cc/X75k7nX5/goblet-squat-800.jpg"
   },
   {
     id: "squat_manubri",
@@ -1885,8 +1885,8 @@ const EXERCISE_DB = [
     id: "squat_bulgaro_manubri",
     name: "Squat Bulgaro Manubri",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Split_Squats/0.jpg`,
-    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+    imgStart: "https://i.postimg.cc/KY8TLbcn/squabulgaromanubri0.jpg",
+    imgEnd: "https://i.postimg.cc/BvnFD3ZH/squabulgaromanubri1.jpg"
   },
   {
     id: "affondi_avanti_manubri",
@@ -1906,15 +1906,15 @@ const EXERCISE_DB = [
     id: "affondi_laterali_manubri",
     name: "Affondi Laterali con Manubri",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Side_Lunge_With_Dumbbells/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`
+    imgStart: "https://i.postimg.cc/xd8k8Pgm/Affondi-Laterali-con-Manubri.jpg",
+    imgEnd: "https://i.postimg.cc/xd8k8Pgm/Affondi-Laterali-con-Manubri.jpg"
   },
   {
     id: "affondi_incrociati",
     name: "Affondi Incrociati",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Dumbbell_Lunges/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_Lunges/1.jpg`
+    imgStart: "https://i.postimg.cc/VN0Y2ZDp/Affondi-incrociati.jpg",
+    imgEnd: "https://i.postimg.cc/bvSz4V35/Affondi-incrociati1.jpg"
   },
   {
     id: "step_up",
@@ -1927,8 +1927,8 @@ const EXERCISE_DB = [
     id: "pistol_squat",
     name: "Pistol Squat",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Single_Leg_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Single_Leg_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/pLhbdhzv/pistol-squat.jpg",
+    imgEnd: "https://i.postimg.cc/JzDVhDZL/pistol-squat1.jpg"
   },
   {
     id: "kettlebell_sumo_squat",
@@ -1962,15 +1962,15 @@ const EXERCISE_DB = [
     id: "stacco_rumeno_multipower",
     name: "Stacco Rumeno al Multipower",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Stiff-Legged_Barbell_Deadlift/0.jpg`,
-    imgEnd: `${BASE_IMG}/Stiff-Legged_Barbell_Deadlift/1.jpg`
+    imgStart: "https://i.postimg.cc/7YjtmBJk/stacco-rumeno-mono.avif",
+    imgEnd: "https://i.postimg.cc/7YjtmBJk/stacco-rumeno-mono.avif"
   },
   {
     id: "deficit_deadlift",
     name: "Deficit Deadlift",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Barbell_Deadlift/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Deadlift/1.jpg`
+    imgStart: "https://i.postimg.cc/YSM3sTr0/deficit-deadlift.png",
+    imgEnd: "https://i.postimg.cc/YSM3sTr0/deficit-deadlift.png"
   },
   {
     id: "stacco_gambe_tese",
