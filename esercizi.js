@@ -1981,10 +1981,10 @@ const EXERCISE_DB = [
   },
   {
     id: "trap_bar",
-    name: "Trap Bar",
+    name: "Stacco Trap Bar",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Barbell_Deadlift/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Deadlift/1.jpg`
+    imgStart: "https://i.postimg.cc/9XZBcWD7/Stacco-Trap-Bar.jpg",
+    imgEnd: "https://i.postimg.cc/qByGpkNC/Stacco-Trap-Bar(1).jpg"
   },
   {
     id: "good_morning_bilanciere",
@@ -1997,22 +1997,22 @@ const EXERCISE_DB = [
     id: "pull_through",
     name: "Pull Through",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Cable_Pull_Through/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Pull_Through/1.jpg`
+    imgStart: "https://i.postimg.cc/1tc4YYzm/Pull-Through-gambe.jpg",
+    imgEnd: "https://i.postimg.cc/sX91002y/Pull-Through-gambe1.jpg"
   },
   {
     id: "kettlebell_deadlift",
     name: "Kettlebell Deadlift",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Kettlebell_Deadlift/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Deadlift/1.jpg`
+    imgStart: "https://i.postimg.cc/5yhGYpwH/Kettlebell-Stacco.jpg",
+    imgEnd: "https://i.postimg.cc/yxM5gnFg/Kettlebell-Stacco1.jpg"
   },
   {
     id: "kettlebell_swing",
     name: "Kettlebell Swing",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Kettlebell_Swing/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Swing/1.jpg`
+    imgStart: "https://i.postimg.cc/KjDqjFvP/Kettlebell-Swing.png",
+    imgEnd: "https://i.postimg.cc/KjDqjFvn/Kettlebell-Swing-1.png"
   },
   {
     id: "back_extension_45",
@@ -2039,15 +2039,15 @@ const EXERCISE_DB = [
     id: "hip_thrust_monopodalico",
     name: "Hip Thrust Monopodalico",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Barbell_Hip_Thrust/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Hip_Thrust/1.jpg`
+    imgStart: "https://i.postimg.cc/nz09hPfG/Hip-Thrust-Monopodalico.jpg",
+    imgEnd: "https://i.postimg.cc/xCtN14VG/Hip-Thrust-Monopodalico1.jpg"
   },
   {
     id: "kickback_al_cavo",
     name: "Kickback al Cavo",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Glute_Kickback/0.jpg`,
-    imgEnd: `${BASE_IMG}/Glute_Kickback/1.jpg`
+    imgStart: "https://i.postimg.cc/yddYv62S/back-al-cavo.jpg",
+    imgEnd: "https://i.postimg.cc/yddYv62S/back-al-cavo.jpg"
   },
   {
     id: "abduzione_al_cavo",
@@ -2060,22 +2060,22 @@ const EXERCISE_DB = [
     id: "adduzione_al_cavo",
     name: "Adduzione al Cavo",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Side_Lunge_With_Dumbbells/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`
+    imgStart: "https://i.postimg.cc/SQYzhVtL/Abduzionealcavo.jpg",
+    imgEnd: "https://i.postimg.cc/SQYzhVtL/Abduzionealcavo.jpg"
   },
   {
     id: "lateral_band_walk",
     name: "Lateral Band Walk",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Side_Lunge_With_Dumbbells/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`
+    imgStart: "https://i.postimg.cc/vZ0m96Ns/Lateral-Band-Walk.webp",
+    imgEnd: "https://i.postimg.cc/vZ0m96Ns/Lateral-Band-Walk.webp"
   },
   {
     id: "calf_raise_step",
     name: "Calf Raise Step",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Standing_Dumbbell_Calf_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Dumbbell_Calf_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/4yPDMptg/Calfraisestep.jpg",
+    imgEnd: "https://i.postimg.cc/4yPDMptg/Calfraisestep.jpg"
   },
   // ==========================================
   // --- FUNZIONALI ---
