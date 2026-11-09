@@ -1439,8 +1439,8 @@ const EXERCISE_DB = [
     id: "push_up_presa_stretta",
     name: "Push-Up Presa Stretta",
     muscle: "Petto",
-    imgStart: "https://i.postimg.cc/vTHpvmBm/pushup-presa-stretta.jpg",
-    imgEnd: "https://i.postimg.cc/j2dGhj5d/pushup-presa-stretta1.webp"
+    imgStart: "https://i.postimg.cc/13Mgp2VT/push-up-presa-stretta.png",
+    imgEnd: "https://i.postimg.cc/13Mgp2VT/push-up-presa-stretta.png"
   },
   {
     id: "diamond_push_up",
