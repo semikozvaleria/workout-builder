@@ -329,49 +329,49 @@ const EXERCISE_DB = [
   },
   {
     id: "curl_bilanciere_dritto",
-    name: "Curl Bilanciere Dritto",
+    name: "Curl bilanciere dritto",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Barbell_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Barbell_Curl/1.jpg`
   },
   {
     id: "curl_bilanciere_ez",
-    name: "Curl Bilanciere EZ",
+    name: "Curl bilanciere EZ",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/EZ-Bar_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/EZ-Bar_Curl/1.jpg`
   },
   {
-    id: "preacher_curl_ez",
-    name: "Preacher Curl Bilanciere EZ",
+    id: "preacher_curl_bilanciere_ez",
+    name: "Preacher Curl bilanciere EZ",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Preacher_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Preacher_Curl/1.jpg`
   },
   {
-    id: "spider_curl_ez",
-    name: "Spider Curl Bilanciere EZ",
+    id: "spider_curl_bilanciere_ez",
+    name: "Spider Curl bilanciere EZ",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Spider_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Spider_Curl/1.jpg`
   },
   {
     id: "curl_manubri",
-    name: "Curl Manubri",
+    name: "Curl manubri",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Dumbbell_Bicep_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Dumbbell_Bicep_Curl/1.jpg`
   },
   {
-    id: "curl_manubri_seduto",
-    name: "Curl Manubri da Seduto",
+    id: "curl_manubri_da_seduto",
+    name: "Curl manubri da seduto",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Seated_Dumbbell_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Seated_Dumbbell_Curl/1.jpg`
   },
   {
-    id: "curl_manubri_panca_inclinata",
-    name: "Curl Manubri su Panca Inclinata",
+    id: "curl_manubri_su_panca_inclinata",
+    name: "Curl manubri su panca inclinata",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Incline_Dumbbell_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Incline_Dumbbell_Curl/1.jpg`
@@ -392,35 +392,35 @@ const EXERCISE_DB = [
   },
   {
     id: "preacher_curl_manubrio",
-    name: "Preacher Curl Manubrio",
+    name: "Preacher Curl manubrio",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/One_Arm_Dumbbell_Preacher_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/One_Arm_Dumbbell_Preacher_Curl/1.jpg`
   },
   {
     id: "spider_curl_manubri",
-    name: "Spider Curl Manubri",
+    name: "Spider Curl manubri",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Spider_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Spider_Curl/1.jpg`
   },
   {
-    id: "curl_cavo_basso_barra",
-    name: "Curl al Cavo Basso con Barra",
+    id: "curl_al_cavo_basso_con_barra",
+    name: "Curl al cavo basso con barra",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Cable_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_Curl/1.jpg`
   },
   {
-    id: "curl_cavo_basso_corda",
-    name: "Curl al Cavo Basso con Corda",
+    id: "curl_al_cavo_basso_con_corda",
+    name: "Curl al cavo basso con corda",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Cable_Hammer_Curls_-_Rope_Attachment/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_Hammer_Curls_-_Rope_Attachment/1.jpg`
   },
   {
-    id: "curl_cavo_unilaterale",
-    name: "Curl al Cavo Unilaterale",
+    id: "curl_al_cavo_unilaterale",
+    name: "Curl al cavo unilaterale",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Cable_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_Curl/1.jpg`
@@ -440,27 +440,198 @@ const EXERCISE_DB = [
     imgEnd: `${BASE_IMG}/Overhead_Cable_Curl/1.jpg`
   },
   {
-    id: "preacher_curl_cavo",
-    name: "Preacher Curl al Cavo",
+    id: "preacher_curl_al_cavo",
+    name: "Preacher Curl al cavo",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Cable_Preacher_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_Preacher_Curl/1.jpg`
   },
   {
-    id: "hammer_curl_cavo",
-    name: "Hammer Curl al Cavo",
+    id: "hammer_curl_al_cavo",
+    name: "Hammer Curl al cavo",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Cable_Hammer_Curls_-_Rope_Attachment/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_Hammer_Curls_-_Rope_Attachment/1.jpg`
   },
   {
-    id: "reverse_curl_cavo",
-    name: "Reverse Curl al Cavo",
+    id: "reverse_curl_al_cavo",
+    name: "Reverse Curl al cavo",
     muscle: "Braccia",
     imgStart: `${BASE_IMG}/Reverse_Cable_Curl/0.jpg`,
     imgEnd: `${BASE_IMG}/Reverse_Cable_Curl/1.jpg`
   },
 
+  // ==========================================
+  // --- TRICIPITI ---
+  // ==========================================
+  {
+    id: "triceps_extension_machine",
+    name: "Triceps Extension Machine",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Lever_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Lever_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "dip_machine",
+    name: "Dip Machine",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Lever_Seated_Dip/0.jpg`,
+    imgEnd: `${BASE_IMG}/Lever_Seated_Dip/1.jpg`
+  },
+  {
+    id: "panca_presa_stretta_al_multipower",
+    name: "Panca presa stretta al Multipower",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Smith_Machine_Close-Grip_Bench_Press/0.jpg`,
+    imgEnd: `${BASE_IMG}/Smith_Machine_Close-Grip_Bench_Press/1.jpg`
+  },
+  {
+    id: "jm_press",
+    name: "JM Press",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Close-Grip_Barbell_Bench_Press/0.jpg`,
+    imgEnd: `${BASE_IMG}/Close-Grip_Barbell_Bench_Press/1.jpg`
+  },
+  {
+    id: "french_press_bilanciere_ez",
+    name: "French Press bilanciere EZ",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Decline_EZ_Bar_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Decline_EZ_Bar_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "french_press_manubrio_singolo",
+    name: "French Press manubrio singolo",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/One_Arm_Pronated_Dumbbell_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/One_Arm_Pronated_Dumbbell_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "french_press_due_manubri",
+    name: "French Press due manubri",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Dumbbell_Lying_Pronated_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Lying_Pronated_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "estensioni_tricipiti_sopra_testa_con_manubrio",
+    name: "Estensioni tricipiti sopra testa con manubrio",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Standing_Dumbbell_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Standing_Dumbbell_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "kickback_manubrio",
+    name: "Kickback manubrio",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Tricep_Dumbbell_Kickback/0.jpg`,
+    imgEnd: `${BASE_IMG}/Tricep_Dumbbell_Kickback/1.jpg`
+  },
+  {
+    id: "pushdown_barra_dritta",
+    name: "Pushdown barra dritta",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Triceps_Pushdown/0.jpg`,
+    imgEnd: `${BASE_IMG}/Triceps_Pushdown/1.jpg`
+  },
+  {
+    id: "pushdown_barra_v",
+    name: "Pushdown barra V",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Triceps_Pushdown_-_V-Bar_Attachment/0.jpg`,
+    imgEnd: `${BASE_IMG}/Triceps_Pushdown_-_V-Bar_Attachment/1.jpg`
+  },
+  {
+    id: "pushdown_corda",
+    name: "Pushdown corda",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Triceps_Pushdown_-_Rope_Attachment/0.jpg`,
+    imgEnd: `${BASE_IMG}/Triceps_Pushdown_-_Rope_Attachment/1.jpg`
+  },
+  {
+    id: "pushdown_presa_inversa",
+    name: "Pushdown presa inversa",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Reverse_Grip_Triceps_Pushdown/0.jpg`,
+    imgEnd: `${BASE_IMG}/Reverse_Grip_Triceps_Pushdown/1.jpg`
+  },
+  {
+    id: "pushdown_unilaterale",
+    name: "Pushdown unilaterale",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/1.jpg`
+  },
+  {
+    id: "pushdown_unilaterale_presa_inversa",
+    name: "Pushdown unilaterale presa inversa",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/1.jpg`
+  },
+  {
+    id: "overhead_extension_corda",
+    name: "Overhead Extension corda",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Cable_Rope_Overhead_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_Rope_Overhead_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "overhead_extension_barra",
+    name: "Overhead Extension barra",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Cable_Rope_Overhead_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_Rope_Overhead_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "overhead_extension_unilaterale",
+    name: "Overhead Extension unilaterale",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/1.jpg`
+  },
+  {
+    id: "cross_body_triceps_extension",
+    name: "Cross Body Triceps Extension",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/1.jpg`
+  },
+  {
+    id: "kickback_al_cavo",
+    name: "Kickback al cavo",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Tricep_Dumbbell_Kickback/0.jpg`,
+    imgEnd: `${BASE_IMG}/Tricep_Dumbbell_Kickback/1.jpg`
+  },
+  {
+    id: "estensioni_tricipiti_al_cavo_da_sdraiato",
+    name: "Estensioni tricipiti al cavo da sdraiato",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Cable_Lying_Triceps_Extension/0.jpg`,
+    imgEnd: `${BASE_IMG}/Cable_Lying_Triceps_Extension/1.jpg`
+  },
+  {
+    id: "dip",
+    name: "Dip",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Dips_-_Triceps_Version/0.jpg`,
+    imgEnd: `${BASE_IMG}/Dips_-_Triceps_Version/1.jpg`
+  },
+  {
+    id: "bodyweight_triceps_extension",
+    name: "Bodyweight Triceps Extension",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Close-Grip_Push-Up/0.jpg`,
+    imgEnd: `${BASE_IMG}/Close-Grip_Push-Up/1.jpg`
+  },
+  {
+    id: "ring_triceps_extension",
+    name: "Ring Triceps Extension",
+    muscle: "Braccia",
+    imgStart: `${BASE_IMG}/Close-Grip_Push-Up/0.jpg`,
+    imgEnd: `${BASE_IMG}/Close-Grip_Push-Up/1.jpg`
+  },
   // ==========================================
   // --- TRICIPITI ---
   // ==========================================
