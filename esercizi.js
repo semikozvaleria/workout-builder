@@ -1156,8 +1156,8 @@ const EXERCISE_DB = [
     id: "panca_declinata_multipower",
     name: "Panca Declinata al Multipower",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Smith_Machine_Decline_Bench_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Smith_Machine_Decline_Bench_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/nVC2q7VW/panca-dec-multipower.jpg",
+    imgEnd: "https://i.postimg.cc/KcRftLcV/panca-dec-multipower1.png"
   },
   {
     id: "panca_piana_manubri",
@@ -1268,15 +1268,15 @@ const EXERCISE_DB = [
     id: "push_up_presa_stretta",
     name: "Push-Up Presa Stretta",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Close-Grip_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Close-Grip_Push-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/vTHpvmBm/pushup-presa-stretta.jpg",
+    imgEnd: "https://i.postimg.cc/j2dGhj5d/pushup-presa-stretta1.webp"
   },
   {
     id: "diamond_push_up",
     name: "Diamond Push-Up",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Diamond_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Diamond_Push-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/YCKB5MDy/Diamond-Push-Ups.jpg",
+    imgEnd: "https://i.postimg.cc/W1LcBTY9/Diamond-Push-Ups-1.jpg"
   },
   {
     id: "push_up_zavorrato",
