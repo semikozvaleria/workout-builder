@@ -47,11 +47,11 @@
     .filter-row select { max-width: 125px; }
     .filter-row input { flex: 1; }
 
-    /* Box anteprima con doppia foto */
+    /* Box anteprima con supporto foto singola o doppia */
     .preview-box { display: flex; gap: 14px; align-items: center; margin: 8px 0; background: #141414; border: 1px solid var(--border); padding: 8px; border-radius: 8px; }
-    .preview-photos { display: flex; gap: 8px; flex-shrink: 0; }
+    .preview-photos { display: flex; gap: 8px; flex-shrink: 0; align-items: center; }
     .preview-photo-wrap { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-    .preview-thumb { width: 62px; height: 62px; border-radius: 6px; object-fit: cover; background: #000; border: 1px solid var(--border); }
+    .preview-thumb { width: 62px; height: 62px; border-radius: 6px; object-fit: cover; background: #000; border: 1px solid var(--border); transition: width 0.2s ease; }
     .photo-tag { font-size: 9px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
     .preview-info { font-size: 0.85rem; line-height: 1.3; }
 
@@ -65,8 +65,8 @@
     .day-group { display: flex; flex-direction: column; gap: 6px; }
     .day-badge { background: #1a2736; border: 1px solid #0284c7; color: var(--primary); font-size: 0.8rem; font-weight: 700; padding: 6px 10px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
     .exercise-item { background: #141414; border: 1px solid var(--border); border-radius: 8px; padding: 10px; display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
-    .item-photos { display: flex; gap: 6px; flex-shrink: 0; }
-    .item-img { width: 44px; height: 44px; border-radius: 5px; object-fit: cover; border: 1px solid var(--border); }
+    .item-photos { display: flex; gap: 6px; flex-shrink: 0; align-items: center; }
+    .item-img { width: 44px; height: 44px; border-radius: 5px; object-fit: cover; border: 1px solid var(--border); background: #000; }
     .item-details { flex: 1; font-size: 0.85rem; margin-left: 4px; }
     .item-details strong { font-size: 0.9rem; display: block; margin-bottom: 2px; }
     .item-sub { color: var(--text-muted); font-size: 0.75rem; margin-top: 2px; }
@@ -105,7 +105,7 @@
     
     .pdf-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; background: #f1f5f9; padding: 7px 10px; border-radius: 6px; margin-bottom: 8px; font-size: 10.5px; }
     
-    /* Note Generali in linea dall'inizio */
+    /* Note Generali */
     .pdf-general-notes { 
       background: #fffbeb; 
       border-left: 3px solid #f59e0b; 
@@ -159,8 +159,8 @@
     .pdf-table tr { page-break-inside: avoid; }
     .pdf-table tr:nth-child(even) { background: #f8fafc; }
     
-    /* Doppia foto nel PDF */
-    .pdf-photos-wrap { display: flex; gap: 4px; align-items: center; }
+    /* Foto nel PDF */
+    .pdf-photos-wrap { display: flex; gap: 4px; align-items: center; justify-content: center; }
     .pdf-img { width: 44px; height: 44px; border-radius: 4px; object-fit: cover; border: 1px solid #94a3b8; }
     .pdf-notes-cell { font-size: 9.5px; color: #334155; white-space: pre-wrap; line-height: 1.25; }
     .pdf-footer { display: flex; justify-content: space-between; margin-top: 14px; padding-top: 8px; border-top: 1px solid #cbd5e1; font-size: 9.5px; color: #64748b; page-break-inside: avoid; }
@@ -234,16 +234,16 @@
 
       <select id="exerciseSelect" style="margin-bottom: 8px;"></select>
 
-      <!-- Box Anteprima a doppia immagine (Partenza / Arrivo) -->
+      <!-- Box Anteprima con supporto immagine singola o doppia -->
       <div class="preview-box">
         <div class="preview-photos">
-          <div class="preview-photo-wrap">
+          <div class="preview-photo-wrap" id="wrapImgStart">
             <img id="previewImgStart" class="preview-thumb" src="" alt="Partenza">
-            <span class="photo-tag">Partenza</span>
+            <span class="photo-tag" id="tagImgStart">Partenza</span>
           </div>
-          <div class="preview-photo-wrap">
+          <div class="preview-photo-wrap" id="wrapImgEnd">
             <img id="previewImgEnd" class="preview-thumb" src="" alt="Arrivo">
-            <span class="photo-tag">Arrivo</span>
+            <span class="photo-tag" id="tagImgEnd">Arrivo</span>
           </div>
         </div>
         <div class="preview-info">
@@ -312,7 +312,7 @@
         <div><strong>Totale Esercizi:</strong> <span id="pdfCount">0</span></div>
       </div>
 
-      <!-- Box Note Generali formattato in blocco con testo allineato -->
+      <!-- Box Note Generali -->
       <div class="pdf-general-notes" id="pdfGeneralNotesBox">
         <span class="pdf-general-notes-title">NOTE GENERALI:</span>
         <span class="pdf-general-notes-body" id="pdfGeneralNotesText"></span>
@@ -336,6 +336,10 @@
     const exerciseSuggestions = document.getElementById("exerciseSuggestions");
     const previewImgStart = document.getElementById("previewImgStart");
     const previewImgEnd = document.getElementById("previewImgEnd");
+    const wrapImgStart = document.getElementById("wrapImgStart");
+    const wrapImgEnd = document.getElementById("wrapImgEnd");
+    const tagImgStart = document.getElementById("tagImgStart");
+    const tagImgEnd = document.getElementById("tagImgEnd");
     const previewName = document.getElementById("previewName");
     const previewMuscle = document.getElementById("previewMuscle");
     const exerciseDay = document.getElementById("exerciseDay");
@@ -392,10 +396,27 @@
       if (!selectedId) return;
       const selected = EXERCISE_DB.find(e => e.id === selectedId);
       if (selected) {
-        previewImgStart.src = selected.imgStart || selected.img || "";
-        previewImgEnd.src = selected.imgEnd || selected.imgStart || selected.img || "";
+        const start = selected.imgStart || selected.img || "";
+        const end = selected.imgEnd || selected.imgStart || selected.img || "";
+        
+        previewImgStart.src = start;
+        previewImgEnd.src = end;
         previewName.textContent = selected.name;
         previewMuscle.textContent = selected.muscle;
+
+        // Riconoscimento intelligente: singola immagine panoramica vs due immagini
+        if (start === end) {
+          wrapImgEnd.style.display = "none";
+          previewImgStart.style.width = "110px";
+          previewImgStart.style.objectFit = "contain";
+          tagImgStart.textContent = "Movimento";
+        } else {
+          wrapImgEnd.style.display = "flex";
+          previewImgStart.style.width = "62px";
+          previewImgStart.style.objectFit = "cover";
+          tagImgStart.textContent = "Partenza";
+          tagImgEnd.textContent = "Arrivo";
+        }
       }
     }
 
@@ -490,8 +511,12 @@
           item.className = "exercise-item";
           item.innerHTML = `
             <div class="item-photos">
-              <img src="${ex.imgStart}" class="item-img" alt="Start" title="Partenza">
-              <img src="${ex.imgEnd}" class="item-img" alt="End" title="Arrivo">
+              ${ex.imgStart === ex.imgEnd ? `
+                <img src="${ex.imgStart}" class="item-img" style="width: 82px; object-fit: contain;" alt="Movimento" title="Movimento">
+              ` : `
+                <img src="${ex.imgStart}" class="item-img" alt="Start" title="Partenza">
+                <img src="${ex.imgEnd}" class="item-img" alt="End" title="Arrivo">
+              `}
             </div>
             <div class="item-details">
               <strong>${idx + 1}. ${escapeHtml(ex.name)}</strong>
@@ -570,10 +595,16 @@
             ${exercises.map((ex, i) => `
               <tr>
                 <td>
-                  <div class="pdf-photos-wrap">
-                    <img src="${ex.imgStart}" class="pdf-img" crossorigin="anonymous" title="Partenza">
-                    <img src="${ex.imgEnd}" class="pdf-img" crossorigin="anonymous" title="Arrivo">
-                  </div>
+                  ${ex.imgStart === ex.imgEnd ? `
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                      <img src="${ex.imgStart}" style="width: 90px; height: 50px; object-fit: contain; background: #fff; border: 1px solid #cbd5e1; border-radius: 4px;" crossorigin="anonymous">
+                    </div>
+                  ` : `
+                    <div class="pdf-photos-wrap">
+                      <img src="${ex.imgStart}" class="pdf-img" crossorigin="anonymous" title="Partenza">
+                      <img src="${ex.imgEnd}" class="pdf-img" crossorigin="anonymous" title="Arrivo">
+                    </div>
+                  `}
                 </td>
                 <td><strong>${i + 1}. ${escapeHtml(ex.name)}</strong></td>
                 <td style="text-align: center; font-weight: bold;">${escapeHtml(ex.setsReps)}</td>
