@@ -5,7 +5,7 @@
 const BASE_IMG = "https://cdn.jsdelivr.net/gh/yuhonas/free-exercise-db@main/exercises";
 
 const EXERCISE_DB = [
-  // ==========================================
+// ==========================================
   // --- SPALLE ---
   // ==========================================
   {
@@ -17,14 +17,14 @@ const EXERCISE_DB = [
   },
   {
     id: "lateral_raise_machine_seduta",
-    name: "Lateral Raise Machine Seduta",
+    name: "Lateral Raise Machine seduta",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Lever_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Lever_Lateral_Raise/1.jpg`
   },
   {
     id: "lateral_raise_machine_in_piedi",
-    name: "Lateral Raise Machine in Piedi",
+    name: "Lateral Raise Machine in piedi",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Lever_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Lever_Lateral_Raise/1.jpg`
@@ -45,14 +45,14 @@ const EXERCISE_DB = [
   },
   {
     id: "military_press_bilanciere",
-    name: "Military Press Bilanciere",
+    name: "Military Press bilanciere",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Standing_Military_Press/0.jpg`,
     imgEnd: `${BASE_IMG}/Standing_Military_Press/1.jpg`
   },
   {
     id: "overhead_press_seduto",
-    name: "Overhead Press Seduto",
+    name: "Overhead Press seduto",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Seated_Barbell_Military_Press/0.jpg`,
     imgEnd: `${BASE_IMG}/Seated_Barbell_Military_Press/1.jpg`
@@ -93,7 +93,7 @@ const EXERCISE_DB = [
     imgEnd: `${BASE_IMG}/Seated_Barbell_Military_Press/1.jpg`
   },
   {
-    id: "shoulder_press_multipower",
+    id: "shoulder_press_al_multipower",
     name: "Shoulder Press al Multipower",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Smith_Machine_Overhead_Shoulder_Press/0.jpg`,
@@ -101,21 +101,21 @@ const EXERCISE_DB = [
   },
   {
     id: "upright_row_bilanciere",
-    name: "Upright Row Bilanciere",
+    name: "Upright Row bilanciere",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Upright_Barbell_Row/0.jpg`,
     imgEnd: `${BASE_IMG}/Upright_Barbell_Row/1.jpg`
   },
   {
     id: "shoulder_press_manubri_seduto",
-    name: "Shoulder Press Manubri Seduto",
+    name: "Shoulder Press manubri seduto",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Seated_Dumbbell_Press/0.jpg`,
     imgEnd: `${BASE_IMG}/Seated_Dumbbell_Press/1.jpg`
   },
   {
     id: "shoulder_press_manubri_in_piedi",
-    name: "Shoulder Press Manubri in Piedi",
+    name: "Shoulder Press manubri in piedi",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Standing_Dumbbell_Press/0.jpg`,
     imgEnd: `${BASE_IMG}/Standing_Dumbbell_Press/1.jpg`
@@ -129,91 +129,91 @@ const EXERCISE_DB = [
   },
   {
     id: "alzate_laterali_manubri",
-    name: "Alzate Laterali Manubri",
+    name: "Alzate laterali manubri",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Side_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Side_Lateral_Raise/1.jpg`
   },
   {
-    id: "alzate_laterali_seduto",
-    name: "Alzate Laterali da Seduto",
+    id: "alzate_laterali_da_seduto",
+    name: "Alzate laterali da seduto",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Seated_Side_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Seated_Side_Lateral_Raise/1.jpg`
   },
   {
-    id: "alzate_laterali_panca_inclinata",
-    name: "Alzate Laterali su Panca Inclinata",
+    id: "alzate_laterali_su_panca_inclinata",
+    name: "Alzate laterali su panca inclinata",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Side_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Side_Lateral_Raise/1.jpg`
   },
   {
     id: "alzate_frontali_manubri",
-    name: "Alzate Frontali Manubri",
+    name: "Alzate frontali manubri",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Front_Dumbbell_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Front_Dumbbell_Raise/1.jpg`
   },
   {
     id: "reverse_fly_manubri",
-    name: "Reverse Fly Manubri",
+    name: "Reverse Fly manubri",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/0.jpg`,
     imgEnd: `${BASE_IMG}/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/1.jpg`
   },
   {
-    id: "reverse_fly_panca_inclinata",
-    name: "Reverse Fly su Panca Inclinata",
+    id: "reverse_fly_su_panca_inclinata",
+    name: "Reverse Fly su panca inclinata",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Incline_Bench_Two_Arm_Dumbbell_Row/0.jpg`,
     imgEnd: `${BASE_IMG}/Incline_Bench_Two_Arm_Dumbbell_Row/1.jpg`
   },
   {
     id: "y_raise_manubri",
-    name: "Y Raise Manubri",
+    name: "Y Raise manubri",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Side_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Side_Lateral_Raise/1.jpg`
   },
   {
-    id: "alzate_laterali_cavo_basso",
-    name: "Alzate Laterali al Cavo Basso",
+    id: "alzate_laterali_al_cavo_basso",
+    name: "Alzate laterali al cavo basso",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/1.jpg`
   },
   {
-    id: "alzate_laterali_cavo_dietro",
-    name: "Alzate Laterali al Cavo Dietro il Corpo",
+    id: "alzate_laterali_al_cavo_dietro_il_corpo",
+    name: "Alzate laterali al cavo dietro il corpo",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/1.jpg`
   },
   {
-    id: "alzate_laterali_bilaterali_cavi",
-    name: "Alzate Laterali Bilaterali ai Cavi",
+    id: "alzate_laterali_bilaterali_ai_cavi",
+    name: "Alzate laterali bilaterali ai cavi",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/1.jpg`
   },
   {
-    id: "alzate_frontali_cavo",
-    name: "Alzate Frontali al Cavo",
+    id: "alzate_frontali_al_cavo",
+    name: "Alzate frontali al cavo",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Front_Cable_Raise/0.jpg`,
     imgEnd: `${BASE_IMG}/Front_Cable_Raise/1.jpg`
   },
   {
-    id: "reverse_fly_cavi",
-    name: "Reverse Fly ai Cavi",
+    id: "reverse_fly_ai_cavi",
+    name: "Reverse Fly ai cavi",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Cable_Rear_Delt_Fly/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_Rear_Delt_Fly/1.jpg`
   },
   {
-    id: "face_pull_cavo_alto",
-    name: "Face Pull al Cavo Alto",
+    id: "face_pull_al_cavo_alto",
+    name: "Face Pull al cavo alto",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Face_Pull/0.jpg`,
     imgEnd: `${BASE_IMG}/Face_Pull/1.jpg`
@@ -233,22 +233,22 @@ const EXERCISE_DB = [
     imgEnd: `${BASE_IMG}/Upright_Cable_Row/1.jpg`
   },
   {
-    id: "extrarotazioni_cavo",
-    name: "Extrarotazioni al Cavo",
+    id: "extrarotazioni_al_cavo",
+    name: "Extrarotazioni al cavo",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Cable_External_Rotation/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_External_Rotation/1.jpg`
   },
   {
-    id: "intrarotazioni_cavo",
-    name: "Intrarotazioni al Cavo",
+    id: "intrarotazioni_al_cavo",
+    name: "Intrarotazioni al cavo",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Cable_Internal_Rotation/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_Internal_Rotation/1.jpg`
   },
   {
-    id: "extrarotazioni_elastico",
-    name: "Extrarotazioni con Elastico",
+    id: "extrarotazioni_con_elastico",
+    name: "Extrarotazioni con elastico",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Cable_External_Rotation/0.jpg`,
     imgEnd: `${BASE_IMG}/Cable_External_Rotation/1.jpg`
@@ -262,27 +262,27 @@ const EXERCISE_DB = [
   },
   {
     id: "shrug_manubri",
-    name: "Shrug Manubri",
+    name: "Shrug manubri",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Dumbbell_Shrug/0.jpg`,
     imgEnd: `${BASE_IMG}/Dumbbell_Shrug/1.jpg`
   },
   {
     id: "shrug_bilanciere",
-    name: "Shrug Bilanciere",
+    name: "Shrug bilanciere",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Barbell_Shrug/0.jpg`,
     imgEnd: `${BASE_IMG}/Barbell_Shrug/1.jpg`
   },
   {
-    id: "shrug_multipower",
+    id: "shrug_al_multipower",
     name: "Shrug al Multipower",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Smith_Machine_Shrug/0.jpg`,
     imgEnd: `${BASE_IMG}/Smith_Machine_Shrug/1.jpg`
   },
   {
-    id: "shrug_trap_bar",
+    id: "shrug_alla_trap_bar",
     name: "Shrug alla Trap Bar",
     muscle: "Spalle",
     imgStart: `${BASE_IMG}/Trap_Bar_Deadlift/0.jpg`,
