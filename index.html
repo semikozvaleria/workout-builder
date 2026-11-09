@@ -342,34 +342,35 @@
 
     document.getElementById("dbCount").textContent = `${EXERCISE_DB.length} Esercizi nel DB`;
 
-    function getFilteredList() {
+    function updateSuggestions() {
+      const selectedMuscle = muscleFilter.value;
+      const pool = selectedMuscle === "ALL" 
+        ? EXERCISE_DB 
+        : EXERCISE_DB.filter(ex => ex.muscle === selectedMuscle);
+      
+      let html = "";
+      for (let i = 0; i < pool.length; i++) {
+        html += `<option value="${pool[i].name}"></option>`;
+      }
+      exerciseSuggestions.innerHTML = html;
+    }
+
+    function updateDropdown() {
       const selectedMuscle = muscleFilter.value;
       const term = exerciseSearch.value.trim().toLowerCase();
 
-      return EXERCISE_DB.filter(ex => {
+      let matches = [];
+      for (let i = 0; i < EXERCISE_DB.length; i++) {
+        const ex = EXERCISE_DB[i];
         const matchMuscle = (selectedMuscle === "ALL" || ex.muscle === selectedMuscle);
-        const matchText = term === "" || ex.name.toLowerCase().includes(term);
-        return matchMuscle && matchText;
-      });
-    }
+        if (matchMuscle && (term === "" || ex.name.toLowerCase().includes(term))) {
+          matches.push(ex);
+          if (matches.length >= 40) break;
+        }
+      }
 
-    function populateSelect() {
-      const filtered = getFilteredList();
-      exerciseSelect.innerHTML = "";
-      exerciseSuggestions.innerHTML = "";
-
-      const poolForDatalist = EXERCISE_DB.filter(ex => muscleFilter.value === "ALL" || ex.muscle === muscleFilter.value);
-      poolForDatalist.forEach(ex => {
-        const dOpt = document.createElement("option");
-        dOpt.value = ex.name;
-        exerciseSuggestions.appendChild(dOpt);
-      });
-
-      if (filtered.length === 0) {
-        const opt = document.createElement("option");
-        opt.value = "";
-        opt.textContent = "Nessun esercizio trovato";
-        exerciseSelect.appendChild(opt);
+      if (matches.length === 0) {
+        exerciseSelect.innerHTML = `<option value="">Nessun esercizio trovato</option>`;
         previewImgStart.src = "";
         previewImgEnd.src = "";
         previewName.textContent = "Nessun esercizio";
@@ -377,18 +378,19 @@
         return;
       }
 
-      filtered.forEach(ex => {
-        const opt = document.createElement("option");
-        opt.value = ex.id;
-        opt.textContent = `[${ex.muscle}] ${ex.name}`;
-        exerciseSelect.appendChild(opt);
-      });
+      let optionsHtml = "";
+      for (let i = 0; i < matches.length; i++) {
+        optionsHtml += `<option value="${matches[i].id}">[${matches[i].muscle}] ${matches[i].name}</option>`;
+      }
+      exerciseSelect.innerHTML = optionsHtml;
 
       updatePreview();
     }
 
     function updatePreview() {
-      const selected = EXERCISE_DB.find(e => e.id === exerciseSelect.value);
+      const selectedId = exerciseSelect.value;
+      if (!selectedId) return;
+      const selected = EXERCISE_DB.find(e => e.id === selectedId);
       if (selected) {
         previewImgStart.src = selected.imgStart || selected.img || "";
         previewImgEnd.src = selected.imgEnd || selected.imgStart || selected.img || "";
@@ -397,10 +399,21 @@
       }
     }
 
-    muscleFilter.addEventListener("change", populateSelect);
-    exerciseSearch.addEventListener("input", populateSelect);
+    let typingTimer;
+    exerciseSearch.addEventListener("input", () => {
+      clearTimeout(typingTimer);
+      typingTimer = setTimeout(updateDropdown, 120);
+    });
+
+    muscleFilter.addEventListener("change", () => {
+      updateSuggestions();
+      updateDropdown();
+    });
+
     exerciseSelect.addEventListener("change", updatePreview);
-    populateSelect();
+
+    updateSuggestions();
+    updateDropdown();
 
     function escapeHtml(str) {
       return str
@@ -412,7 +425,8 @@
     }
 
     document.getElementById("btnAddEx").addEventListener("click", () => {
-      const selected = EXERCISE_DB.find(e => e.id === exerciseSelect.value);
+      const selectedId = exerciseSelect.value;
+      const selected = EXERCISE_DB.find(e => e.id === selectedId);
       if (!selected) {
         alert("Seleziona un esercizio valido.");
         return;
@@ -533,7 +547,6 @@
         const dayTitle = document.createElement("div");
         dayTitle.className = "pdf-day-banner";
         
-        // Nome del giorno a sinistra, conteggio a destra
         dayTitle.innerHTML = `
           <span>${dayName}</span>
           <span class="pdf-day-count">${exercises.length} ${exercises.length === 1 ? 'esercizio' : 'esercizi'}</span>
@@ -562,7 +575,7 @@
                     <img src="${ex.imgEnd}" class="pdf-img" crossorigin="anonymous" title="Arrivo">
                   </div>
                 </td>
-                <td><strong>${i + 1}. ${escapeHtml(ex.name)}</strong><br><small style="color: #64748b;">${escapeHtml(ex.muscle)}</small></td>
+                <td><strong>${i + 1}. ${escapeHtml(ex.name)}</strong></td>
                 <td style="text-align: center; font-weight: bold;">${escapeHtml(ex.setsReps)}</td>
                 <td style="text-align: center;">${escapeHtml(ex.rest)}</td>
                 <td style="text-align: center; font-weight: 600;">${escapeHtml(ex.rir)}</td>
