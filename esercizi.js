@@ -1710,8 +1710,8 @@ const EXERCISE_DB = [
     id: "belt_squat",
     name: "Belt Squat",
     muscle: "Gambe",
-    imgStart: "https://i.postimg.cc/v8VGbp8D/Belt-Squat.jpg",
-    imgEnd: "https://i.postimg.cc/v8VGbp8D/Belt-Squat.jpg"
+    imgStart: "https://i.postimg.cc/SKdWqyL1/Belt-Squat.jpg",
+    imgEnd: "https://i.postimg.cc/xd5KY0Gs/Belt-Squat1.jpg"
   },
   {
     id: "hip_thrust_machine",
