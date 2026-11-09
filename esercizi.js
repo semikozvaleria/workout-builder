@@ -1282,29 +1282,29 @@ const EXERCISE_DB = [
     id: "push_up_zavorrato",
     name: "Push-Up Zavorrato",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+    imgStart: "https://i.postimg.cc/Fzr9TsSv/1172.jpg",
+    imgEnd: "https://i.postimg.cc/nrFH3cmt/1172(1).jpg"
   },
   {
     id: "deficit_push_up",
     name: "Deficit Push-Up",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+    imgStart: "https://i.postimg.cc/T3zQgy8g/deficit-push.jpg",
+    imgEnd: "https://i.postimg.cc/vZJXf1R9/deficit-push1.jpg"
   },
   {
     id: "archer_push_up",
     name: "Archer Push-Up",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+    imgStart: "https://i.postimg.cc/d1xhZyXB/archer.jpg",
+    imgEnd: "https://i.postimg.cc/0QBzKw3Z/archer(2).jpg"
   },
   {
     id: "ring_push_up",
     name: "Ring Push-Up",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+    imgStart: "https://i.postimg.cc/SNWc3gHN/ring.jpg",
+    imgEnd: "https://i.postimg.cc/15pD2vbR/ring(1).jpg"
   },
   {
     id: "dip_alle_parallele",
@@ -1317,22 +1317,22 @@ const EXERCISE_DB = [
     id: "dip_zavorrate",
     name: "Dip Zavorrate",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Dips_-_Chest_Version/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dips_-_Chest_Version/1.jpg`
+    imgStart: "https://i.postimg.cc/htDQwc9N/dip-zavorra.jpg",
+    imgEnd: "https://i.postimg.cc/0ykK3PpF/dip-zavorra(1).jpg"
   },
   {
     id: "dip_assistite",
     name: "Dip Assistite",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Assisted_Chest_Dip/0.jpg`,
-    imgEnd: `${BASE_IMG}/Assisted_Chest_Dip/1.jpg`
+    imgStart: "https://i.postimg.cc/VLLYP6Vk/assistita(1).jpg",
+    imgEnd: "https://i.postimg.cc/qMMkHR5k/assistita(2).jpg"
   },
   {
     id: "ring_dip",
     name: "Ring Dip",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Dips_-_Chest_Version/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dips_-_Chest_Version/1.jpg`
+    imgStart: "https://i.postimg.cc/5N0MkrXL/ring-dip.avif",
+    imgEnd: "https://i.postimg.cc/5N0MkrXL/ring-dip.avif"
   },
 
   // ==========================================
