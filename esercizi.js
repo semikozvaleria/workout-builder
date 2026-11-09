@@ -1065,22 +1065,22 @@ const EXERCISE_DB = [
     id: "chest_press_orizzontale",
     name: "Chest Press Orizzontale",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Lever_Chest_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Chest_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/8kK0Rtmh/chest-press-orizzontale.jpg",
+    imgEnd: "https://i.postimg.cc/DfjMrBPr/chest-press-orizzontale-1.jpg"
   },
   {
     id: "incline_chest_press_30",
     name: "Incline Chest Press 30°",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Lever_Incline_Chest_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Incline_Chest_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/kMpT6D7j/Incline-Chest-Press-30.jpg",
+    imgEnd: "https://i.postimg.cc/CMQcBdwP/Incline-Chest-Press-30-1.jpg"
   },
   {
     id: "incline_chest_press_45",
     name: "Incline Chest Press 45°",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Lever_Incline_Chest_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Incline_Chest_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/kMpT6D7j/Incline-Chest-Press-30.jpg",
+    imgEnd: "https://i.postimg.cc/CMQcBdwP/Incline-Chest-Press-30-1.jpg"
   },
   {
     id: "decline_chest_press",
