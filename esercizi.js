@@ -1907,7 +1907,7 @@ const EXERCISE_DB = [
     name: "Affondi Laterali con Manubri",
     muscle: "Gambe",
     imgStart: "https://i.postimg.cc/xd8k8Pgm/Affondi-Laterali-con-Manubri.jpg",
-    imgEnd: "https://i.postimg.cc/xd8k8Pgm/Affondi-Laterali-con-Manubri.jpg"
+    imgEnd: "https://i.postimg.cc/ZRJDh1V4/Affondi-Laterali-con-Manubri1.jpg"
   },
   {
     id: "affondi_incrociati",
