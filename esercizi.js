@@ -12,8 +12,8 @@ const EXERCISE_DB = [
     id: "shoulder_press_machine",
     name: "Shoulder Press Machine",
     muscle: "Spalle",
-    imgStart: "https://i.postimg.cc/xTNxPNQ7/Whats-App-Image-2026-11-09-at-23-33-30.jpg",
-    imgEnd: "https://i.postimg.cc/xTNxPNQ7/Whats-App-Image-2026-11-09-at-23-33-30.jpg"
+    imgStart: "https://i.postimg.cc/MK6NbpTf/Whats-App-Image-2026-11-09-at-23-33-30(2).jpg",
+    imgEnd: "https://i.postimg.cc/MK6NbpTf/Whats-App-Image-2026-11-09-at-23-33-30(2).jpg"
   },
   {
     id: "lateral_raise_machine_seduta",
