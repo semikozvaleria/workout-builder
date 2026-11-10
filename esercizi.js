@@ -475,8 +475,8 @@ const EXERCISE_DB = [
     id: "dip_machine",
     name: "Dip Machine",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Lever_Seated_Dip/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Seated_Dip/1.jpg`
+    imgStart: "https://i.postimg.cc/JzLwgCRb/Whats-App-Image-2026-11-10-at-00-07-27.jpg",
+    imgEnd: "https://i.postimg.cc/JzLwgCRb/Whats-App-Image-2026-11-10-at-00-07-27.jpg"
   },
   {
     id: "panca_presa_stretta_al_multipower",
@@ -510,8 +510,8 @@ const EXERCISE_DB = [
     id: "french_press_due_manubri",
     name: "French Press due manubri",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Dumbbell_Lying_Pronated_Triceps_Extension/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_Lying_Pronated_Triceps_Extension/1.jpg`
+    imgStart: "https://i.postimg.cc/zGrmMYqT/Whats-App-Image-2026-11-10-at-00-08-36.jpg",
+    imgEnd: "https://i.postimg.cc/zGrmMYqT/Whats-App-Image-2026-11-10-at-00-08-36.jpg"
   },
   {
     id: "estensioni_tricipiti_sopra_testa_con_manubrio",
@@ -587,15 +587,15 @@ const EXERCISE_DB = [
     id: "overhead_extension_unilaterale",
     name: "Overhead Extension unilaterale",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/1.jpg`
+    imgStart: "https://i.postimg.cc/NfTqpjvN/Whats-App-Image-2026-11-10-at-00-10-10.jpg",
+    imgEnd: "https://i.postimg.cc/NfTqpjvN/Whats-App-Image-2026-11-10-at-00-10-10.jpg"
   },
   {
     id: "cross_body_triceps_extension",
     name: "Cross Body Triceps Extension",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_One_Arm_Tricep_Extension/1.jpg`
+    imgStart: "https://i.postimg.cc/3wxq5KVD/Whats-App-Image-2026-11-10-at-00-11-02.jpg",
+    imgEnd: "https://i.postimg.cc/3wxq5KVD/Whats-App-Image-2026-11-10-at-00-11-02.jpg"
   },
   {
     id: "kickback_al_cavo",
@@ -811,29 +811,29 @@ const EXERCISE_DB = [
     id: "abdominal_crunch_machine",
     name: "Abdominal Crunch Machine",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Lever_Seated_Crunch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Seated_Crunch/1.jpg`
+    imgStart: "https://i.postimg.cc/CxN2QZPN/Whats-App-Image-2026-11-10-at-00-12-32.jpg",
+    imgEnd: "https://i.postimg.cc/CxN2QZPN/Whats-App-Image-2026-11-10-at-00-12-32.jpg"
   },
   {
     id: "cable_crunch_ginocchio",
     name: "Cable Crunch in Ginocchio",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Kneeling_Cable_Crunch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kneeling_Cable_Crunch/1.jpg`
+    imgStart: "https://i.postimg.cc/Z5cQM97L/Whats-App-Image-2026-11-10-at-00-13-14.jpg",
+    imgEnd: "https://i.postimg.cc/Z5cQM97L/Whats-App-Image-2026-11-10-at-00-13-14.jpg"
   },
   {
     id: "pallof_press",
     name: "Pallof Press",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Cable_Internal_Rotation/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Internal_Rotation/1.jpg`
+    imgStart: "https://i.postimg.cc/SN4DbSzj/Whats-App-Image-2026-11-10-at-00-14-14.jpg",
+    imgEnd: "https://i.postimg.cc/SN4DbSzj/Whats-App-Image-2026-11-10-at-00-14-14.jpg"
   },
   {
     id: "cable_rotation",
     name: "Cable Rotation",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Cable_Internal_Rotation/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Internal_Rotation/1.jpg`
+    imgStart: "https://i.postimg.cc/zXN0YzRv/Whats-App-Image-2026-11-10-at-00-15-22.jpg",
+    imgEnd: "https://i.postimg.cc/zXN0YzRv/Whats-App-Image-2026-11-10-at-00-15-22.jpg"
   },
   {
     id: "crunch_classico",
@@ -895,43 +895,43 @@ const EXERCISE_DB = [
     id: "bird_dog",
     name: "Bird Dog",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Bird_Dog/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bird_Dog/1.jpg`
+    imgStart: "https://i.postimg.cc/gkpNbz6J/Whats-App-Image-2026-11-10-at-00-17-25.jpg",
+    imgEnd: "https://i.postimg.cc/gkpNbz6J/Whats-App-Image-2026-11-10-at-00-17-25.jpg"
   },
   {
     id: "plank",
     name: "Plank",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Front_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/mDx73jY2/Whats-App-Image-2026-11-10-at-00-18-04.jpg",
+    imgEnd: "https://i.postimg.cc/mDx73jY2/Whats-App-Image-2026-11-10-at-00-18-04.jpg"
   },
   {
     id: "plank_zavorrato",
     name: "Plank Zavorrato",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Front_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/gJ93ysV2/Whats-App-Image-2026-11-10-at-00-18-46.jpg",
+    imgEnd: "https://i.postimg.cc/gJ93ysV2/Whats-App-Image-2026-11-10-at-00-18-46.jpg"
   },
   {
     id: "plank_sollevamento_gamba",
     name: "Plank con Sollevamento Gamba",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Front_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/W3R0m8Gp/Whats-App-Image-2026-11-10-at-00-19-30.jpg",
+    imgEnd: "https://i.postimg.cc/W3R0m8Gp/Whats-App-Image-2026-11-10-at-00-19-30.jpg"
   },
   {
     id: "side_plank",
     name: "Side Plank",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Side_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/1tcVGQ54/Whats-App-Image-2026-11-10-at-00-20-36.jpg",
+    imgEnd: "https://i.postimg.cc/1tcVGQ54/Whats-App-Image-2026-11-10-at-00-20-36.jpg"
   },
   {
     id: "side_plank_abduzione",
     name: "Side Plank con Abduzione",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Side_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/xCyNv2T8/Whats-App-Image-2026-11-10-at-00-21-38.jpg",
+    imgEnd: "https://i.postimg.cc/xCyNv2T8/Whats-App-Image-2026-11-10-at-00-21-38.jpg"
   },
   {
     id: "hollow_body_hold",
@@ -965,29 +965,29 @@ const EXERCISE_DB = [
     id: "bear_crawl",
     name: "Bear Crawl",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Bear_Crawl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bear_Crawl/1.jpg`
+    imgStart: "https://i.postimg.cc/LXBgtp6X/Whats-App-Image-2026-11-10-at-00-22-47.jpg",
+    imgEnd: "https://i.postimg.cc/LXBgtp6X/Whats-App-Image-2026-11-10-at-00-22-47.jpg"
   },
   {
     id: "bear_plank",
     name: "Bear Plank",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Front_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/zB5VXcwM/Whats-App-Image-2026-11-10-at-00-23-47.jpg",
+    imgEnd: "https://i.postimg.cc/zB5VXcwM/Whats-App-Image-2026-11-10-at-00-23-47.jpg"
   },
   {
     id: "russian_twist",
     name: "Russian Twist",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Russian_Twist/0.jpg`,
-    imgEnd: `${BASE_IMG}/Russian_Twist/1.jpg`
+    imgStart: "https://i.postimg.cc/XJ3p7zKm/Whats-App-Image-2026-11-10-at-00-25-23.jpg",
+    imgEnd: "https://i.postimg.cc/XJ3p7zKm/Whats-App-Image-2026-11-10-at-00-25-23.jpg"
   },
   {
     id: "scissor_kick",
     name: "Scissor Kick",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Flutter_Kicks/0.jpg`,
-    imgEnd: `${BASE_IMG}/Flutter_Kicks/1.jpg`
+    imgStart: "https://i.postimg.cc/gJdnkTy7/Whats-App-Image-2026-11-10-at-00-25-34.jpg",
+    imgEnd: "https://i.postimg.cc/gJdnkTy7/Whats-App-Image-2026-11-10-at-00-25-34.jpg"
   },
   {
     id: "leg_raise_terra",
@@ -1000,22 +1000,22 @@ const EXERCISE_DB = [
     id: "dragon_flag",
     name: "Dragon Flag",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Dragon_Flag/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dragon_Flag/1.jpg`
+    imgStart: "https://i.postimg.cc/LsSHzZqH/Whats-App-Image-2026-11-10-at-00-27-08.jpg",
+    imgEnd: "https://i.postimg.cc/LsSHzZqH/Whats-App-Image-2026-11-10-at-00-27-08.jpg"
   },
   {
     id: "copenhagen_plank",
     name: "Copenhagen Plank",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Side_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/YS7p1m42/Whats-App-Image-2026-11-10-at-00-28-10.jpg",
+    imgEnd: "https://i.postimg.cc/YS7p1m42/Whats-App-Image-2026-11-10-at-00-28-10.jpg"
   },
   {
     id: "hanging_knee_raise",
     name: "Hanging Knee Raise",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Hanging_Knee_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Hanging_Knee_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/GpRcksBL/Whats-App-Image-2026-11-10-at-00-28-59.jpg",
+    imgEnd: "https://i.postimg.cc/GpRcksBL/Whats-App-Image-2026-11-10-at-00-28-59.jpg"
   },
   {
     id: "hanging_leg_raise",
