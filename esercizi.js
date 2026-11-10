@@ -1888,8 +1888,8 @@ const EXERCISE_DB = [
     id: "hip_thrust_machine",
     name: "Hip Thrust Machine",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Barbell_Hip_Thrust/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Hip_Thrust/1.jpg`
+    imgStart: "https://i.postimg.cc/fRxjchGd/11d8da2d-c8aa-4b1c-902e-a3d9d9151af7.jpg",
+    imgEnd: "https://i.postimg.cc/fRxjchGd/11d8da2d-c8aa-4b1c-902e-a3d9d9151af7.jpg"
   },
   {
     id: "glute_kickback_machine",
