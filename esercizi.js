@@ -2493,29 +2493,29 @@ const EXERCISE_DB = [
     id: "dumbbell_push_press",
     name: "Dumbbell Push Press",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Standing_Dumbbell_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Dumbbell_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/9F52Z7wQ/Whats-App-Image-2026-11-10-at-01-20-06.jpg",
+    imgEnd: "https://i.postimg.cc/9F52Z7wQ/Whats-App-Image-2026-11-10-at-01-20-06.jpg"
   },
   {
     id: "dumbbell_devil_press",
     name: "Dumbbell Devil Press",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Burpee/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/1.jpg`
+    imgStart: "https://i.postimg.cc/ZKtmpdvK/Whats-App-Image-2026-11-10-at-01-21-16.jpg",
+    imgEnd: "https://i.postimg.cc/ZKtmpdvK/Whats-App-Image-2026-11-10-at-01-21-16.jpg"
   },
   {
     id: "dumbbell_ground_to_overhead",
     name: "Dumbbell Ground to Overhead",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/1.jpg`
+    imgStart: "https://i.postimg.cc/BQ93HKPZ/Whats-App-Image-2026-11-10-at-01-22-20.jpg",
+    imgEnd: "https://i.postimg.cc/BQ93HKPZ/Whats-App-Image-2026-11-10-at-01-22-20.jpg"
   },
   {
     id: "power_clean",
     name: "Power Clean",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Power_Clean/0.jpg`,
-    imgEnd: `${BASE_IMG}/Power_Clean/1.jpg`
+    imgStart: "https://i.postimg.cc/CMbXy6dz/Whats-App-Image-2026-11-10-at-01-23-17.jpg",
+    imgEnd: "https://i.postimg.cc/CMbXy6dz/Whats-App-Image-2026-11-10-at-01-23-17.jpg"
   },
   {
     id: "hang_power_clean",
@@ -2528,8 +2528,8 @@ const EXERCISE_DB = [
     id: "squat_clean",
     name: "Squat Clean",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Power_Clean/0.jpg`,
-    imgEnd: `${BASE_IMG}/Power_Clean/1.jpg`
+    imgStart: "https://i.postimg.cc/v85kRSD4/Whats-App-Image-2026-11-10-at-01-23-57.jpg",
+    imgEnd: "https://i.postimg.cc/v85kRSD4/Whats-App-Image-2026-11-10-at-01-23-57.jpg"
   },
   {
     id: "clean_and_jerk",
