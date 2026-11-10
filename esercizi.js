@@ -1021,36 +1021,36 @@ const EXERCISE_DB = [
     id: "hanging_leg_raise",
     name: "Hanging Leg Raise",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Hanging_Leg_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Hanging_Leg_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/prQNVsZY/Whats-App-Image-2026-11-10-at-00-30-02.jpg",
+    imgEnd: "https://i.postimg.cc/prQNVsZY/Whats-App-Image-2026-11-10-at-00-30-02.jpg"
   },
   {
     id: "toes_to_bar",
     name: "Toes-to-Bar",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Hanging_Leg_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Hanging_Leg_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/hv8F42r8/Whats-App-Image-2026-11-10-at-00-30-44.jpg",
+    imgEnd: "https://i.postimg.cc/hv8F42r8/Whats-App-Image-2026-11-10-at-00-30-44.jpg"
   },
   {
     id: "l_sit_parallele",
     name: "L-Sit Parallele",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Dips_-_Chest_Version/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dips_-_Chest_Version/0.jpg`
+    imgStart: "https://i.postimg.cc/90P3XLp7/Whats-App-Image-2026-11-10-at-00-31-33.jpg",
+    imgEnd: "https://i.postimg.cc/90P3XLp7/Whats-App-Image-2026-11-10-at-00-31-33.jpg"
   },
   {
     id: "l_sit_sbarra",
     name: "L-Sit Sbarra",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Hanging_Leg_Raise/1.jpg`,
-    imgEnd: `${BASE_IMG}/Hanging_Leg_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/d3YXf8YZ/Whats-App-Image-2026-11-10-at-00-33-56.jpg",
+    imgEnd: "https://i.postimg.cc/d3YXf8YZ/Whats-App-Image-2026-11-10-at-00-33-56.jpg"
   },
   {
     id: "l_sit_anelli",
     name: "L-Sit Anelli",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Dips_-_Chest_Version/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dips_-_Chest_Version/0.jpg`
+    imgStart: "https://i.postimg.cc/d3YXf8YT/Whats-App-Image-2026-11-10-at-00-35-09.jpg",
+    imgEnd: "https://i.postimg.cc/d3YXf8YT/Whats-App-Image-2026-11-10-at-00-35-09.jpg"
   },
   {
     id: "ab_wheel_rollout",
@@ -1063,15 +1063,15 @@ const EXERCISE_DB = [
     id: "trx_body_saw",
     name: "TRX Body Saw",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Front_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/zvrMQnrL/Whats-App-Image-2026-11-10-at-00-36-14.jpg",
+    imgEnd: "https://i.postimg.cc/zvrMQnrL/Whats-App-Image-2026-11-10-at-00-36-14.jpg"
   },
   {
     id: "trx_knee_tuck",
     name: "TRX Knee Tuck",
     muscle: "Addome",
-    imgStart: `${BASE_IMG}/Seated_Flat_Bench_Leg_Pull-In/0.jpg`,
-    imgEnd: `${BASE_IMG}/Seated_Flat_Bench_Leg_Pull-In/1.jpg`
+    imgStart: "https://i.postimg.cc/rsMnjM1g/Whats-App-Image-2026-11-10-at-00-36-57.jpg",
+    imgEnd: "https://i.postimg.cc/rsMnjM1g/Whats-App-Image-2026-11-10-at-00-36-57.jpg"
   },
   {
     id: "fitball_crunch",
@@ -1109,71 +1109,71 @@ const EXERCISE_DB = [
     id: "bar_muscle_up",
     name: "Bar Muscle-Up",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Muscle_Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Muscle_Up/1.jpg`
+    imgStart: "https://i.postimg.cc/mkBXjBYj/Whats-App-Image-2026-11-10-at-00-39-54.jpg",
+    imgEnd: "https://i.postimg.cc/mkBXjBYj/Whats-App-Image-2026-11-10-at-00-39-54.jpg"
   },
   {
     id: "bar_muscle_up_zavorrato",
     name: "Bar Muscle-Up Zavorrato",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Muscle_Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Muscle_Up/1.jpg`
+    imgStart: "https://i.postimg.cc/mkBXjBYj/Whats-App-Image-2026-11-10-at-00-39-54.jpg",
+    imgEnd: "https://i.postimg.cc/mkBXjBYj/Whats-App-Image-2026-11-10-at-00-39-54.jpg"
   },
   {
     id: "bar_muscle_up_elastico",
     name: "Bar Muscle-Up con Elastico",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Muscle_Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Muscle_Up/1.jpg`
+    imgStart: "https://i.postimg.cc/W4Z5PhSm/Whats-App-Image-2026-11-10-at-00-42-02.jpg",
+    imgEnd: "https://i.postimg.cc/W4Z5PhSm/Whats-App-Image-2026-11-10-at-00-42-02.jpg"
   },
   {
     id: "ring_muscle_up",
     name: "Ring Muscle-Up",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Muscle_Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Muscle_Up/1.jpg`
+    imgStart: "https://i.postimg.cc/0NSVqbZY/Whats-App-Image-2026-11-10-at-00-42-46.jpg",
+    imgEnd: "https://i.postimg.cc/0NSVqbZY/Whats-App-Image-2026-11-10-at-00-42-46.jpg"
   },
   {
     id: "ring_muscle_up_assistito",
     name: "Ring Muscle-Up Assistito",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Muscle_Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Muscle_Up/1.jpg`
+    imgStart: "https://i.postimg.cc/0NSVqbZY/Whats-App-Image-2026-11-10-at-00-42-46.jpg",
+    imgEnd: "https://i.postimg.cc/0NSVqbZY/Whats-App-Image-2026-11-10-at-00-42-46.jpg"
   },
   {
     id: "handstand_muro",
     name: "Handstand al Muro",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Handstand_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Handstand_Push-Up/0.jpg`
+    imgStart: "https://i.postimg.cc/FHdZj7M2/Whats-App-Image-2026-11-10-at-00-44-29.jpg",
+    imgEnd: "https://i.postimg.cc/FHdZj7M2/Whats-App-Image-2026-11-10-at-00-44-29.jpg"
   },
   {
     id: "handstand_libera",
     name: "Handstand",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Handstand_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Handstand_Push-Up/0.jpg`
+    imgStart: "https://i.postimg.cc/Hkc2QVqN/Whats-App-Image-2026-11-10-at-00-45-42.jpg",
+    imgEnd: "https://i.postimg.cc/Hkc2QVqN/Whats-App-Image-2026-11-10-at-00-45-42.jpg"
   },
   {
     id: "handstand_push_up",
     name: "Handstand Push-Up",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Handstand_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Handstand_Push-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/Sx2rWJBv/Whats-App-Image-2026-11-10-at-00-46-05.jpg",
+    imgEnd: "https://i.postimg.cc/Sx2rWJBv/Whats-App-Image-2026-11-10-at-00-46-05.jpg"
   },
   {
     id: "pike_push_up",
     name: "Pike Push-Up",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Handstand_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Handstand_Push-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/NMgmPMn1/Whats-App-Image-2026-11-10-at-00-46-40.jpg",
+    imgEnd: "https://i.postimg.cc/NMgmPMn1/Whats-App-Image-2026-11-10-at-00-46-40.jpg"
   },
   {
     id: "elevated_pike_push_up",
     name: "Elevated Pike Push-Up",
     muscle: "Skill",
-    imgStart: `${BASE_IMG}/Handstand_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Handstand_Push-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/bJzkFJ51/Whats-App-Image-2026-11-10-at-00-47-26.jpg",
+    imgEnd: "https://i.postimg.cc/bJzkFJ51/Whats-App-Image-2026-11-10-at-00-47-26.jpg"
   },
 
   // ==========================================
@@ -1190,36 +1190,36 @@ const EXERCISE_DB = [
     id: "skierg",
     name: "SkiErg",
     muscle: "Cardio",
-    imgStart: `${BASE_IMG}/Cable_Pull_Through/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Pull_Through/1.jpg`
+    imgStart: "https://i.postimg.cc/brSJ6fpK/Whats-App-Image-2026-11-10-at-00-48-31.jpg",
+    imgEnd: "https://i.postimg.cc/brSJ6fpK/Whats-App-Image-2026-11-10-at-00-48-31.jpg"
   },
   {
     id: "air_bike",
     name: "Air Bike",
     muscle: "Cardio",
-    imgStart: `${BASE_IMG}/Bicycling_Stationary/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bicycling_Stationary/1.jpg`
+    imgStart: "https://i.postimg.cc/7hJ6Brq8/Whats-App-Image-2026-11-10-at-00-49-17.jpg",
+    imgEnd: "https://i.postimg.cc/7hJ6Brq8/Whats-App-Image-2026-11-10-at-00-49-17.jpg"
   },
   {
     id: "bike_erg",
     name: "BikeErg",
     muscle: "Cardio",
-    imgStart: `${BASE_IMG}/Bicycling_Stationary/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bicycling_Stationary/1.jpg`
+    imgStart: "https://i.postimg.cc/7hJ6Brqv/Whats-App-Image-2026-11-10-at-00-50-20.jpg",
+    imgEnd: "https://i.postimg.cc/7hJ6Brqv/Whats-App-Image-2026-11-10-at-00-50-20.jpg"
   },
   {
     id: "cyclette",
     name: "Cyclette",
     muscle: "Cardio",
-    imgStart: `${BASE_IMG}/Bicycling_Stationary/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bicycling_Stationary/1.jpg`
+    imgStart: "https://i.postimg.cc/9FGTVyj9/Whats-App-Image-2026-11-10-at-00-50-59.jpg",
+    imgEnd: "https://i.postimg.cc/9FGTVyj9/Whats-App-Image-2026-11-10-at-00-50-59.jpg"
   },
   {
     id: "ellittica",
     name: "Ellittica",
     muscle: "Cardio",
-    imgStart: `${BASE_IMG}/Elliptical_Trainer/0.jpg`,
-    imgEnd: `${BASE_IMG}/Elliptical_Trainer/1.jpg`
+    imgStart: "https://i.postimg.cc/ncv7Zqt7/Whats-App-Image-2026-11-10-at-00-52-18.jpg",
+    imgEnd: "https://i.postimg.cc/ncv7Zqt7/Whats-App-Image-2026-11-10-at-00-52-18.jpg"
   },
   {
     id: "tapis_roulant",
@@ -2255,29 +2255,29 @@ const EXERCISE_DB = [
     id: "sled_push",
     name: "Sled Push",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Sled_Push/0.jpg`,
-    imgEnd: `${BASE_IMG}/Sled_Push/1.jpg`
+    imgStart: "https://i.postimg.cc/PfDvz1JR/Whats-App-Image-2026-11-10-at-00-53-56.jpg",
+    imgEnd: "https://i.postimg.cc/PfDvz1JR/Whats-App-Image-2026-11-10-at-00-53-56.jpg"
   },
   {
     id: "sled_pull",
     name: "Sled Pull",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Sled_Pull/0.jpg`,
-    imgEnd: `${BASE_IMG}/Sled_Pull/1.jpg`
+    imgStart: "https://i.postimg.cc/XN5Bc9qm/Whats-App-Image-2026-11-10-at-00-55-25.jpg",
+    imgEnd: "https://i.postimg.cc/XN5Bc9qm/Whats-App-Image-2026-11-10-at-00-55-25.jpg"
   },
   {
     id: "sled_drag_indietro",
     name: "Sled Drag all'Indietro",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Sled_Pull/0.jpg`,
-    imgEnd: `${BASE_IMG}/Sled_Pull/1.jpg`
+    imgStart: "https://i.postimg.cc/BbCq7SdZ/Whats-App-Image-2026-11-10-at-00-56-50.jpg",
+    imgEnd: "https://i.postimg.cc/BbCq7SdZ/Whats-App-Image-2026-11-10-at-00-56-50.jpg"
   },
   {
     id: "sled_drag_avanti",
     name: "Sled Drag in Avanti",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Sled_Push/0.jpg`,
-    imgEnd: `${BASE_IMG}/Sled_Push/1.jpg`
+    imgStart: "https://i.postimg.cc/9X9wty0k/Whats-App-Image-2026-11-10-at-00-56-40.jpg",
+    imgEnd: "https://i.postimg.cc/9X9wty0k/Whats-App-Image-2026-11-10-at-00-56-40.jpg"
   },
   {
     id: "farmer_carry",
@@ -2297,15 +2297,15 @@ const EXERCISE_DB = [
     id: "walking_lunge_sandbag",
     name: "Walking Lunge con Sandbag",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Dumbbell_Lunges/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_Lunges/1.jpg`
+    imgStart: "https://i.postimg.cc/MHYW36hW/Whats-App-Image-2026-11-10-at-00-59-14.jpg",
+    imgEnd: "https://i.postimg.cc/MHYW36hW/Whats-App-Image-2026-11-10-at-00-59-14.jpg"
   },
   {
     id: "box_jump",
     name: "Box Jump",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Box_Jump/0.jpg`,
-    imgEnd: `${BASE_IMG}/Box_Jump/1.jpg`
+    imgStart: "https://i.postimg.cc/HntpvYfY/Whats-App-Image-2026-11-10-at-01-00-12.jpg",
+    imgEnd: "https://i.postimg.cc/HntpvYfY/Whats-App-Image-2026-11-10-at-01-00-12.jpg"
   },
   {
     id: "box_step_up",
@@ -2318,64 +2318,64 @@ const EXERCISE_DB = [
     id: "lateral_box_jump",
     name: "Lateral Box Jump",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Side_To_Side_Box_Shuffle/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_To_Side_Box_Shuffle/1.jpg`
+    imgStart: "https://i.postimg.cc/rFFcFLBm/Whats-App-Image-2026-11-10-at-01-01-34.jpg",
+    imgEnd: "https://i.postimg.cc/rFFcFLBm/Whats-App-Image-2026-11-10-at-01-01-34.jpg"
   },
   {
     id: "broad_jump",
     name: "Broad Jump",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Box_Jump/0.jpg`,
-    imgEnd: `${BASE_IMG}/Box_Jump/1.jpg`
+    imgStart: "https://i.postimg.cc/jddKdrp2/Whats-App-Image-2026-11-10-at-01-02-34.jpg",
+    imgEnd: "https://i.postimg.cc/jddKdrp2/Whats-App-Image-2026-11-10-at-01-02-34.jpg"
   },
   {
     id: "squat_jump",
     name: "Squat Jump",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Jump_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Jump_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/MKKxK8Cp/Whats-App-Image-2026-11-10-at-01-03-08.jpg",
+    imgEnd: "https://i.postimg.cc/MKKxK8Cp/Whats-App-Image-2026-11-10-at-01-03-08.jpg"
   },
   {
     id: "skater_jump",
     name: "Skater Jump",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Side_To_Side_Box_Shuffle/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_To_Side_Box_Shuffle/1.jpg`
+    imgStart: "https://i.postimg.cc/wBDnQfK9/Whats-App-Image-2026-11-10-at-01-03-57.jpg",
+    imgEnd: "https://i.postimg.cc/wBDnQfK9/Whats-App-Image-2026-11-10-at-01-03-57.jpg"
   },
   {
     id: "jumping_lunge",
     name: "Jumping Lunge",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Scissor_Jumps/0.jpg`,
-    imgEnd: `${BASE_IMG}/Scissor_Jumps/1.jpg`
+    imgStart: "https://i.postimg.cc/pdK3JGN2/Whats-App-Image-2026-11-10-at-01-04-51.jpg",
+    imgEnd: "https://i.postimg.cc/pdK3JGN2/Whats-App-Image-2026-11-10-at-01-04-51.jpg"
   },
   {
     id: "jumping_jack",
     name: "Jumping Jack",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Jumping_Jacks/0.jpg`,
-    imgEnd: `${BASE_IMG}/Jumping_Jacks/1.jpg`
+    imgStart: "https://i.postimg.cc/VNX2WGym/Whats-App-Image-2026-11-10-at-01-05-36.jpg",
+    imgEnd: "https://i.postimg.cc/VNX2WGym/Whats-App-Image-2026-11-10-at-01-05-36.jpg"
   },
   {
     id: "high_knees",
     name: "High Knees",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/High_Knees/0.jpg`,
-    imgEnd: `${BASE_IMG}/High_Knees/1.jpg`
+    imgStart: "https://i.postimg.cc/6qPHXnsF/Whats-App-Image-2026-11-10-at-01-06-22.jpg",
+    imgEnd: "https://i.postimg.cc/6qPHXnsF/Whats-App-Image-2026-11-10-at-01-06-22.jpg"
   },
   {
     id: "burpee",
     name: "Burpee",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Burpee/0.jpg`,
-    imgEnd: `${BASE_IMG}/Burpee/1.jpg`
+    imgStart: "https://i.postimg.cc/Fz6P43t2/Whats-App-Image-2026-11-10-at-01-07-41.jpg",
+    imgEnd: "https://i.postimg.cc/Fz6P43t2/Whats-App-Image-2026-11-10-at-01-07-41.jpg"
   },
   {
     id: "american_kettlebell_swing",
     name: "American Kettlebell Swing",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Swing/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Swing/1.jpg`
+    imgStart: "https://i.postimg.cc/Wzy9vgRB/Whats-App-Image-2026-11-10-at-01-08-26.jpg",
+    imgEnd: "https://i.postimg.cc/Wzy9vgRB/Whats-App-Image-2026-11-10-at-01-08-26.jpg"
   },
   {
     id: "single_arm_kettlebell_swing",
@@ -2388,22 +2388,22 @@ const EXERCISE_DB = [
     id: "double_kettlebell_swing",
     name: "Double Kettlebell Swing",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Swing/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Swing/1.jpg`
+    imgStart: "https://i.postimg.cc/WpyStGKy/Whats-App-Image-2026-11-10-at-01-09-21.jpg",
+    imgEnd: "https://i.postimg.cc/WpyStGKy/Whats-App-Image-2026-11-10-at-01-09-21.jpg"
   },
   {
     id: "kettlebell_clean",
     name: "Kettlebell Clean",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Clean/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Clean/1.jpg`
+    imgStart: "https://i.postimg.cc/c1zT6Rj9/Whats-App-Image-2026-11-10-at-01-10-15.jpg",
+    imgEnd: "https://i.postimg.cc/c1zT6Rj9/Whats-App-Image-2026-11-10-at-01-10-15.jpg"
   },
   {
     id: "kettlebell_snatch",
     name: "Kettlebell Snatch",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Snatch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Snatch/1.jpg`
+    imgStart: "https://i.postimg.cc/ryHgz1bg/Whats-App-Image-2026-11-10-at-01-10-58.jpg",
+    imgEnd: "https://i.postimg.cc/ryHgz1bg/Whats-App-Image-2026-11-10-at-01-10-58.jpg"
   },
   {
     id: "kettlebell_high_pull",
@@ -2416,15 +2416,15 @@ const EXERCISE_DB = [
     id: "kettlebell_thruster",
     name: "Kettlebell Thruster",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Thruster/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Thruster/1.jpg`
+    imgStart: "https://i.postimg.cc/WpxKxc2c/Whats-App-Image-2026-11-10-at-01-11-53.jpg",
+    imgEnd: "https://i.postimg.cc/WpxKxc2c/Whats-App-Image-2026-11-10-at-01-11-53.jpg"
   },
   {
     id: "kettlebell_push_press",
     name: "Kettlebell Push Press",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Push_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Push_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/G36N6ncR/Whats-App-Image-2026-11-10-at-01-12-34.jpg",
+    imgEnd: "https://i.postimg.cc/G36N6ncR/Whats-App-Image-2026-11-10-at-01-12-34.jpg"
   },
   {
     id: "kettlebell_windmill",
@@ -2437,57 +2437,57 @@ const EXERCISE_DB = [
     id: "turkish_get_up",
     name: "Turkish Get-Up",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Turkish_Get-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Turkish_Get-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/gc151bYG/Whats-App-Image-2026-11-10-at-01-13-36.jpg",
+    imgEnd: "https://i.postimg.cc/gc151bYG/Whats-App-Image-2026-11-10-at-01-13-36.jpg"
   },
   {
     id: "kettlebell_halo",
     name: "Kettlebell Halo",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Halo/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Halo/1.jpg`
+    imgStart: "https://i.postimg.cc/zG7xzs1w/Whats-App-Image-2026-11-10-at-01-14-14.jpg",
+    imgEnd: "https://i.postimg.cc/zG7xzs1w/Whats-App-Image-2026-11-10-at-01-14-14.jpg"
   },
   {
     id: "kettlebell_bottom_up_press",
     name: "Kettlebell Bottom-Up Press",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Push_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Push_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/BnpmSrG2/Whats-App-Image-2026-11-10-at-01-15-05.jpg",
+    imgEnd: "https://i.postimg.cc/BnpmSrG2/Whats-App-Image-2026-11-10-at-01-15-05.jpg"
   },
   {
     id: "double_kettlebell_front_squat",
     name: "Double Kettlebell Front Squat",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Kettlebell_Front_Squats/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kettlebell_Front_Squats/1.jpg`
+    imgStart: "https://i.postimg.cc/3x1t8sHX/Whats-App-Image-2026-11-10-at-01-15-52.jpg",
+    imgEnd: "https://i.postimg.cc/3x1t8sHX/Whats-App-Image-2026-11-10-at-01-15-52.jpg"
   },
   {
     id: "dumbbell_snatch",
     name: "Dumbbell Snatch",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_One-Arm_Snatch/1.jpg`
+    imgStart: "https://i.postimg.cc/Mp596C8y/Whats-App-Image-2026-11-10-at-01-16-54.jpg",
+    imgEnd: "https://i.postimg.cc/Mp596C8y/Whats-App-Image-2026-11-10-at-01-16-54.jpg"
   },
   {
     id: "dumbbell_clean",
     name: "Dumbbell Clean",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Dumbbell_Clean/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_Clean/1.jpg`
+    imgStart: "https://i.postimg.cc/76212cjJ/Whats-App-Image-2026-11-10-at-01-17-40.jpg",
+    imgEnd: "https://i.postimg.cc/76212cjJ/Whats-App-Image-2026-11-10-at-01-17-40.jpg"
   },
   {
     id: "dumbbell_hang_clean",
     name: "Dumbbell Hang Clean",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Dumbbell_Clean/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_Clean/1.jpg`
+    imgStart: "https://i.postimg.cc/9M7P7Ssq/Whats-App-Image-2026-11-10-at-01-18-14.jpg",
+    imgEnd: "https://i.postimg.cc/9M7P7Ssq/Whats-App-Image-2026-11-10-at-01-18-14.jpg"
   },
   {
     id: "dumbbell_thruster",
     name: "Dumbbell Thruster",
     muscle: "Funzionali",
-    imgStart: `${BASE_IMG}/Dumbbell_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Dumbbell_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/Pxwbwc0L/Whats-App-Image-2026-11-10-at-01-19-06.jpg",
+    imgEnd: "https://i.postimg.cc/Pxwbwc0L/Whats-App-Image-2026-11-10-at-01-19-06.jpg"
   },
   {
     id: "dumbbell_push_press",
