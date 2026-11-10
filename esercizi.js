@@ -2857,196 +2857,196 @@ const EXERCISE_DB = [
     id: "cat_cow",
     name: "Cat-Cow",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Cat_Cow_Pose/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cat_Cow_Pose/1.jpg`
+    imgStart: "https://i.postimg.cc/y6J8CRZ6/Whats-App-Image-2026-11-10-at-01-46-55.jpg",
+    imgEnd: "https://i.postimg.cc/y6J8CRZ6/Whats-App-Image-2026-11-10-at-01-46-55.jpg"
   },
   {
     id: "childs_pose",
     name: "Child's Pose",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Childs_Pose/0.jpg`,
-    imgEnd: `${BASE_IMG}/Childs_Pose/1.jpg`
+    imgStart: "https://i.postimg.cc/59H2WzC2/Whats-App-Image-2026-11-10-at-01-52-48.jpg",
+    imgEnd: "https://i.postimg.cc/59H2WzC2/Whats-App-Image-2026-11-10-at-01-52-48.jpg"
   },
   {
     id: "worlds_greatest_stretch",
     name: "World's Greatest Stretch",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Worlds_Greatest_Stretch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Worlds_Greatest_Stretch/1.jpg`
+    imgStart: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg",
+    imgEnd: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg"
   },
   {
     id: "90_90_hip_switch",
     name: "90/90 Hip Switch",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Butterfly/0.jpg`,
-    imgEnd: `${BASE_IMG}/Butterfly/1.jpg`
+    imgStart: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg",
+    imgEnd: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg"
   },
   {
     id: "90_90_hip_rotation",
     name: "90/90 Hip Rotation",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Butterfly/0.jpg`,
-    imgEnd: `${BASE_IMG}/Butterfly/1.jpg`
+    imgStart: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg",
+    imgEnd: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg"
   },
   {
     id: "hip_cars",
     name: "Hip CARs",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Standing_Leg_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Leg_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/HjGNfRyD/Whats-App-Image-2026-11-10-at-02-02-52.jpg",
+    imgEnd: "https://i.postimg.cc/HjGNfRyD/Whats-App-Image-2026-11-10-at-02-02-52.jpg"
   },
   {
     id: "shoulder_cars",
     name: "Shoulder CARs",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Arm_Circles/0.jpg`,
-    imgEnd: `${BASE_IMG}/Arm_Circles/1.jpg`
+    imgStart: "https://i.postimg.cc/dQ7VcCyv/Whats-App-Image-2026-11-10-at-02-01-35.jpg",
+    imgEnd: "https://i.postimg.cc/dQ7VcCyv/Whats-App-Image-2026-11-10-at-02-01-35.jpg"
   },
   {
     id: "thoracic_rotation_quadrupedia",
     name: "Thoracic Rotation Quadrupedia",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Bird_Dog/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bird_Dog/1.jpg`
+    imgStart: "https://i.postimg.cc/s1FLtqZt/Whats-App-Image-2026-11-10-at-02-03-40.jpg",
+    imgEnd: "https://i.postimg.cc/s1FLtqZt/Whats-App-Image-2026-11-10-at-02-03-40.jpg"
   },
   {
     id: "open_book",
     name: "Open Book",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Spine_Twist/0.jpg`,
-    imgEnd: `${BASE_IMG}/Spine_Twist/1.jpg`
+    imgStart: "https://i.postimg.cc/HjGNfR7F/Whats-App-Image-2026-11-10-at-02-04-23.jpg",
+    imgEnd: "https://i.postimg.cc/HjGNfR7F/Whats-App-Image-2026-11-10-at-02-04-23.jpg"
   },
   {
     id: "deep_squat_hold",
     name: "Deep Squat Hold",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Bodyweight_Squat/1.jpg`,
-    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/pyNSg4n4/Whats-App-Image-2026-11-10-at-02-05-02.jpg",
+    imgEnd: "https://i.postimg.cc/pyNSg4n4/Whats-App-Image-2026-11-10-at-02-05-02.jpg"
   },
   {
     id: "ankle_dorsiflexion_mobilization",
     name: "Ankle Dorsiflexion Mobilization",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Calf_Stretch_with_Rope/0.jpg`,
-    imgEnd: `${BASE_IMG}/Calf_Stretch_with_Rope/1.jpg`
+    imgStart: "https://i.postimg.cc/7bvRpdTc/Whats-App-Image-2026-11-10-at-02-06-55.jpg",
+    imgEnd: "https://i.postimg.cc/7bvRpdTc/Whats-App-Image-2026-11-10-at-02-06-55.jpg"
   },
   {
     id: "couch_stretch",
     name: "Couch Stretch",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Quad_Stretch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Quad_Stretch/1.jpg`
+    imgStart: "https://i.postimg.cc/XXMPTmyH/Whats-App-Image-2026-11-10-at-02-07-49.jpg",
+    imgEnd: "https://i.postimg.cc/XXMPTmyH/Whats-App-Image-2026-11-10-at-02-07-49.jpg"
   },
   {
     id: "hip_flexor_stretch",
     name: "Hip Flexor Stretch",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Kneeling_Hip_Flexor/0.jpg`,
-    imgEnd: `${BASE_IMG}/Kneeling_Hip_Flexor/1.jpg`
+    imgStart: "https://i.postimg.cc/jCV1GmJv/Whats-App-Image-2026-11-10-at-02-08-52.jpg",
+    imgEnd: "https://i.postimg.cc/jCV1GmJv/Whats-App-Image-2026-11-10-at-02-08-52.jpg"
   },
   {
     id: "hamstring_dynamic_stretch",
     name: "Hamstring Dynamic Stretch",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Hamstring_Stretch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Hamstring_Stretch/1.jpg`
+    imgStart: "https://i.postimg.cc/K4XWdwgf/Whats-App-Image-2026-11-10-at-02-09-53.jpg",
+    imgEnd: "https://i.postimg.cc/K4XWdwgf/Whats-App-Image-2026-11-10-at-02-09-53.jpg"
   },
   {
     id: "adductor_rock_back",
     name: "Adductor Rock Back",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lunge_With_Dumbbells/1.jpg`
+    imgStart: "https://i.postimg.cc/V5yh3pbF/Whats-App-Image-2026-11-10-at-02-11-02.jpg",
+    imgEnd: "https://i.postimg.cc/V5yh3pbF/Whats-App-Image-2026-11-10-at-02-11-02.jpg"
   },
   {
     id: "pectoral_doorway_stretch",
     name: "Pectoral Doorway Stretch",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Doorway_Chest_Stretch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Doorway_Chest_Stretch/1.jpg`
+    imgStart: "https://i.postimg.cc/Sj0Pw3zr/Whats-App-Image-2026-11-10-at-02-12-05.jpg",
+    imgEnd: "https://i.postimg.cc/Sj0Pw3zr/Whats-App-Image-2026-11-10-at-02-12-05.jpg"
   },
   {
     id: "lat_stretch",
     name: "Lat Stretch",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Overhead_Lat_Stretch/0.jpg`,
-    imgEnd: `${BASE_IMG}/Overhead_Lat_Stretch/1.jpg`
+    imgStart: "https://i.postimg.cc/K4XWdwgr/Whats-App-Image-2026-11-10-at-02-13-05.jpg",
+    imgEnd: "https://i.postimg.cc/K4XWdwgr/Whats-App-Image-2026-11-10-at-02-13-05.jpg"
   },
   {
     id: "band_shoulder_dislocation",
     name: "Band Shoulder Dislocation",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Band_Pull_Apart/0.jpg`,
-    imgEnd: `${BASE_IMG}/Band_Pull_Apart/1.jpg`
+    imgStart: "https://i.postimg.cc/hhFYH67V/Whats-App-Image-2026-11-10-at-02-13-59.jpg",
+    imgEnd: "https://i.postimg.cc/hhFYH67V/Whats-App-Image-2026-11-10-at-02-13-59.jpg"
   },
   {
     id: "scapular_retraction_elastico",
     name: "Scapular Retraction con Elastico",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Band_Pull_Apart/0.jpg`,
-    imgEnd: `${BASE_IMG}/Band_Pull_Apart/1.jpg`
+    imgStart: "https://i.postimg.cc/s1FLtqZS/Whats-App-Image-2026-11-10-at-02-15-13.jpg",
+    imgEnd: "https://i.postimg.cc/s1FLtqZS/Whats-App-Image-2026-11-10-at-02-15-13.jpg"
   },
   {
     id: "serratus_wall_slide",
     name: "Serratus Wall Slide",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Standing_Military_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Military_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/QVLzRwW7/Whats-App-Image-2026-11-10-at-02-15-55.jpg",
+    imgEnd: "https://i.postimg.cc/QVLzRwW7/Whats-App-Image-2026-11-10-at-02-15-55.jpg"
   },
   {
     id: "glute_bridge_march",
     name: "Glute Bridge March",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Single_Leg_Glute_Bridge/0.jpg`,
-    imgEnd: `${BASE_IMG}/Single_Leg_Glute_Bridge/1.jpg`
+    imgStart: "https://i.postimg.cc/bdX5KW2t/Whats-App-Image-2026-11-10-at-02-16-49.jpg",
+    imgEnd: "https://i.postimg.cc/bdX5KW2t/Whats-App-Image-2026-11-10-at-02-16-49.jpg"
   },
   {
     id: "single_leg_balance",
     name: "Single Leg Balance",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Single_Leg_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Single_Leg_Squat/0.jpg`
+    imgStart: "https://i.postimg.cc/NF2VCBLk/Whats-App-Image-2026-11-10-at-02-17-35.jpg",
+    imgEnd: "https://i.postimg.cc/NF2VCBLk/Whats-App-Image-2026-11-10-at-02-17-35.jpg"
   },
   {
     id: "terminal_knee_extension_elastico",
     name: "Terminal Knee Extension con Elastico",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Standing_Calf_Raises/0.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Calf_Raises/1.jpg`
+    imgStart: "https://i.postimg.cc/Hn8Kvdj4/Whats-App-Image-2026-11-10-at-02-18-53.jpg",
+    imgEnd: "https://i.postimg.cc/Hn8Kvdj4/Whats-App-Image-2026-11-10-at-02-18-53.jpg"
   },
   {
     id: "spanish_squat",
     name: "Spanish Squat",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Bodyweight_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/1XVT7s40/Whats-App-Image-2026-11-10-at-02-19-47.jpg",
+    imgEnd: "https://i.postimg.cc/1XVT7s40/Whats-App-Image-2026-11-10-at-02-19-47.jpg"
   },
   {
     id: "wall_sit",
     name: "Wall Sit",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Bodyweight_Squat/1.jpg`,
-    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/7hJctwbg/Whats-App-Image-2026-11-10-at-02-20-26.jpg",
+    imgEnd: "https://i.postimg.cc/7hJctwbg/Whats-App-Image-2026-11-10-at-02-20-26.jpg"
   },
   {
     id: "isometric_split_squat",
     name: "Isometric Split Squat",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Split_Squats/1.jpg`,
-    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+    imgStart: "https://i.postimg.cc/7hJctwb3/Whats-App-Image-2026-11-10-at-02-22-12.jpg",
+    imgEnd: "https://i.postimg.cc/7hJctwb3/Whats-App-Image-2026-11-10-at-02-22-12.jpg"
   },
   {
     id: "calf_isometric_hold",
     name: "Calf Isometric Hold",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Standing_Calf_Raises/1.jpg`,
-    imgEnd: `${BASE_IMG}/Standing_Calf_Raises/1.jpg`
+    imgStart: "https://i.postimg.cc/nr95SpMB/Whats-App-Image-2026-11-10-at-02-23-05.jpg",
+    imgEnd: "https://i.postimg.cc/nr95SpMB/Whats-App-Image-2026-11-10-at-02-23-05.jpg"
   },
   {
     id: "dead_bug_fitball",
     name: "Dead Bug con Fitball",
     muscle: "Mobilità",
-    imgStart: `${BASE_IMG}/Dead_Bug/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dead_Bug/1.jpg`
+    imgStart: "https://i.postimg.cc/WzqKYTt0/Whats-App-Image-2026-11-10-at-02-24-23.jpg",
+    imgEnd: "https://i.postimg.cc/WzqKYTt0/Whats-App-Image-2026-11-10-at-02-24-23.jpg"
   }
 ];
