@@ -2664,190 +2664,190 @@ const EXERCISE_DB = [
     id: "trx_squat",
     name: "TRX Squat",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Bodyweight_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Bodyweight_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/Pq9X7FJS/Whats-App-Image-2026-11-10-at-01-25-06.jpg",
+    imgEnd: "https://i.postimg.cc/Pq9X7FJS/Whats-App-Image-2026-11-10-at-01-25-06.jpg"
   },
   {
     id: "trx_jump_squat",
     name: "TRX Jump Squat",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Jump_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Jump_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/zf6zQPv0/Whats-App-Image-2026-11-10-at-01-25-41.jpg",
+    imgEnd: "https://i.postimg.cc/zf6zQPv0/Whats-App-Image-2026-11-10-at-01-25-41.jpg"
   },
   {
     id: "trx_assisted_split_squat",
     name: "TRX Assisted Split Squat",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Split_Squats/0.jpg`,
-    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+    imgStart: "https://i.postimg.cc/9fKmkN0b/Whats-App-Image-2026-11-10-at-01-26-29.jpg",
+    imgEnd: "https://i.postimg.cc/9fKmkN0b/Whats-App-Image-2026-11-10-at-01-26-29.jpg"
   },
   {
     id: "trx_reverse_lunge",
     name: "TRX Reverse Lunge",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Dumbbell_Rear_Lunge/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_Rear_Lunge/1.jpg`
+    imgStart: "https://i.postimg.cc/fbpzPgyv/Whats-App-Image-2026-11-10-at-01-28-44.jpg",
+    imgEnd: "https://i.postimg.cc/fbpzPgyv/Whats-App-Image-2026-11-10-at-01-28-44.jpg"
   },
   {
     id: "trx_bulgarian_split_squat",
     name: "TRX Bulgarian Split Squat",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Split_Squats/0.jpg`,
-    imgEnd: `${BASE_IMG}/Split_Squats/1.jpg`
+    imgStart: "https://i.postimg.cc/9fKmkN0b/Whats-App-Image-2026-11-10-at-01-26-29.jpg",
+    imgEnd: "https://i.postimg.cc/9fKmkN0b/Whats-App-Image-2026-11-10-at-01-26-29.jpg"
   },
   {
     id: "trx_pistol_squat_assistito",
     name: "TRX Pistol Squat Assistito",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Single_Leg_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Single_Leg_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/25MktXyw/Whats-App-Image-2026-11-10-at-01-27-31.jpg",
+    imgEnd: "https://i.postimg.cc/25MktXyw/Whats-App-Image-2026-11-10-at-01-27-31.jpg"
   },
   {
     id: "trx_hamstring_curl",
     name: "TRX Hamstring Curl",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Lying_Leg_Curls/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lying_Leg_Curls/1.jpg`
+    imgStart: "https://i.postimg.cc/VNpfhHvW/Whats-App-Image-2026-11-10-at-01-29-59.jpg",
+    imgEnd: "https://i.postimg.cc/VNpfhHvW/Whats-App-Image-2026-11-10-at-01-29-59.jpg"
   },
   {
     id: "trx_hip_bridge",
     name: "TRX Hip Bridge",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Single_Leg_Glute_Bridge/0.jpg`,
-    imgEnd: `${BASE_IMG}/Single_Leg_Glute_Bridge/1.jpg`
+    imgStart: "https://i.postimg.cc/8C9pYncB/Whats-App-Image-2026-11-10-at-01-30-59.jpg",
+    imgEnd: "https://i.postimg.cc/8C9pYncB/Whats-App-Image-2026-11-10-at-01-30-59.jpg"
   },
   {
     id: "trx_row",
     name: "TRX Row",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/TPFdsH1r/Whats-App-Image-2026-11-10-at-01-31-30.jpg",
+    imgEnd: "https://i.postimg.cc/TPFdsH1r/Whats-App-Image-2026-11-10-at-01-31-30.jpg"
   },
   {
     id: "trx_high_row",
     name: "TRX High Row",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/SK3SPtRL/Whats-App-Image-2026-11-10-at-01-32-55.jpg",
+    imgEnd: "https://i.postimg.cc/SK3SPtRL/Whats-App-Image-2026-11-10-at-01-32-55.jpg"
   },
   {
     id: "trx_wide_row",
     name: "TRX Wide Row",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/TPFdsH1r/Whats-App-Image-2026-11-10-at-01-31-30.jpg",
+    imgEnd: "https://i.postimg.cc/TPFdsH1r/Whats-App-Image-2026-11-10-at-01-31-30.jpg"
   },
   {
     id: "trx_single_arm_row",
     name: "TRX Single Arm Row",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/zf6zQPvT/Whats-App-Image-2026-11-10-at-01-35-11.jpg",
+    imgEnd: "https://i.postimg.cc/zf6zQPvT/Whats-App-Image-2026-11-10-at-01-35-11.jpg"
   },
   {
     id: "trx_power_pull",
     name: "TRX Power Pull",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Inverted_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/DzHvNY0L/Whats-App-Image-2026-11-10-at-01-35-50.jpg",
+    imgEnd: "https://i.postimg.cc/DzHvNY0L/Whats-App-Image-2026-11-10-at-01-35-50.jpg"
   },
   {
     id: "trx_face_pull",
     name: "TRX Face Pull",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Face_Pull/0.jpg`,
-    imgEnd: `${BASE_IMG}/Face_Pull/1.jpg`
+    imgStart: "https://i.postimg.cc/5t69nM4s/Whats-App-Image-2026-11-10-at-01-36-17.jpg",
+    imgEnd: "https://i.postimg.cc/5t69nM4s/Whats-App-Image-2026-11-10-at-01-36-17.jpg"
   },
   {
     id: "trx_y_fly",
     name: "TRX Y Fly",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/QMHN0r80/Whats-App-Image-2026-11-10-at-01-36-58.jpg",
+    imgEnd: "https://i.postimg.cc/QMHN0r80/Whats-App-Image-2026-11-10-at-01-36-58.jpg"
   },
   {
     id: "trx_t_fly",
     name: "TRX T Fly",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Rear_Delt_Fly/1.jpg`
+    imgStart: "https://i.postimg.cc/HLVWBCYz/Whats-App-Image-2026-11-10-at-01-37-29.jpg",
+    imgEnd: "https://i.postimg.cc/HLVWBCYz/Whats-App-Image-2026-11-10-at-01-37-29.jpg"
   },
   {
     id: "trx_biceps_curl",
     name: "TRX Biceps Curl",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Inverted_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/9frXJjm1/Whats-App-Image-2026-11-10-at-01-38-09.jpg",
+    imgEnd: "https://i.postimg.cc/9frXJjm1/Whats-App-Image-2026-11-10-at-01-38-09.jpg"
   },
   {
     id: "trx_chest_press",
     name: "TRX Chest Press",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+    imgStart: "https://i.postimg.cc/cJr1XNxc/Whats-App-Image-2026-11-10-at-01-38-58.jpg",
+    imgEnd: "https://i.postimg.cc/cJr1XNxc/Whats-App-Image-2026-11-10-at-01-38-58.jpg"
   },
   {
     id: "trx_chest_fly",
     name: "TRX Chest Fly",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Butterfly/1.jpg`
+    imgStart: "https://i.postimg.cc/PqPf2kXQ/Whats-App-Image-2026-11-10-at-01-39-32.jpg",
+    imgEnd: "https://i.postimg.cc/PqPf2kXQ/Whats-App-Image-2026-11-10-at-01-39-32.jpg"
   },
   {
     id: "trx_push_up",
     name: "TRX Push-Up",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pushups/1.jpg`
+    imgStart: "https://i.postimg.cc/cJr1XNxc/Whats-App-Image-2026-11-10-at-01-38-58.jpg",
+    imgEnd: "https://i.postimg.cc/cJr1XNxc/Whats-App-Image-2026-11-10-at-01-38-58.jpg"
   },
   {
     id: "trx_triceps_extension",
     name: "TRX Triceps Extension",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Close-Grip_Push-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Close-Grip_Push-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/FK7FDQry/Whats-App-Image-2026-11-10-at-01-40-55.jpg",
+    imgEnd: "https://i.postimg.cc/FK7FDQry/Whats-App-Image-2026-11-10-at-01-40-55.jpg"
   },
   {
     id: "trx_atomic_push_up",
     name: "TRX Atomic Push-Up",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Pushups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Seated_Flat_Bench_Leg_Pull-In/1.jpg`
+    imgStart: "https://i.postimg.cc/8CjktVph/Whats-App-Image-2026-11-10-at-01-41-31.jpg",
+    imgEnd: "https://i.postimg.cc/8CjktVph/Whats-App-Image-2026-11-10-at-01-41-31.jpg"
   },
   {
     id: "trx_fallout",
     name: "TRX Fallout",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Front_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/5t69nM48/Whats-App-Image-2026-11-10-at-01-42-07.jpg",
+    imgEnd: "https://i.postimg.cc/5t69nM48/Whats-App-Image-2026-11-10-at-01-42-07.jpg"
   },
   {
     id: "trx_mountain_climber",
     name: "TRX Mountain Climber",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Mountain_Climbers/0.jpg`,
-    imgEnd: `${BASE_IMG}/Mountain_Climbers/1.jpg`
+    imgStart: "https://i.postimg.cc/MGvZd86B/Whats-App-Image-2026-11-10-at-01-42-48.jpg",
+    imgEnd: "https://i.postimg.cc/MGvZd86B/Whats-App-Image-2026-11-10-at-01-42-48.jpg"
   },
   {
     id: "trx_side_plank",
     name: "TRX Side Plank",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Side_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/KYRcJyGL/Whats-App-Image-2026-11-10-at-01-44-29.jpg",
+    imgEnd: "https://i.postimg.cc/KYRcJyGL/Whats-App-Image-2026-11-10-at-01-44-29.jpg"
   },
   {
     id: "trx_pendulum",
     name: "TRX Pendulum",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Front_Plank/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Plank/0.jpg`
+    imgStart: "https://i.postimg.cc/mrtZ8GLH/Whats-App-Image-2026-11-10-at-01-45-09.jpg",
+    imgEnd: "https://i.postimg.cc/mrtZ8GLH/Whats-App-Image-2026-11-10-at-01-45-09.jpg"
   },
   {
     id: "trx_hamstring_runner",
     name: "TRX Hamstring Runner",
     muscle: "TRX",
-    imgStart: `${BASE_IMG}/Lying_Leg_Curls/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lying_Leg_Curls/1.jpg`
+    imgStart: "https://i.postimg.cc/W4hpXPNJ/Whats-App-Image-2026-11-10-at-01-45-47.jpg",
+    imgEnd: "https://i.postimg.cc/W4hpXPNJ/Whats-App-Image-2026-11-10-at-01-45-47.jpg"
   },
 
   // ==========================================
