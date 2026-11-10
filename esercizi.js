@@ -12,36 +12,36 @@ const EXERCISE_DB = [
     id: "shoulder_press_machine",
     name: "Shoulder Press Machine",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Lever_Shoulder_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Shoulder_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/xTNxPNQ7/Whats-App-Image-2026-11-09-at-23-33-30.jpg",
+    imgEnd: "https://i.postimg.cc/xTNxPNQ7/Whats-App-Image-2026-11-09-at-23-33-30.jpg"
   },
   {
     id: "lateral_raise_machine_seduta",
     name: "Lateral Raise Machine seduta",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Lever_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/nz6R8nYc/Whats-App-Image-2026-11-09-at-23-34-20.jpg",
+    imgEnd: "https://i.postimg.cc/nz6R8nYc/Whats-App-Image-2026-11-09-at-23-34-20.jpg"
   },
   {
     id: "lateral_raise_machine_in_piedi",
     name: "Lateral Raise Machine in piedi",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Lever_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/RFjsrvQZ/Whats-App-Image-2026-11-09-at-23-36-37(1).jpg",
+    imgEnd: "https://i.postimg.cc/hjHyFKbG/Whats-App-Image-2026-11-09-at-23-36-37.jpg"
   },
   {
     id: "rear_delt_machine",
     name: "Rear Delt Machine",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Rear_Delt_Machine/0.jpg`,
-    imgEnd: `${BASE_IMG}/Rear_Delt_Machine/1.jpg`
+    imgStart: "https://i.postimg.cc/9FcPD4M7/Whats-App-Image-2026-11-09-at-23-37-35.jpg",
+    imgEnd: "https://i.postimg.cc/9FcPD4M7/Whats-App-Image-2026-11-09-at-23-37-35.jpg"
   },
   {
     id: "reverse_pec_deck",
     name: "Reverse Pec Deck",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Rear_Delt_Machine/0.jpg`,
-    imgEnd: `${BASE_IMG}/Rear_Delt_Machine/1.jpg`
+    imgStart: "https://i.postimg.cc/5Nf5XH0Y/Whats-App-Image-2026-11-09-at-23-38-25.jpg",
+    imgEnd: "https://i.postimg.cc/5Nf5XH0Y/Whats-App-Image-2026-11-09-at-23-38-25.jpg"
   },
   {
     id: "military_press_bilanciere",
@@ -61,22 +61,22 @@ const EXERCISE_DB = [
     id: "push_press",
     name: "Push Press",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Push_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Push_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/BZpLwmS4/Whats-App-Image-2026-11-09-at-23-39-21.jpg",
+    imgEnd: "https://i.postimg.cc/BZpLwmS4/Whats-App-Image-2026-11-09-at-23-39-21.jpg"
   },
   {
     id: "push_jerk",
     name: "Push Jerk",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Push_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Push_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/8k4JnZpS/Whats-App-Image-2026-11-09-at-23-40-15.jpg",
+    imgEnd: "https://i.postimg.cc/8k4JnZpS/Whats-App-Image-2026-11-09-at-23-40-15.jpg"
   },
   {
     id: "split_jerk",
     name: "Split Jerk",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Split_Jerk/0.jpg`,
-    imgEnd: `${BASE_IMG}/Split_Jerk/1.jpg`
+    imgStart: "https://i.postimg.cc/qBwhZ1J0/Whats-App-Image-2026-11-09-at-23-40-56.jpg",
+    imgEnd: "https://i.postimg.cc/qBwhZ1J0/Whats-App-Image-2026-11-09-at-23-40-56.jpg"
   },
   {
     id: "strict_press",
@@ -89,8 +89,8 @@ const EXERCISE_DB = [
     id: "z_press",
     name: "Z Press",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Seated_Barbell_Military_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Seated_Barbell_Military_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/xC0jvSbk/Whats-App-Image-2026-11-09-at-23-42-29.jpg",
+    imgEnd: "https://i.postimg.cc/xC0jvSbk/Whats-App-Image-2026-11-09-at-23-42-29.jpg"
   },
   {
     id: "shoulder_press_al_multipower",
@@ -145,8 +145,8 @@ const EXERCISE_DB = [
     id: "alzate_laterali_su_panca_inclinata",
     name: "Alzate laterali su panca inclinata",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Side_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/NMgG6wr9/Whats-App-Image-2026-11-09-at-23-43-57.jpg",
+    imgEnd: "https://i.postimg.cc/NMgG6wr9/Whats-App-Image-2026-11-09-at-23-43-57.jpg"
   },
   {
     id: "alzate_frontali_manubri",
@@ -166,36 +166,36 @@ const EXERCISE_DB = [
     id: "reverse_fly_su_panca_inclinata",
     name: "Reverse Fly su panca inclinata",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Incline_Bench_Two_Arm_Dumbbell_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Incline_Bench_Two_Arm_Dumbbell_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/x8BS4rqL/Whats-App-Image-2026-11-09-at-23-45-02.jpg",
+    imgEnd: "https://i.postimg.cc/x8BS4rqL/Whats-App-Image-2026-11-09-at-23-45-02.jpg"
   },
   {
     id: "y_raise_manubri",
     name: "Y Raise manubri",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Side_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Side_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/L5GMbdhz/Whats-App-Image-2026-11-09-at-23-46-06.jpg",
+    imgEnd: "https://i.postimg.cc/L5GMbdhz/Whats-App-Image-2026-11-09-at-23-46-06.jpg"
   },
   {
     id: "alzate_laterali_al_cavo_basso",
     name: "Alzate laterali al cavo basso",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/rmP6D61b/Whats-App-Image-2026-11-09-at-23-46-51.jpg",
+    imgEnd: "https://i.postimg.cc/rmP6D61b/Whats-App-Image-2026-11-09-at-23-46-51.jpg"
   },
   {
     id: "alzate_laterali_al_cavo_dietro_il_corpo",
     name: "Alzate laterali al cavo dietro il corpo",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/G25040Ff/Whats-App-Image-2026-11-09-at-23-49-31.jpg",
+    imgEnd: "https://i.postimg.cc/G25040Ff/Whats-App-Image-2026-11-09-at-23-49-31.jpg"
   },
   {
     id: "alzate_laterali_bilaterali_ai_cavi",
     name: "Alzate laterali bilaterali ai cavi",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/VN7sWV9V/Whats-App-Image-2026-11-09-at-23-50-19.jpg",
+    imgEnd: "https://i.postimg.cc/VN7sWV9V/Whats-App-Image-2026-11-09-at-23-50-19.jpg"
   },
   {
     id: "alzate_frontali_al_cavo",
@@ -222,8 +222,8 @@ const EXERCISE_DB = [
     id: "cable_y_raise",
     name: "Cable Y Raise",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_One_Arm_Lateral_Raise/1.jpg`
+    imgStart: "https://i.postimg.cc/fbHWfr7P/Whats-App-Image-2026-11-09-at-23-51-28.jpg",
+    imgEnd: "https://i.postimg.cc/fbHWfr7P/Whats-App-Image-2026-11-09-at-23-51-28.jpg"
   },
   {
     id: "cable_upright_row",
@@ -236,8 +236,8 @@ const EXERCISE_DB = [
     id: "extrarotazioni_al_cavo",
     name: "Extrarotazioni al cavo",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Cable_External_Rotation/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_External_Rotation/1.jpg`
+    imgStart: "https://i.postimg.cc/jj8q4F6k/Whats-App-Image-2026-11-09-at-23-52-15.jpg",
+    imgEnd: "https://i.postimg.cc/jj8q4F6k/Whats-App-Image-2026-11-09-at-23-52-15.jpg"
   },
   {
     id: "intrarotazioni_al_cavo",
@@ -250,8 +250,8 @@ const EXERCISE_DB = [
     id: "extrarotazioni_con_elastico",
     name: "Extrarotazioni con elastico",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Cable_External_Rotation/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_External_Rotation/1.jpg`
+    imgStart: "https://i.postimg.cc/zDh5yBMz/Whats-App-Image-2026-11-09-at-23-56-11.jpg",
+    imgEnd: "https://i.postimg.cc/zDh5yBMz/Whats-App-Image-2026-11-09-at-23-56-11.jpg"
   },
   {
     id: "band_pull_apart",
@@ -278,15 +278,15 @@ const EXERCISE_DB = [
     id: "shrug_al_multipower",
     name: "Shrug al Multipower",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Smith_Machine_Shrug/0.jpg`,
-    imgEnd: `${BASE_IMG}/Smith_Machine_Shrug/1.jpg`
+    imgStart: "https://i.postimg.cc/fWdZVLFD/Whats-App-Image-2026-11-09-at-23-57-36.jpg",
+    imgEnd: "https://i.postimg.cc/fWdZVLFD/Whats-App-Image-2026-11-09-at-23-57-36.jpg"
   },
   {
     id: "shrug_alla_trap_bar",
     name: "Shrug alla Trap Bar",
     muscle: "Spalle",
-    imgStart: `${BASE_IMG}/Trap_Bar_Deadlift/0.jpg`,
-    imgEnd: `${BASE_IMG}/Barbell_Shrug/1.jpg`
+    imgStart: "https://i.postimg.cc/59z1X0Gx/Whats-App-Image-2026-11-09-at-23-58-32.jpg",
+    imgEnd: "https://i.postimg.cc/59z1X0Gx/Whats-App-Image-2026-11-09-at-23-58-32.jpg"
   },
   {
     id: "scapular_push_up",
@@ -317,15 +317,15 @@ const EXERCISE_DB = [
     id: "biceps_curl_machine",
     name: "Biceps Curl Machine",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Lever_Preacher_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Preacher_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/KcPwXgwk/Whats-App-Image-2026-11-10-at-00-00-26.jpg",
+    imgEnd: "https://i.postimg.cc/KcPwXgwk/Whats-App-Image-2026-11-10-at-00-00-26.jpg"
   },
   {
     id: "preacher_curl_machine",
     name: "Preacher Curl Machine",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Lever_Preacher_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Preacher_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/KcPwXgwk/Whats-App-Image-2026-11-10-at-00-00-26.jpg",
+    imgEnd: "https://i.postimg.cc/KcPwXgwk/Whats-App-Image-2026-11-10-at-00-00-26.jpg"
   },
   {
     id: "curl_bilanciere_dritto",
@@ -408,8 +408,8 @@ const EXERCISE_DB = [
     id: "curl_al_cavo_basso_con_barra",
     name: "Curl al cavo basso con barra",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Cable_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/1RG2xN2V/Whats-App-Image-2026-11-10-at-00-02-52.jpg",
+    imgEnd: "https://i.postimg.cc/1RG2xN2V/Whats-App-Image-2026-11-10-at-00-02-52.jpg"
   },
   {
     id: "curl_al_cavo_basso_con_corda",
@@ -422,15 +422,15 @@ const EXERCISE_DB = [
     id: "curl_al_cavo_unilaterale",
     name: "Curl al cavo unilaterale",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Cable_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/3rXVMDVk/Whats-App-Image-2026-11-10-at-00-03-30.jpg",
+    imgEnd: "https://i.postimg.cc/3rXVMDVk/Whats-App-Image-2026-11-10-at-00-03-30.jpg"
   },
   {
     id: "bayesian_curl",
     name: "Bayesian Curl",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Cable_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/7hHVrbJC/Whats-App-Image-2026-11-10-at-00-04-08.jpg",
+    imgEnd: "https://i.postimg.cc/7hHVrbJC/Whats-App-Image-2026-11-10-at-00-04-08.jpg"
   },
   {
     id: "high_cable_curl",
@@ -443,8 +443,8 @@ const EXERCISE_DB = [
     id: "preacher_curl_al_cavo",
     name: "Preacher Curl al cavo",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Cable_Preacher_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Preacher_Curl/1.jpg`
+    imgStart: "https://i.postimg.cc/Y0r3BjLv/Whats-App-Image-2026-11-10-at-00-05-21.jpg",
+    imgEnd: "https://i.postimg.cc/Y0r3BjLv/Whats-App-Image-2026-11-10-at-00-05-21.jpg"
   },
   {
     id: "hammer_curl_al_cavo",
@@ -468,8 +468,8 @@ const EXERCISE_DB = [
     id: "triceps_extension_machine",
     name: "Triceps Extension Machine",
     muscle: "Braccia",
-    imgStart: `${BASE_IMG}/Lever_Triceps_Extension/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Triceps_Extension/1.jpg`
+    imgStart: "https://i.postimg.cc/BbSgftP6/Whats-App-Image-2026-11-10-at-00-06-34.jpg",
+    imgEnd: "https://i.postimg.cc/BbSgftP6/Whats-App-Image-2026-11-10-at-00-06-34.jpg"
   },
   {
     id: "dip_machine",
@@ -1236,22 +1236,22 @@ const EXERCISE_DB = [
     id: "chest_press_orizzontale",
     name: "Chest Press Orizzontale",
     muscle: "Petto",
-    imgStart: "https://i.postimg.cc/8kK0Rtmh/chest-press-orizzontale.jpg",
-    imgEnd: "https://i.postimg.cc/DfjMrBPr/chest-press-orizzontale-1.jpg"
+    imgStart: "https://i.postimg.cc/2yQfMLYp/Whats-App-Image-2026-11-09-at-22-53-27.jpg",
+    imgEnd: "https://i.postimg.cc/2yQfMLYp/Whats-App-Image-2026-11-09-at-22-53-27.jpg"
   },
   {
     id: "incline_chest_press_30",
     name: "Incline Chest Press 30°",
     muscle: "Petto",
-    imgStart: "https://i.postimg.cc/kMpT6D7j/Incline-Chest-Press-30.jpg",
-    imgEnd: "https://i.postimg.cc/CMQcBdwP/Incline-Chest-Press-30-1.jpg"
+    imgStart: "https://i.postimg.cc/4y6TqHgr/Whats-App-Image-2026-11-09-at-22-55-12.jpg",
+    imgEnd: "https://i.postimg.cc/4y6TqHgr/Whats-App-Image-2026-11-09-at-22-55-12.jpg"
   },
   {
     id: "incline_chest_press_45",
     name: "Incline Chest Press 45°",
     muscle: "Petto",
-    imgStart: "https://i.postimg.cc/kMpT6D7j/Incline-Chest-Press-30.jpg",
-    imgEnd: "https://i.postimg.cc/CMQcBdwP/Incline-Chest-Press-30-1.jpg"
+    imgStart: "https://i.postimg.cc/4y6TqHgr/Whats-App-Image-2026-11-09-at-22-55-12.jpg",
+    imgEnd: "https://i.postimg.cc/4y6TqHgr/Whats-App-Image-2026-11-09-at-22-55-12.jpg"
   },
   {
     id: "decline_chest_press",
@@ -1264,8 +1264,8 @@ const EXERCISE_DB = [
     id: "pec_fly_machine",
     name: "Pec Fly Machine",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Butterfly/0.jpg`,
-    imgEnd: `${BASE_IMG}/Butterfly/1.jpg`
+    imgStart: `${BASE_IMG}/Butterfly/1.jpg`,
+    imgEnd: `${BASE_IMG}/Butterfly/0.jpg`
   },
   {
     id: "panca_piana_bilanciere",
@@ -1299,8 +1299,8 @@ const EXERCISE_DB = [
     id: "chest_dip_machine",
     name: "Chest Dip Machine",
     muscle: "Petto",
-    imgStart: `${BASE_IMG}/Machine_Bench_Press/0.jpg`,
-    imgEnd: `${BASE_IMG}/Machine_Bench_Press/1.jpg`
+    imgStart: "https://i.postimg.cc/XNcmMbFW/Whats-App-Image-2026-11-09-at-22-57-58.jpg",
+    imgEnd: "https://i.postimg.cc/XNcmMbFW/Whats-App-Image-2026-11-09-at-22-57-58.jpg"
   },
   {
     id: "floor_press_bilanciere",
@@ -1527,29 +1527,29 @@ const EXERCISE_DB = [
     id: "lat_machine_triangolo",
     name: "Lat Machine Triangolo",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/V-bar_Pull_Down/0.jpg`,
-    imgEnd: `${BASE_IMG}/V-bar_Pull_Down/1.jpg`
+    imgStart: "https://i.postimg.cc/d345hJmv/Whats-App-Image-2026-11-09-at-23-03-19.jpg",
+    imgEnd: "https://i.postimg.cc/d345hJmv/Whats-App-Image-2026-11-09-at-23-03-19.jpg"
   },
   {
     id: "lat_machine_unilaterale",
     name: "Lat Machine Unilaterale",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Wide-Grip_Lat_Pulldown/0.jpg`,
-    imgEnd: `${BASE_IMG}/Wide-Grip_Lat_Pulldown/1.jpg`
+    imgStart: "https://i.postimg.cc/ZnVwWJFS/Whats-App-Image-2026-11-09-at-23-04-11.jpg",
+    imgEnd: "https://i.postimg.cc/ZnVwWJFS/Whats-App-Image-2026-11-09-at-23-04-11.jpg"
   },
   {
     id: "pullover_machine",
     name: "Pullover Machine",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Straight-Arm_Pulldown/0.jpg`,
-    imgEnd: `${BASE_IMG}/Straight-Arm_Pulldown/1.jpg`
+    imgStart: "https://i.postimg.cc/sDxcnd4Y/Whats-App-Image-2026-11-09-at-23-05-07.jpg",
+    imgEnd: "https://i.postimg.cc/sDxcnd4Y/Whats-App-Image-2026-11-09-at-23-05-07.jpg"
   },
   {
     id: "chin_up_machine",
     name: "Chin-Up Machine",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Assisted_Pull-up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Assisted_Pull-up/1.jpg`
+    imgStart: "https://i.postimg.cc/RVhRP5Lc/Whats-App-Image-2026-11-09-at-23-06-38.jpg",
+    imgEnd: "https://i.postimg.cc/RVhRP5Lc/Whats-App-Image-2026-11-09-at-23-06-38.jpg"
   },
   {
     id: "pulley_presa_stretta",
@@ -1590,29 +1590,29 @@ const EXERCISE_DB = [
     id: "high_row_machine",
     name: "High Row Machine",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Lever_High_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_High_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/RhNHT9xF/Whats-App-Image-2026-11-09-at-23-09-13.jpg",
+    imgEnd: "https://i.postimg.cc/RhNHT9xF/Whats-App-Image-2026-11-09-at-23-09-13.jpg"
   },
   {
     id: "mid_row_machine",
     name: "Mid Row Machine",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Lever_Seated_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Seated_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/prpFBxMy/Whats-App-Image-2026-11-09-at-23-12-04.jpg",
+    imgEnd: "https://i.postimg.cc/prpFBxMy/Whats-App-Image-2026-11-09-at-23-12-04.jpg"
   },
   {
     id: "low_row_machine",
     name: "Low Row Machine",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Lever_Seated_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Seated_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/XvjX83wW/Whats-App-Image-2026-11-09-at-23-13-36.jpg",
+    imgEnd: "https://i.postimg.cc/XvjX83wW/Whats-App-Image-2026-11-09-at-23-13-36.jpg"
   },
   {
     id: "t_bar_row_appoggio",
     name: "T-Bar Row con Appoggio",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Lever_T-bar_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_T-bar_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/rpVzJcSL/Whats-App-Image-2026-11-09-at-23-14-40.jpg",
+    imgEnd: "https://i.postimg.cc/rpVzJcSL/Whats-App-Image-2026-11-09-at-23-14-40.jpg"
   },
   {
     id: "t_bar_row_senza_appoggio",
@@ -1625,8 +1625,8 @@ const EXERCISE_DB = [
     id: "seated_row",
     name: "Seated Row",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Lever_Seated_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Lever_Seated_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/cJxBPvqW/Whats-App-Image-2026-11-09-at-23-15-54.jpg",
+    imgEnd: "https://i.postimg.cc/cJxBPvqW/Whats-App-Image-2026-11-09-at-23-15-54.jpg"
   },
   {
     id: "rematore_bilanciere_prona",
@@ -1639,15 +1639,15 @@ const EXERCISE_DB = [
     id: "rematore_bilanciere_supina",
     name: "Rematore Bilanciere Presa Supina",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Reverse_Grip_Bent-Over_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Reverse_Grip_Bent-Over_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/fbzf1V4N/Whats-App-Image-2026-11-09-at-23-16-45.jpg",
+    imgEnd: "https://i.postimg.cc/fbzf1V4N/Whats-App-Image-2026-11-09-at-23-16-45.jpg"
   },
   {
     id: "pendlay_row",
     name: "Pendlay Row",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Pendlay_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pendlay_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/pL2jL3sR/Whats-App-Image-2026-11-09-at-23-17-52.jpg",
+    imgEnd: "https://i.postimg.cc/pL2jL3sR/Whats-App-Image-2026-11-09-at-23-17-52.jpg"
   },
   {
     id: "rematore_manubrio_unilaterale",
@@ -1667,8 +1667,8 @@ const EXERCISE_DB = [
     id: "rematore_manubri_panca_inclinata",
     name: "Rematore Manubri su Panca Inclinata",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Incline_Bench_Two_Arm_Dumbbell_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Incline_Bench_Two_Arm_Dumbbell_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/9QW9QsLV/Whats-App-Image-2026-11-09-at-23-19-05.jpg",
+    imgEnd: "https://i.postimg.cc/9QW9QsLV/Whats-App-Image-2026-11-09-at-23-19-05.jpg"
   },
   {
     id: "rematore_manubri_gomiti_larghi",
@@ -1681,8 +1681,8 @@ const EXERCISE_DB = [
     id: "renegade_row",
     name: "Renegade Row",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Alternate_Hammer_Curl/0.jpg`,
-    imgEnd: `${BASE_IMG}/One-Arm_Dumbbell_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/cJP6wzBm/Whats-App-Image-2026-11-09-at-23-20-25.jpg",
+    imgEnd: "https://i.postimg.cc/cJP6wzBm/Whats-App-Image-2026-11-09-at-23-20-25.jpg"
   },
   {
     id: "dumbbell_pullover",
@@ -1695,8 +1695,8 @@ const EXERCISE_DB = [
     id: "lat_pulldown_unilaterale_cavo",
     name: "Lat Pulldown Unilaterale al Cavo",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Wide-Grip_Lat_Pulldown/0.jpg`,
-    imgEnd: `${BASE_IMG}/Wide-Grip_Lat_Pulldown/1.jpg`
+    imgStart: "https://i.postimg.cc/nLNMBWGG/Whats-App-Image-2026-11-09-at-23-22-23.jpg",
+    imgEnd: "https://i.postimg.cc/nLNMBWGG/Whats-App-Image-2026-11-09-at-23-22-23.jpg"
   },
   {
     id: "pulldown_braccia_tese",
@@ -1709,15 +1709,15 @@ const EXERCISE_DB = [
     id: "pullover_al_cavo",
     name: "Pullover al Cavo",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Straight-Arm_Pulldown/0.jpg`,
-    imgEnd: `${BASE_IMG}/Straight-Arm_Pulldown/1.jpg`
+    imgStart: "https://i.postimg.cc/fyDzvQt7/Whats-App-Image-2026-11-09-at-23-23-34.jpg",
+    imgEnd: "https://i.postimg.cc/fyDzvQt7/Whats-App-Image-2026-11-09-at-23-23-34.jpg"
   },
   {
     id: "rematore_unilaterale_cavo",
     name: "Rematore Unilaterale al Cavo",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Single_Arm_Cable_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Single_Arm_Cable_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/gjmzKbXR/Whats-App-Image-2026-11-09-at-23-24-48.jpg",
+    imgEnd: "https://i.postimg.cc/gjmzKbXR/Whats-App-Image-2026-11-09-at-23-24-48.jpg"
   },
   {
     id: "rematore_bilaterale_cavi",
@@ -1730,8 +1730,8 @@ const EXERCISE_DB = [
     id: "high_cable_row",
     name: "High Cable Row",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Cable_Standing_High_Row/0.jpg`,
-    imgEnd: `${BASE_IMG}/Cable_Standing_High_Row/1.jpg`
+    imgStart: "https://i.postimg.cc/mgvGwWKs/Whats-App-Image-2026-11-09-at-23-25-58.jpg",
+    imgEnd: "https://i.postimg.cc/mgvGwWKs/Whats-App-Image-2026-11-09-at-23-25-58.jpg"
   },
   {
     id: "low_cable_row",
@@ -1758,15 +1758,15 @@ const EXERCISE_DB = [
     id: "pull_up_neutra",
     name: "Pull-Up Presa Neutra",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Parallel_Grip_Pull-up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Parallel_Grip_Pull-up/1.jpg`
+    imgStart: "https://i.postimg.cc/t4KH5G8H/Whats-App-Image-2026-11-09-at-23-26-57.jpg",
+    imgEnd: "https://i.postimg.cc/t4KH5G8H/Whats-App-Image-2026-11-09-at-23-26-57.jpg"
   },
   {
     id: "chin_up",
     name: "Chin-Up",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Chin-Up/0.jpg`,
-    imgEnd: `${BASE_IMG}/Chin-Up/1.jpg`
+    imgStart: "https://i.postimg.cc/j259TMBZ/Whats-App-Image-2026-11-09-at-23-27-57.jpg",
+    imgEnd: "https://i.postimg.cc/j259TMBZ/Whats-App-Image-2026-11-09-at-23-27-57.jpg"
   },
   {
     id: "pull_up_larga",
@@ -1779,15 +1779,15 @@ const EXERCISE_DB = [
     id: "chest_to_bar_pull_up",
     name: "Chest-to-Bar Pull-Up",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Pullups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pullups/1.jpg`
+    imgStart: "https://i.postimg.cc/4ydMGWjw/Whats-App-Image-2026-11-09-at-23-28-52.jpg",
+    imgEnd: "https://i.postimg.cc/4ydMGWjw/Whats-App-Image-2026-11-09-at-23-28-52.jpg"
   },
   {
     id: "scapular_pull_up",
     name: "Scapular Pull-Up",
     muscle: "Dorso",
-    imgStart: `${BASE_IMG}/Pullups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Pullups/0.jpg`
+    imgStart: "https://i.postimg.cc/28LcxLYt/Whats-App-Image-2026-11-09-at-23-31-15.jpg",
+    imgEnd: "https://i.postimg.cc/28LcxLYt/Whats-App-Image-2026-11-09-at-23-31-15.jpg"
   },
   {
     id: "australian_pull_up",
@@ -1874,8 +1874,8 @@ const EXERCISE_DB = [
     id: "pendulum_squat",
     name: "Pendulum Squat",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Hack_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Hack_Squat/1.jpg`
+    imgStart: "https://i.postimg.cc/Kzvw93Hs/Whats-App-Image-2026-11-09-at-22-43-29.jpg",
+    imgEnd: "https://i.postimg.cc/SsN3ZYv1/Whats-App-Image-2026-11-09-at-22-43-29(1).jpg"
   },
   {
     id: "belt_squat",
@@ -1895,8 +1895,8 @@ const EXERCISE_DB = [
     id: "glute_kickback_machine",
     name: "Glute Kick Back Machine",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Glute_Kickback/0.jpg`,
-    imgEnd: `${BASE_IMG}/Glute_Kickback/1.jpg`
+    imgStart: "https://i.postimg.cc/ZY94ZXwM/Whats-App-Image-2026-11-09-at-22-47-16.jpg",
+    imgEnd: "https://i.postimg.cc/ZY94ZXwM/Whats-App-Image-2026-11-09-at-22-47-16.jpg"
   },
   {
     id: "gluteus_machine",
@@ -2000,15 +2000,15 @@ const EXERCISE_DB = [
     id: "squat_multipower",
     name: "Squat al Multipower",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Smith_Machine_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Smith_Machine_Squat/1.jpg`
+    imgStart: `${BASE_IMG}/Smith_Machine_Squat/1.jpg`,
+    imgEnd: `${BASE_IMG}/Smith_Machine_Squat/0.jpg`
   },
   {
     id: "front_squat_multipower",
     name: "Front Squat al Multipower",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Smith_Machine_Squat/0.jpg`,
-    imgEnd: `${BASE_IMG}/Smith_Machine_Squat/1.jpg`
+    imgStart: `${BASE_IMG}/Smith_Machine_Squat/1.jpg`,
+    imgEnd: `${BASE_IMG}/Smith_Machine_Squat/0.jpg`
   },
   {
     id: "split_squat_multipower",
@@ -2091,8 +2091,8 @@ const EXERCISE_DB = [
     id: "step_up",
     name: "Step Up",
     muscle: "Gambe",
-    imgStart: `${BASE_IMG}/Dumbbell_Step_Ups/0.jpg`,
-    imgEnd: `${BASE_IMG}/Dumbbell_Step_Ups/1.jpg`
+    imgStart: `${BASE_IMG}/Dumbbell_Step_Ups/1.jpg`,
+    imgEnd: `${BASE_IMG}/Dumbbell_Step_Ups/0.jpg`
   },
   {
     id: "pistol_squat",
