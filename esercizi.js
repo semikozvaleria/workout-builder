@@ -2214,8 +2214,8 @@ const EXERCISE_DB = [
     imgEnd: "https://i.postimg.cc/xCtN14VG/Hip-Thrust-Monopodalico1.jpg"
   },
   {
-    id: "kickback_al_cavo",
-    name: "Kickback al Cavo",
+    id: "kickback_al_cavo_glutei",
+    name: "Kickback al Cavo (Glutei)",
     muscle: "Gambe",
     imgStart: "https://i.postimg.cc/yddYv62S/back-al-cavo.jpg",
     imgEnd: "https://i.postimg.cc/yddYv62S/back-al-cavo.jpg"
@@ -2878,15 +2878,15 @@ const EXERCISE_DB = [
     id: "90_90_hip_switch",
     name: "90/90 Hip Switch",
     muscle: "Mobilità",
-    imgStart: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg",
-    imgEnd: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg"
+    imgStart: "https://i.postimg.cc/FFfHXSLN/Whats-App-Image-2026-11-10-at-01-56-43.jpg",
+    imgEnd: "https://i.postimg.cc/FFfHXSLN/Whats-App-Image-2026-11-10-at-01-56-43.jpg"
   },
   {
     id: "90_90_hip_rotation",
     name: "90/90 Hip Rotation",
     muscle: "Mobilità",
-    imgStart: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg",
-    imgEnd: "https://i.postimg.cc/gcw2bhZY/Whats-App-Image-2026-11-10-at-01-53-52.jpg"
+    imgStart: "https://i.postimg.cc/FFfHXSLN/Whats-App-Image-2026-11-10-at-01-56-43.jpg",
+    imgEnd: "https://i.postimg.cc/FFfHXSLN/Whats-App-Image-2026-11-10-at-01-56-43.jpg"
   },
   {
     id: "hip_cars",
