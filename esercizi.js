@@ -1,6 +1,5 @@
 // Database definitivo esercizi - Workout Builder Carlo Ratto
-// CDN jsDelivr collegata al repository open-source yuhonas/free-exercise-db + esercizi miei su postimg.cc
-// Immagini verificate: 0.jpg (Partenza) e 1.jpg (Arrivo)
+// Database spostato su SUPABASE --> rimozione esercizi.js presto 
 
 const BASE_IMG = "https://cdn.jsdelivr.net/gh/yuhonas/free-exercise-db@main/exercises";
 
