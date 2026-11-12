@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Workout Builder</title>
+  <title>Workout Builder - Cloud</title>
   <!-- Script html2pdf per scaricare il PDF direttamente dal browser -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <!-- Database esterno degli esercizi -->
-  <script src="esercizi.js"></script>
+  <!-- Libreria ufficiale Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     :root {
       --bg: #000000;
@@ -96,7 +96,6 @@
       font-size: 11px;
     }
 
-    /* Intestazione in nero */
     .pdf-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #111827; padding-bottom: 8px; margin-bottom: 10px; }
     .pdf-header-left { display: flex; align-items: center; gap: 12px; }
     .pdf-logo { height: 50px; width: auto; max-width: 120px; object-fit: contain; }
@@ -105,7 +104,6 @@
     
     .pdf-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; background: #f1f5f9; padding: 7px 10px; border-radius: 6px; margin-bottom: 8px; font-size: 10.5px; }
     
-    /* Note Generali */
     .pdf-general-notes { 
       background: #fffbeb; 
       border-left: 3px solid #f59e0b; 
@@ -117,18 +115,9 @@
       display: none; 
       line-height: 1.4; 
     }
-    .pdf-general-notes-title { 
-      display: block; 
-      font-weight: 800; 
-      margin-bottom: 3px; 
-      letter-spacing: 0.3px; 
-    }
-    .pdf-general-notes-body { 
-      display: block; 
-      white-space: pre-wrap; 
-    }
+    .pdf-general-notes-title { display: block; font-weight: 800; margin-bottom: 3px; letter-spacing: 0.3px; }
+    .pdf-general-notes-body { display: block; white-space: pre-wrap; }
     
-    /* Banner Seduta/Giorno nero con conteggio a destra */
     .pdf-day-banner {
       background: #000000;
       color: #ffffff;
@@ -145,13 +134,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    .pdf-day-count {
-      font-size: 10px;
-      font-weight: 600;
-      color: #d1d5db;
-      text-transform: none;
-      letter-spacing: 0;
-    }
+    .pdf-day-count { font-size: 10px; font-weight: 600; color: #d1d5db; text-transform: none; letter-spacing: 0; }
 
     .pdf-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
     .pdf-table th { background: #e2e8f0; color: #334155; text-align: left; padding: 5px 6px; font-size: 9.5px; text-transform: uppercase; }
@@ -159,7 +142,6 @@
     .pdf-table tr { page-break-inside: avoid; }
     .pdf-table tr:nth-child(even) { background: #f8fafc; }
     
-    /* Foto nel PDF */
     .pdf-photos-wrap { display: flex; gap: 4px; align-items: center; justify-content: center; }
     .pdf-img { width: 44px; height: 44px; border-radius: 4px; object-fit: cover; border: 1px solid #94a3b8; }
     .pdf-notes-cell { font-size: 9.5px; color: #334155; white-space: pre-wrap; line-height: 1.25; }
@@ -174,7 +156,7 @@
         <img src="logo_carlo.png" alt="Logo" class="site-logo">
         <h1>Workout Builder - Carlo Ratto</h1>
       </div>
-      <span style="font-size: 0.8rem; color: var(--text-muted);" id="dbCount">0 Esercizi nel DB</span>
+      <span style="font-size: 0.8rem; color: var(--primary);" id="dbCount">Connessione al cloud...</span>
     </header>
 
     <!-- 1. Dati Scheda -->
@@ -232,9 +214,10 @@
         <datalist id="exerciseSuggestions"></datalist>
       </div>
 
-      <select id="exerciseSelect" style="margin-bottom: 8px;"></select>
+      <select id="exerciseSelect" style="margin-bottom: 8px;">
+        <option value="">Caricamento esercizi dal database...</option>
+      </select>
 
-      <!-- Box Anteprima con supporto immagine singola o doppia -->
       <div class="preview-box">
         <div class="preview-photos">
           <div class="preview-photo-wrap" id="wrapImgStart">
@@ -312,7 +295,6 @@
         <div><strong>Totale Esercizi:</strong> <span id="pdfCount">0</span></div>
       </div>
 
-      <!-- Box Note Generali -->
       <div class="pdf-general-notes" id="pdfGeneralNotesBox">
         <span class="pdf-general-notes-title">NOTE GENERALI:</span>
         <span class="pdf-general-notes-body" id="pdfGeneralNotesText"></span>
@@ -328,6 +310,12 @@
   </div>
 
   <script>
+    // Inizializzazione Connessione Supabase
+    const SUPABASE_URL = "https://rcpegoxebgpjziwctmaz.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_7jyLjdruc3-Jio7dyVE3ag_ekcppthX";
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    let EXERCISE_DB = [];
     let currentWorkout = [];
 
     const muscleFilter = document.getElementById("muscleFilter");
@@ -344,7 +332,33 @@
     const previewMuscle = document.getElementById("previewMuscle");
     const exerciseDay = document.getElementById("exerciseDay");
 
-    document.getElementById("dbCount").textContent = `${EXERCISE_DB.length} Esercizi nel DB`;
+    // Scarica tutti gli esercizi dal database Supabase all'avvio
+    async function loadExercisesFromCloud() {
+      const { data, error } = await supabaseClient
+        .from('exercises')
+        .select('*')
+        .order('name', { ascending: true });
+
+      if (error) {
+        console.error("Errore caricamento esercizi:", error);
+        document.getElementById("dbCount").textContent = "Errore connessione DB";
+        document.getElementById("dbCount").style.color = "var(--danger)";
+        return;
+      }
+
+      // Adatta i nomi delle colonne del DB (img_start, img_end) al formato dell'app
+      EXERCISE_DB = data.map(row => ({
+        id: row.id,
+        name: row.name,
+        muscle: row.muscle,
+        imgStart: row.img_start,
+        imgEnd: row.img_end
+      }));
+
+      document.getElementById("dbCount").textContent = `☁️ ${EXERCISE_DB.length} Esercizi Cloud`;
+      updateSuggestions();
+      updateDropdown();
+    }
 
     function updateSuggestions() {
       const selectedMuscle = muscleFilter.value;
@@ -369,7 +383,7 @@
         const matchMuscle = (selectedMuscle === "ALL" || ex.muscle === selectedMuscle);
         if (matchMuscle && (term === "" || ex.name.toLowerCase().includes(term))) {
           matches.push(ex);
-          if (matches.length >= 40) break;
+          if (matches.length >= 60) break;
         }
       }
 
@@ -396,15 +410,14 @@
       if (!selectedId) return;
       const selected = EXERCISE_DB.find(e => e.id === selectedId);
       if (selected) {
-        const start = selected.imgStart || selected.img || "";
-        const end = selected.imgEnd || selected.imgStart || selected.img || "";
+        const start = selected.imgStart || "";
+        const end = selected.imgEnd || selected.imgStart || "";
         
         previewImgStart.src = start;
         previewImgEnd.src = end;
         previewName.textContent = selected.name;
         previewMuscle.textContent = selected.muscle;
 
-        // Riconoscimento intelligente: singola immagine panoramica vs due immagini
         if (start === end) {
           wrapImgEnd.style.display = "none";
           previewImgStart.style.width = "110px";
@@ -433,8 +446,8 @@
 
     exerciseSelect.addEventListener("change", updatePreview);
 
-    updateSuggestions();
-    updateDropdown();
+    // Avvia il caricamento da Supabase
+    loadExercisesFromCloud();
 
     function escapeHtml(str) {
       return str
@@ -464,8 +477,8 @@
         day: day,
         name: selected.name,
         muscle: selected.muscle,
-        imgStart: selected.imgStart || selected.img || "",
-        imgEnd: selected.imgEnd || selected.imgStart || selected.img || "",
+        imgStart: selected.imgStart || "",
+        imgEnd: selected.imgEnd || selected.imgStart || "",
         setsReps, rest, rir, notes
       });
 
